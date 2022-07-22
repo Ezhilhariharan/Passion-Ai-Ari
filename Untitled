@@ -1,0 +1,1365 @@
+<p className="name-right">
+  <label htmlFor="name">Username</label>
+</p>
+<p>
+  <input
+    className=" input-right"
+    id="name"
+    name="Username"
+    type="text"
+    onChange={formik.handleChange}
+    value={formik.values.Username}
+  />
+</p>
+<p className="  name-right">
+  <label htmlFor="number">Password</label>ms-1 ms-md-5 ms-sm-5 ms-lg-5 ms-xl-5
+</p>
+<p>mt-2 mt-md-4 mt-sm-4 mt-lg-4 mt-xl-4
+  <input
+    className=" input-right"
+    id="name"
+    name="number"
+    type="password"
+    onChange={formik.handleChange}
+    value={formik.values.Password}
+  />
+</p>
+<p className="forgot-passward" onClick={forgotpassword}>
+  forgot password
+</p>
+<p>
+  <button type="submit" className="submit-signin">
+    <h5>Signin</h5>{" "}
+  </button>
+</p>
+<p className="new-user">New user?</p>
+<p>
+  <button className="submit-right-fourth">
+    <h5>Signup</h5>{" "}
+  </button>
+</p>
+.icon{
+  color:white;
+  margin-top:7%;
+  margin-left:70%;
+  font-size:25px;
+  cursor:pointer;
+  font-family:'Gilroy-Medium';
+  display:flex;
+}
+.icon-back{
+  color:white;
+  text-align: center;
+  align-items: center;
+  font-size:20px;
+ margin-left:5px;
+  cursor:pointer;
+  font-family:'Gilroy-Medium';
+}
+.submit-right{
+  color:rgb(255, 136, 0);
+  font-size:25px;
+  width:150px;
+  height:40px;
+  margin-top:510px;
+  margin-left:480px;
+  background-color:#2a2e4b;
+  text-align:center;
+  border-radius:5px ;
+  border:none;
+  border-radius:50px;
+  box-shadow:2px 1px 1px rgb(54, 53, 53);
+  cursor:pointer;
+}
+.submit-four{
+  color:rgb(255, 136, 0);
+  font-size:25px;
+  width:150px;
+  height:40px;
+  margin-top:50px;
+  margin-left:380px;
+  background-color:#2a2e4b;
+  text-align:center;
+  border-radius:5px ;
+  border:none;
+  border-radius:50px;
+  box-shadow:2px 1px 1px rgb(54, 53, 53);
+  cursor:pointer;
+}
+@media(min-width:768px){
+  .pageleft{
+    color:#2a2e4b;
+    font-size:32px;
+    margin-top:200px;
+    margin-left:50px;
+    font-family:'Gilroy-Bold';
+}
+}
+@media(max-width:800px){
+  .app-left{
+     display:none
+}
+.app-right{
+  background-color:#2a2e4b;
+  width: 100vw;
+  overflow:hidden;
+  z-index:1;
+  }
+}
+@media (max-width: 575.98px){
+  .form-border{
+  max-width: 100%;
+  height:70%;
+  top:7%;
+  margin-left:7%;
+overflow:hidden;
+color:white;
+  z-index:-1;
+  }
+  .icon{
+    color:white;
+    margin-top:5%;
+    margin-left:80%;
+    font-size:18px;
+      cursor:pointer;
+    font-family:'Gilroy-Medium';
+       display:flex;
+  }
+  .icon-back{
+    color:white;
+    text-align: center;
+    align-items: center;
+    font-size:15px;
+   margin-left:4px;
+    cursor:pointer;
+    font-family:'Gilroy-Medium';
+  }
+  }
+///login css
+  .form-1 {
+    margin-top: 0px;
+  }
+  .form-2 {
+    margin-top: 0px;
+  }
+  .name-right {
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    margin-left: 80px;
+    font-family: "Gilroy-Medium";
+  }
+  .input-right {
+    border-color: #fff;
+    box-sizing: border-box;
+    outline: none;
+    margin-top: 10px;
+    padding: 8px;
+    color: white;
+    width: 60%;
+    background-color: #2a2e4b;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-left: 80px;
+    font-family: "Gilroy-Medium";
+    font-size: 1.2rem;
+    background: yellow;
+  }
+  .sign-right {
+    font-size: 25px;
+    padding-top: 20px;
+  }
+  .img {
+    width: 30px;
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+    align-items: center;
+  }
+  .img-icon {
+    margin-left: 80px;
+  }
+  .forgot-passward {
+    color: white;
+    font-size: 12px;
+    padding-left: 380px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    font-family: "Gilroy-Medium";
+    cursor: pointer;
+  }
+  .submit-signin {
+    background-color: #2a2e4b;
+    font-size: 25px;
+    width: 170px;
+    height: 40px;
+    margin-top: 60px;
+    margin-left: 80px;
+    color: rgb(255, 136, 0);
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 1px 1px rgb(54, 53, 53);
+  }
+  .submit-signin:hover {
+    color: #2a2e4b;
+    font-size: 25px;
+    width: 170px;
+    height: 40px;
+    margin-top: 60px;
+    margin-left: 80px;
+    background-color: rgb(255, 136, 0);
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 1px 1px rgb(54, 53, 53);
+  }
+  .new-user {
+    color: white;
+    font-size: 12px;
+    padding-left: 405px;
+    padding-top: 55px;
+    font-family: "Gilroy-Medium";
+  }
+  .submit-right-fourth {
+    background-color: rgb(255, 136, 0);
+    font-size: 25px;
+    width: 170px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 380px;
+    margin-bottom: 300px;
+    color: #2a2e4b;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+  }
+  .submit-right-fourth:hover {
+    color: rgb(255, 136, 0);
+    font-size: 25px;
+    width: 170px;
+    height: 40px;
+    margin-top: 0px;
+    margin-left: 380px;
+    margin-bottom: 300px;
+    background-color: #2a2e4b;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+  }
+  const icons = [{
+  icon : <i className="fa-solid fa-masks-theater"></i>
+ },{
+    icon :<i className="fa-solid fa-pen-paintbrush"></i>
+ },{
+   icon :<i className="fa-solid fa-stethoscope"></i>
+ },{
+    icon : <i className="fa-regular fa-user-helmet-safety"></i>
+ },
+ {
+   icon :<i className="fa-solid fa-pen-paintbrush"></i>
+},{
+  icon :<i className="fa-solid fa-stethoscope"></i>
+},{
+   icon : <i className="fa-regular fa-user-helmet-safety"></i>
+},
+{
+   icon :<i className="fa-solid fa-pen-paintbrush"></i>
+},{
+  icon :<i className="fa-solid fa-stethoscope"></i>
+},{
+   icon : <i className="fa-regular fa-user-helmet-safety"></i>
+}
+]
+ export default icons
+ <div className="slider">
+                    {
+                        icons.map(items => (
+                            <Selection items={items.icon} />
+                        ))
+                    }
+                </div>
+            </div> */}
+            {/* <div className="option-selection ">
+                <InfiniteScroll onScroll={handleHorizontalScroll}  position={10} horizontal>
+                    {
+                        icons.map(items => (
+                            <Selection items={items.icon} />
+                        ))
+                    }
+                </InfiniteScroll>
+            </div> */}
+            {/* <div className="option-selection ">
+                <HorizontalScroll>
+                    {
+                        icons.map(items => (
+                            <Selection items={items.icon} />
+                        ))
+                    }
+                </HorizontalScroll>
+                //     let sliderwrap = document.querySelector('.option-selection');
+    //     let slider = document.querySelector('.slider');
+    //     let clonesWidth;
+    //     let sliderWidth;
+    //     let clones = [];
+    //     let disableScroll = false;
+    //     let scrollpos;
+    //     let items = [...document.querySelectorAll('.slider-item')];
+    //     items.forEach(item => {
+    //         let clone = item.cloneNode(true);
+    //         clone.classList.add('clone');
+    //         slider.appendChild(clone);
+    //         clones.push(clone);
+    //     })
+    //     function getClonesWidth() {
+    //         let width = 0;
+    //         clones.forEach(clone => {
+    //             width += clone.offsetWidth;
+    //         })
+    //         return width;
+    //     }
+    //     function getScrollpos() {
+    //         return window.scrollY;
+    //     }
+    //     function scrollUpdate() {
+    //         scrollpos = getScrollpos();
+    //         if (clonesWidth + scrollpos >= sliderWidth) {
+    //             window.scrollTo({ top: 1 });
+    //         } else if (scrollpos <= 0) {
+    //             window.scrollTo({ top: sliderWidth - clonesWidth - 1 });
+    //         }
+    //         slider.style.transform = `translateX(${-window.scrollY}px)`
+    //         requestAnimationFrame(scrollUpdate)
+    //     }
+    //     function onload() {
+    //         calaculateDimensions()
+    //         document.body.style.height = `${sliderWidth}px`
+    //         window.scrollTo({ top: 1 });
+    //         scrollUpdate()
+    //     }
+    //     function calaculateDimensions() {
+    //         sliderWidth = slider.getBoundingClientRect().width;
+    //         clonesWidth = getClonesWidth();
+    //     }
+    // useEffect(() => {
+    //     onload()
+    // })
+    // const handleHorizontalScroll = (position, previousPosition) => {
+    //     const diffScroll = position - previousPosition
+    //     const direction = diffScroll > 0
+    //         ? 'right'
+    //         : 'left'
+    //     
+    // }
+     <Formik
+                                initialValues={{ college: '', department: '', Graduation: '' }}
+                                onSubmit={(values, onSubmitProps) => {
+                                    onSubmitProps.resetForm()
+                                }}
+                                validationSchema={EducationDetailsSchema}
+                            >
+                                <Form>
+                                  <Formik
+                                initialValues={{ mobile: '', }}
+                                onSubmit={(values, onSubmitProps) => {
+                                    onSubmitProps.resetForm()
+                                }}
+                                validationSchema={MobileNumberSchema}
+                            >
+                                <Form>
+                                onClick={() => this.setState({setShow:true})}
+                                onClick={this.login}
+                                modal css is in setting scss
+                                {/* played == 1.0 &&                                   
+                                  <div className="multiple-video d-flex flex-row " >
+                                      <div className="">
+                                          <img src="image/unlock.png" alt="" className="img-fluid ps-3 pe-2" />
+                                          <i className="fa-regular fa-lock ps-3 pe-2"></i>
+                                          <div className="menubar-sideline mt-1 "></div>
+                                      </div>
+                                      <h5 className="stages-video-name ps-3">{stagedata.content_type}</h5>
+                                      <div className="stages-video-para ps-1"><p className="">{stagedata.description}
+                                          </p>
+                                          <span className="video-time">{stagedata.content_duration} </span>
+                                      </div>
+                                  </div> */}
+              {/* <div className="multiple-video d-flex flex-row " >
+                                      <div className="">
+                                          <img src="image/lock.png" alt="" className="img-fluid ps-3 pe-2" />
+                                          <i className="fa-regular fa-lock ps-3 pe-2"></i>
+                                          <div className="menubar-sideline mt-1 "></div>
+                                      </div>
+                                      <h5 className="stages-video-name ps-3">{stagedata.content_type}</h5>
+                                      <div className="stages-video-para ps-1"><p className="">{stagedata.description}
+                                          </p>
+                                          <span className="video-time"> {stagedata.content_duration} </span>
+                                      </div>
+                                  </div>    
+                                  <h1>{played}</h1>                            */}
+                                  {/* <div className="stages-button d-flex flex-row justify-content-center  ">
+                                    <div className="btn-blue-stages d-flex flex-row">
+                                        <span className={ "font-color my-auto pe-3 ps-5" + (this.state.active === 1? ' ActiveTab': '') } onClick={() => this.setState({ active: 1 })}>Stage1</span>
+                                        <i className="fa-thin fa-chevron-right font-icon"></i>
+                                        <span className= { "font-color my-auto pe-3 ps-3" + (this.state.active === 2? ' ActiveTab': '') } onClick={() => this.setState({ active: 2 })}>Stage2</span>
+                                        <i className="fa-thin fa-chevron-right font-icon "></i>
+                                        <span className= "font-color my-auto pe-3 ps-3"
+                                        //  + (this.state.active === 3? ' ActiveTab': '') 
+                                        //  onClick={() => this.setState({ active: 3 })}
+                                         >Stage3</span>
+                                        <i className="fa-thin fa-chevron-right font-icon "></i>
+                                        <span className=  "font-color my-auto pe-3 ps-3" 
+                                        // + (this.state.active === 4? ' ActiveTab': '') 
+                                        //  onClick={() => this.setState({ active: 4 })}
+                                         >Stage4</span>   </div>
+                                    <button className="btn-blue-stages mt-3">stages</button>
+                                </div> */}  
+                                {(formProps) => (
+                                  <Form className="d-flex flex-row   ">
+                                    <input
+                                      type="file"
+                                      name="file"
+                                      id="file"
+                                      // className="profile-upload mt-3"
+                                      style={{ display: "none" }}
+                                      onChange={(event) => {
+                                        formProps.setFieldValue(
+                                          "photo1",
+                                          event.target.files[0]
+                                        );
+                                      }}
+                                      ref={this.editpicture}
+                                      onClick={() =>
+                                        this.setState({ editprofilepic: false })
+                                      }
+                                    />
+                                    <button type="submit" className="btn-update mt-4 me-1">
+                                      update
+                                    </button>
+                                  </Form>
+                                )}
+                                //   
+    //   var formpatchData = new FormData()
+    //   formpatchData.append('is_first', "True")
+    //   formpatchData.append('content_id', details.id)
+    //   formpatchData.append('course_id', courseid)
+    //   axios
+    //     .post("student/progress_updater/", formpatchData)
+    //     .then((res) => {
+    //       
+    //     })
+    //     .catch((error) => {
+    //       
+    //     });
+    //   // datapass()  
+    {/* <div>
+      <p className="pb-4 ps-3 pt-2">Webinars</p>
+      <div className="studenthomepage-fotter-right-middle d-flex flex-row">
+        <div className="studenthomepage-fotter-cards ms-md-5 me-5">
+          <p className="studenthomepage-card-Title pt-3">
+            Webinar Title
+          </p>
+          <p className="studenthomepage-card-description ">
+            Lorem ipsum dolor sit amet
+          </p>
+          <div className="studenthomepage-card-date ">
+            18 July 2021 |{" "}
+            <span className="studenthomepage-card-date-time">
+              9 AM
+            </span>
+          </div>
+          <div className=" d-flex flex-row justify-content-center pt-1">
+            <div className="studenthomepage-cards-img"></div>
+          </div>
+          <p className="studenthomepage-card-name pt-1">
+            Naveen Rajendran
+          </p>
+          <p className="studenthomepage-card-domain">
+            Visual Designer
+          </p>
+          <button className="studenthomepage-cards-join ">
+            Join
+          </button>
+        </div>
+        <div className="studenthomepage-fotter-cards d-none d-lg-block">
+          <p className="studenthomepage-card-Title pt-3">
+            Webinar Title
+          </p>
+          <p className="studenthomepage-card-description">
+            Lorem ipsum dolor sit amet
+          </p>
+          <div className="studenthomepage-card-date ">
+            18 July 2021 |{" "}
+            <span className="studenthomepage-card-date-time">
+              9 AM
+            </span>
+          </div>
+          <div className=" d-flex flex-row justify-content-center pt-1">
+            <div className="studenthomepage-cards-img"></div>
+          </div>
+          <p className="studenthomepage-card-name pt-1">
+            Naveen Rajendran
+          </p>
+          <p className="studenthomepage-card-domain ">
+            Visual Designer
+          </p>
+          <button className="studenthomepage-cards-join ">
+            Join
+          </button>
+        </div>
+      </div>
+      <div className=" d-flex flex-row justify-content-end me-xl-5 pe-xl-5">
+        <p className="pt-4 me-md-5 me-sm-5 me-xl-5 pe-xl-5 mb-2"> View all</p>
+      </div>
+    </div> */}
+    // <div
+                    //   class="modal fade"
+                    //   id="staticBackdrop"
+                    //   data-keyboard="false"
+                    //   aria-labelledby="staticBackdropLabel"
+                    //   aria-hidden="true"
+                    // >
+                    //   <div class="modal-dialog modal-dialog-centered">
+                    //     <div class="modal-content">
+                    //       <div class="modal-header">
+                    //         <h5 class="modal-title" id="staticBackdropLabel">
+                    //           Email Verification
+                    //         </h5>
+                    //         <button
+                    //           type="button"
+                    //           class="close"
+                    //           data-dismiss="modal"
+                    //           aria-label="Close"
+                    //           onClick={() => this.setState({ modalhide: false })}
+                    //         >
+                    //           <span aria-hidden="true">&times;</span>
+                    //         </button>
+                    //       </div>
+                    //       <div class="modal-body">
+                    //         <div>
+                    //           <center><h4>Email : {this.state.emailcustom}</h4></center>
+                    //           <p className="otpsetting mt-2">
+                    //             OTP has been sent to your Email ID
+                    //           </p>
+                    //           <OtpComponent userid={this.state.userid} email={this.state.emailcustom} />
+                    //         </div>
+                    //       </div>
+                    //     </div>
+                    //   </div>
+                    // </div>
+                    float-lg-right float-md-right float-lg-right
+                    export const courseURL = axios.create({
+                      // baseURL: "http://15.206.9.228:9000/",
+                      // baseURL: "http://127.0.0.1:8000/",
+                      // baseURL : 'http://183.83.191.203:9000/'
+                      baseURL : 'http://49.204.124.186:9000/'
+                    });
+                    {/* <thead>
+                      <tr>
+                          {daysShort.map(day => (
+                              <th key={day}>{day}</th>
+                          ))}
+                      </tr>
+                  </thead> */}
+            {/* <button className="button" onClick={getPrevMonth}>Prev</button>
+            <button className="button" onClick={getNextMonth}>Next</button> */}
+            <<<<<<< HEAD
+              </div>
+              <div className="settingcard-middle-line mt-2"> </div>
+              <div>
+                {this.state.active === 1 && (
+                  <SettingsPersonaldetails
+                    profiledata={this.state.profiledata}
+                  />
+                )}
+                {this.state.active === 2 && (
+                  <SettingAccountdetails
+                    changepassword={this.changepassword}
+                    profiledata={this.state.profiledata}
+                  />
+                )}
+                {this.state.active === 3 && <Settingshelpandsupport />}
+                {this.state.active === 4 && <Settingschangeindustry />}
+                {this.state.hidechangeindustry
+                  ? this.state.active === 5 && (
+                      <Settingchangepassword
+                        backto_accountdetails={this.backto_accountdetails}
+                      />
+                    )
+                  : null}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-keyboard="false"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title ms-auto" id="staticBackdropLabel">
+                  Phone no verification
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <Formik
+                  initialValues={{ number: "" }}
+                  onSubmit={(values, onSubmitProps) => {
+                    onSubmitProps.resetForm();
+                    this.setState({ show: true });
+                  }}
+                  validationSchema={changenumberSchema}
+                >
+                  <Form className="">
+                    <div className="d-flex flex-row mt-3 justify-content-center">
+                      <Field
+                        id="number"
+                        name="number"
+                        type="number"
+                        className="input-password px-3"
+                        placeholder="Please enter your mobile number."
+                      />
+                    </div>
+                    <div className="d-flex flex-row justify-content-center mt-5 ms-5">
+                      <button type="submit" className="btn-yellow w-25 me-5">
+                        Submit
+                      </button>{" "}
+=======
+</Form>
+</Formik>
+{this.state.show ? (
+  <div>
+    <Settingotpcomponent />
+  </div>
+) : null}
+</div>
+</div>
+</div>
+className={activerangedate ? 
+  fromclassDate >= col.date && toclassDate <= col.date?  "" :"" 
+  : `${col.classes} today ` }
+  // if (
+    //   progress.played.toFixed(4) >= 0.9800 &&
+    //   progress.played.toFixed(4) <= 0.9995
+    // ) {
+    //   // stagedata.forEach((item, index) => {
+    //   //   // 
+    //   //   if (item.id === details.id) {
+    //   //     // 
+    //   //     setChangeicon(index + 1);
+    //   //     // setChangeicon(index )
+    //   //   }
+    //   // });
+    //   // 
+    //   if (lastarraydata.id === currentvideoid) {
+    //     // 
+    //     
+    //     var formlastData = new FormData();
+    //     formlastData.append("stage_no", currentstage);
+    //     formlastData.append("course_id", courseid);
+    //     axios
+    //       .patch("users/manage_user_course/last_video_updater/", formlastData)
+    //       .then((res) => {
+    //         
+    //         if (res.status === 200) {
+    //           // setViewbutton(true)
+    //           setModalShow(true);           
+    //           
+    //           stagedata.forEach((item, index) => {               
+    //             if (item.id === details.id) {
+    //               setCaptureid(index);              
+    //             } else {
+    //             }
+    //           });
+    //         }
+    //       })
+    //       .catch((error) => {
+    //         
+    //       });
+    //   } 
+    // } else {
+    // }
+    // this.courseAPI.getCourseContent(this.state.industry_id, index + 1,this.state.page)
+        //     .then(res => {
+        //         
+        //         if (res.status === 200) {
+        //             // this.setState({ showbutton: true })
+        //             this.setState({
+        //                 course_content: res.data.data.results,
+        //                 // currentstage: res.data.data[0].stage_no,
+        //                 //         coursetitle: res.data.data[0].title,
+        //                 //         CourseDescription: res.data.data[0].description,
+        //                 // is_final: res.data.data[0].is_final,
+        //                 //         totalstage: res.data.data[0].total_stages,
+        //             })
+        //             content_order = this.state.course_content;
+        //         }
+        //         else {
+        //             this.setState({ course_content: "" })
+        //         }
+        //     })
+        //     .catch(err => {
+        //         
+        //     }) 
+        this.chartData = {
+          labels: ['A', 'B', 'C', 'D', 'E', 'F'],
+          datasets: [
+              {
+                  data: [190, 50, 100, 150, 50, 100,],
+                  backgroundColor: [
+                      "#FB9B51",
+                      "#11224E",
+                      "#1A3B70",
+                      "#2C599D",
+                      "#5C83C4",
+                      "#F88125"
+                  ],
+                  hoverBackgroundColor: [
+                      "#FB9B51",
+                      "#11224E",
+                      "#1A3B70",
+                      "#2C599D",
+                      "#5C83C4",
+                      "#F88125"
+                  ]
+              }]
+      };
+      // this.lightOptions = {
+      //     plugins: {
+      //         legend: {
+      //             labels: {
+      //                 color: '#495057'
+      //             }
+      //         }
+      //     }
+      // };
+      this.basicData1 = {
+          labels: ['Ongoing', 'Completed', 'Yet to start',],
+          datasets: [
+              {
+                  label: 'Appointment',
+                  backgroundColor: '#2B2E4A',
+                  data: [65, 59, 80,]
+              },
+          ]
+      };
+      this.basicData2 = {
+          labels: ['Ongoing', 'Completed', 'Yet to start',],
+          datasets: [
+              {
+                  label: 'Webinar',
+                  backgroundColor: '#FF7A00',
+                  data: [65, 59, 80,]
+              },
+          ]
+      };
+      this.basicData3 = {
+          labels: ['industry1', 'industry2', 'industry3', 'indsdsa'],
+          datasets: [
+              {
+                  label: 'Stage1',
+                  backgroundColor: '#C4C4C4',
+                  data: [65, 29, 80, 34]
+              },
+              {
+                  label: 'Stage2',
+                  backgroundColor: '#FF7A00',
+                  data: [65, 89, 10, 32]
+              },
+              {
+                  label: 'Stage3',
+                  backgroundColor: '#5A619E',
+                  data: [65, 59, 80, 34]
+              },
+          ],
+      };
+      horizontalOptions = {
+          indexAxis: 'y',
+          maintainAspectRatio: false,
+          aspectRatio: 1.9,
+          // plugins: {
+          //     legend: {
+          //         labels: {
+          //             color: '#495057'
+          //         }
+          //     }
+          // },
+          // scales: {
+          //     x: {
+          //         ticks: {
+          //             color: '#495057'
+          //         },
+          //         grid: {
+          //             color: '#ebedef'
+          //         }
+          //     },
+          //     y: {
+          //         ticks: {
+          //             color: '#495057'
+          //         },
+          //         grid: {
+          //             color: '#ebedef'
+          //         }
+          //     }
+          // }
+      };
+      basicOptions = {
+          maintainAspectRatio: false,
+          aspectRatio: 1.0,
+          plugins: {
+              legend: {
+                  labels: {
+                      color: '#495057'
+                  }
+              }
+          },
+          scales: {
+              xAxes: [
+                  {
+                      barPercentage: 0.4
+                  }
+              ],
+              x: {
+                  ticks: {
+                      color: '#495057'
+                  },
+                  grid: {
+                      color: '#ebedef'
+                  }
+              },
+              y: {
+                  ticks: {
+                      color: '#495057'
+                  },
+                  grid: {
+                      color: '#ebedef'
+                  }
+              }
+          }
+      }
+      // contract_doc: Yup.mixed().required('File is required'),
+      ///cool 
+      <div className="mentorprofile-left ">
+        <div className="mentorprofile-left-card">
+            <div className="mentorprofile-card d-flex flex-row ">
+                <div className="profile-img col-5 mx-auto my-auto">
+                    <img
+                        src={this.state.profiledata.profile_image}
+                        alt=""
+                        className="profilein-img"
+                        onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src =
+                                "/image/errorprofileimg.webp";
+                        }}
+                    />
+                </div>
+                <div className="profile-name  col-7">
+                    <div>
+                        <span className="">
+                            {this.state.profiledata === "" ? (
+                                <Skeleton
+                                    width="10rem"
+                                    className="p-mb-2 ms-4 "
+                                ></Skeleton>
+                            ) : (
+                                this.state.profiledata.name
+                            )}
+                        </span>                                   
+                    </div>
+                </div>
+            </div>
+            <div className="mentorprofile-card-details d-flex flex-row justify-content-start">
+                <div className=" ps-4  pt-2">
+                    <div className=" d-flex flex-row ">
+                        <span className="mentor-profile-details ">
+                            {studentProfileUser_Text.Details}
+                        </span>
+                    </div>
+                    <div className="Profile_Personaldetails_fields ">
+                        <div className="d-flex flex-row">
+                            <span className="field  ">
+                                {studentProfileUser_Text.Industry}
+                            </span>{" "}
+                            <span className="value ">
+                                {this.state.profiledata === "" ? (
+                                    <Skeleton
+                                        width="10rem"
+                                        className="p-mb-2 ms-4 "
+                                    ></Skeleton>
+                                ) : (
+                                    this.state.profiledata.company
+                                )}
+                            </span>
+                        </div>
+                        <div className="d-flex flex-row">
+                            <span className="field ">
+                                {studentProfileUser_Text.Domain}
+                            </span>{" "}
+                            <span className="value">
+                                {this.state.profiledata === "" ? (
+                                    <Skeleton
+                                        width="10rem"
+                                        className="p-mb-2 ms-4 "
+                                    ></Skeleton>
+                                ) : (
+                                    this.state.profiledata.position
+                                )}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="mentorprofile-card-details d-flex flex-row justify-content-start">
+                <div className="ps-4 pt-2">
+                    <div className=" d-flex flex-row">
+                        <span className="mentor-profile-details ">
+                            {
+                                studentProfileUser_Text.Personal_Details
+                            }
+                        </span>
+                    </div>
+                    <div className="Profile_Personaldetails_fields">
+                        <div className="d-flex flex-row">
+                            <span className="field  ">Email</span>{" "}
+                            <span className="value ">
+                                {this.state.profiledata === "" ? (
+                                    <Skeleton
+                                        width="10rem"
+                                        className="p-mb-2 ms-4 "
+                                    ></Skeleton>
+                                ) : (
+                                    this.state.profiledata.email
+                                )}
+                            </span>
+                        </div>
+                        <div className="d-flex flex-row">
+                            <span className="field  ">
+                                {studentProfileUser_Text.Phone}
+                            </span>{" "}
+                            <span className="value">
+                                {this.state.profiledata === "" ? (
+                                    <Skeleton
+                                        width="10rem"
+                                        className="p-mb-2 ms-4 "
+                                    ></Skeleton>
+                                ) : (
+                                    this.state.profiledata.mobile_no
+                                )}
+                            </span>
+                        </div>
+                        <div className="d-flex flex-row">
+                            <span className="field ">
+                                {studentProfileUser_Text.Password}
+                            </span>{" "}
+                            <span className="value">●●●●●●●●</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div className="d-flex flex-row ps-4 pt-3">
+        {" "}
+        <span className="mentorcompleted-Student">{this.state.studentappointment[0]?.student_name}</span>
+      </div>
+      <div className="d-flex flex-row ps-4 pt-2">
+        {" "}
+        <span className="mentorcompleted-CollegeName">
+          {this.state.studentappointment[0]?.college_name}
+        </span>
+      </div>
+      <div className="d-flex flex-row ps-4 pt-2">
+        {" "}
+        <span className="mentorcompleted-Batch"> {this.state.studentappointment[0]?.batch}</span>
+      </div>
+      <div className="d-flex flex-row ps-4 pt-2">
+        {" "}                  
+      </div>
+    </div>
+    <div className="mentorprofile-right pt-3 ">
+        <div className="mentorprofile-align mt-5 col-md-12">
+            <div className="mentorprofile-right-upper mt-1 mb-4 ms-4 d-flex flex-row justify-content-center">
+                <div className="w-100 split-students">
+                    <div className="Students-tittle  pt-3 ps-3 d-flex flex-row ">
+                        <h3 className="student">Students</h3>
+                        <h6
+                            data-bs-toggle="modal"
+                            data-bs-target="#studentappointment"
+                            className=" me-5 "
+                        >
+                            {studentProfileUser_Text.View_more}
+                        </h6>
+                    </div>
+                    {this.state.studentappointment.length === 0 ? (
+                        <div
+                            class="spinner-border mt-5 ms-5"
+                            role="status"
+                        >
+                            <span class="sr-only ms-5">
+                                Loading...
+                            </span>
+                        </div>
+                    ) : (
+                        <>
+                            {this.state.studentappointment
+                                .slice(0, 2)
+                                .map((data, index) => (
+                                    <NavLink
+                                        to={`${url}/:${data.student_username}`}
+                                        style={{
+                                            textDecoration: "none",
+                                        }}
+                                    >
+                                        <div
+                                            className="mentorstudent-appointment  mt-4 mx-auto  d-sm-flex d-none"
+                                            onClick={() =>
+                                                this.setState({
+                                                    active: 2,
+                                                })
+                                            }
+                                            key={index}
+                                        >
+                                            <div className="mentor-appointment d-flex flex-row ">
+                                                <div className="mentorstudent-profile ">
+                                                    <div className="mentorstudent-profiledetails d-flex flex-row justify-content-start ">
+                                                        <div className="mentorstudent-profileimg mt-3 ms-3">
+                                                            <img
+                                                                src={
+                                                                    data.profile_image
+                                                                }
+                                                                alt=""
+                                                                className="img-fit img-fluid"
+                                                                onError={(
+                                                                    e
+                                                                ) => {
+                                                                    e.target.onerror = null;
+                                                                    e.target.src =
+                                                                        "/image/errorprofileimg.webp";
+                                                                }}
+                                                            />
+                                                        </div>
+                                                        <div className="mentorstudent-details mt-3 ms-2">
+                                                            <span className="mentorstudent-Student d-flex">
+                                                                {
+                                                                    data.student_name
+                                                                }
+                                                            </span>
+                                                            <span className="mentorstudent-CollegeName d-flex mt-1">
+                                                                {
+                                                                    data.college_name
+                                                                }
+                                                            </span>
+                                                            <span className="mentorstudent-Batch d-flex mt-1">
+                                                                {
+                                                                    data.batch
+                                                                }
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    {/* <span className="mentor-appointmenttime  ms-3">
+                      Appointment scheduled at Jun 23, 12 PM
+                    </span> */}
+                                                </div>
+                                                <div className="mentorstudent-stage my-auto ms-3">
+                                                    <div className="mentorstudent-stagecircle">
+                                                        <h5 className="mentorstudent-stagenumber ">
+                                                            Stage{" "}
+                                                            {
+                                                                data.stage_no
+                                                            }
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </NavLink>
+                                ))}
+                        </>
+                    )}
+                    <div
+                        className="mentors-student-appointement-md mx-auto d-block d-sm-none d-sm-block  mt-3 mb-3"
+                        onClick={() => this.setState({ active: 2 })}
+                    >
+                        <div className="d-flex flex-row justify-content-center pt-3">
+                            <div className="mentors-card-img center mt-3 ms-3">
+                                <img
+                                    src={
+                                        this.state
+                                            .studentappointment[0]
+                                            ?.profile_image
+                                    }
+                                    alt=""
+                                    className="profilein-img img-fluid"
+                                    onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.src =
+                                            "/image/errorprofileimg.webp";
+                                    }}
+                                />
+                            </div>
+                            <div className="mentorstudent-stage   ms-auto me-3">
+                                <div className="mentorstudent-stagecircle">
+                                    <h5 className="mentorstudent-stagenumber ">
+                                        Stage
+                                        {
+                                            this.state
+                                                .studentappointment[0]
+                                                ?.stage_no
+                                        }
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-row justify-content-center pt-3">
+                            {" "}
+                            <span className="mentorcompleted-Student">
+                                {
+                                    this.state.studentappointment[0]
+                                        ?.student_name
+                                }
+                            </span>
+                        </div>
+                        <div className="d-flex flex-row justify-content-center pt-2">
+                            {" "}
+                            <span className="mentorcompleted-CollegeName">
+                                {
+                                    this.state.studentappointment[0]
+                                        ?.college_name
+                                }
+                            </span>
+                        </div>
+                        <div className="d-flex flex-row justify-content-center pt-2">
+                            {" "}
+                            <span className="mentorcompleted-Batch">
+                                {" "}
+                                {
+                                    this.state.studentappointment[0]
+                                        ?.batch
+                                }
+                            </span>
+                        </div>
+                        <div className="d-flex flex-row justify-content-center pt-2">
+                            {" "}
+                            {/* <span className="mentor-appointmenttime ">
+          Appointment scheduled at Jun 23, 12 PM
+        </span> */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </NavLink>
+            )
+          })}
+      </>
+)
+}
+    <div className="mentors-student-completed-md mx-auto  d-block d-sm-none   mt-4 mb-3"
+onClick={() => this.setState({ active: 3 })}>
+<div className="d-flex flex-row justify-content-center pt-3">
+<div className="mentors-card-img center mt-3 ms-3">
+<img
+    src={this.state.completedstudent[0]?.profile_image}
+    alt=""
+    className="profilein-img img-fluid"
+    onError={(e) => { e.target.onerror = null; e.target.src = "/image/errorprofileimg.webp" }}
+/>
+</div>
+<div className="ms-auto me-5 mt-3">
+<img
+    src="image/done.png"
+    alt=""
+    className="img-fluid ps-5 pt-2"
+/>
+</div>
+</div>
+<div className="d-flex flex-row ps-4 pt-3">
+{" "}
+<span className="mentorcompleted-Student">{this.state.completedstudent[0]?.student_name}</span>
+</div>
+<div className="d-flex flex-row ps-4 pt-2">
+{" "}
+<span className="mentorcompleted-CollegeName">
+{this.state.completedstudent[0]?.college_name}
+</span>
+</div>
+<div className="d-flex flex-row ps-4 pt-2">
+{" "}
+<span className="mentorcompleted-Batch "> {this.state.completedstudent[0]?.batch}</span>
+</div>
+<div className="d-flex flex-row ps-4 pt-2">
+{" "}
+</div>
+</div>
+                </div >
+            </div >
+        </div >
+    </div >
+    // communityhasMoreItems
+    // <ScrollArea
+    //     speed={0.5}
+    //     className="area me-4"
+    //     // contentClassName="content"
+    //     horizontal={false}
+    //     verticalScrollbarStyle={{
+    //         background: "transparent",
+    //         width: "0px",
+    //     }}
+    //     // smoothScrolling={true}
+    //     onScroll={(value) => this.feedsscroll(value)}
+    // >
+    //     {this.state.Globalfeeddata.length !== 0 ? (
+    //         <>
+    //             {this.state.Globalfeeddata.map((data) => (
+    //                 <Feed Localfeeddata={data} refreshfeed={this.fetchfeedsdata}
+    //                     comments={this.state.comments} FeedId={this.feedid}
+    //                     alertToaste={this.deleteToaste} loading={this.showLoading} />
+    //             ))}
+    //         </>
+    //     ) : (
+    //         <center><img
+    //             src="/image/nofeeds.png"
+    //             alt=""
+    //             className="mt-5 nofeeds"
+    //         /></center>
+    //     )}
+    // </ScrollArea>
+    // <ScrollArea
+                            //     speed={0.5}
+                            //     className="area  me-4"
+                            //     // contentClassName="content"
+                            //     horizontal={false}
+                            //     verticalScrollbarStyle={{
+                            //         background: "transparent",
+                            //         width: "0px",
+                            //     }}
+                            //     // smoothScrolling={true}
+                            //     onScroll={(value) => this.feedsscroll(value)}
+                            //     minScrollSize={1}
+                            // >
+                            //     {this.state.communityfeeds.length !== 0 ? (
+                            //         <>
+                            //             {this.state.communityfeeds.map(
+                            //                 (data) => (
+                            //                     <Feed
+                            //                         Localfeeddata={data}
+                            //                         FeedId={this.feedid}
+                            //                         refreshfeed={
+                            //                             this.fetchfeedsdata
+                            //                         }
+                            //                         comments={
+                            //                             this.state.comments
+                            //                         }
+                            //                         alertToaste={this.deleteToaste}
+                            //                         loading={this.showLoading}
+                            //                     />
+                            //                 )
+                            //             )}
+                            //         </>
+                            //     ) : (
+                            //         <center>
+                            //             <img
+                            //                 src="/image/nofeeds.png"
+                            //                 alt=""
+                            //                 className="mt-5 nofeeds"
+                            //             />
+                            //         </center>
+                            //     )}
+                            // </ScrollArea>
+                            // <ScrollArea
+                            //     speed={0.5}
+                            //     className="area mt-2"
+                            //     horizontal={false}
+                            //     verticalScrollbarStyle={{
+                            //         background: "transparent",
+                            //         width: "0px",
+                            //     }}
+                            //     smoothScrolling={true}
+                            // // onScroll={(value) => this.feedsscroll(value)}
+                            // >
+                            //     {this.state.Globalfeeddata.length !== 0 ? (
+                            //         <>
+                            //             {this.state.Globalfeeddata.map(
+                            //                 (data) => (
+                            //                     <Feed
+                            //                         Localfeeddata={data}
+                            //                         refreshfeed={
+                            //                             this.fetchfeedsdata
+                            //                         }
+                            //                         FeedId={this.feedid}
+                            //                         comments={
+                            //                             this.state.comments
+                            //                         }
+                            //                         alertToaste={this.deleteToaste}
+                            //                         loading={this.showLoading}
+                            //                     />
+                            //                 )
+                            //             )}
+                            //         </>
+                            //     ) : (
+                            //         <center>
+                            //             <img
+                            //                 src="/image/nofeeds.png"
+                            //                 alt=""
+                            //                 className="mt-5 nofeeds"
+                            //             />
+                            //         </center>
+                            //     )}
+                            // </ScrollArea>
+                            <Modal
+          size="md"
+          aria-labelledby="contained-modal-title-vcenter"
+          centered
+          backdrop="static"
+          show={this.state.show}
+          onHide={() => this.setState({ show: false })}
+        >
+          <Modal.Header >
+            <Modal.Title id="contained-modal-title-vcenter"></Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <div className="">
+              <center className="mt-3 mb-3">
+                <h2>{this.state.message}</h2>
+              </center>
+            </div>
+          </Modal.Body>
+          <Modal.Footer>
+            <button
+              onClick={() => this.setState({ show: false })}
+              className="btn-blue mx-auto mt-5 mb-5 w-50"
+            >
+         ok
+            </button>
+          </Modal.Footer>
+        </Modal>
+        <svg
+        width="36"
+        height="34"
+        viewBox="0 0 36 34"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.6826 14.0585L17.7048 14.0782L17.7285 14.0961C18.017 14.314 18.4242 14.4857 18.8646 14.4857C19.393 14.4857 19.8205 14.2385 20.0996 13.9749C20.3839 13.7064 20.6646 13.2345 20.547 12.6775C20.5183 12.2582 20.3215 11.87 20.0276 11.5924L20.0204 11.5856L20.013 11.579L15.843 7.84442C15.268 7.31012 14.3253 7.31011 13.7502 7.8444L9.58027 11.579L9.57288 11.5856L9.56566 11.5924C9.25977 11.8813 9.05912 12.29 9.0436 12.7288C8.98733 13.2438 9.22936 13.6913 9.52966 13.9749C9.85987 14.2868 10.294 14.4375 10.7033 14.4513C11.1094 14.465 11.5654 14.3452 11.9178 14.0181L13.0746 12.9908V20.0937C13.0746 21.0577 13.8834 21.7617 14.7966 21.7617H14.7966H14.7967H14.7967H14.7967H14.7967H14.7967H14.7968H14.7968H14.7968H14.7968H14.7968H14.7968H14.7969H14.7969H14.7969H14.7969H14.7969H14.797H14.797H14.797H14.797H14.7971H14.7971H14.7971H14.7971H14.7972H14.7972H14.7972H14.7973H14.7973H14.7973H14.7974H14.7974H14.7974H14.7975H14.7975H14.7975H14.7976H14.7976H14.7977H14.7977H14.7977H14.7978H14.7978H14.7979H14.7979H14.798H14.798H14.7981H14.7981H14.7981H14.7982H14.7982H14.7983H14.7983H14.7984H14.7984H14.7985H14.7986H14.7986H14.7987H14.7987H14.7988H14.7988H14.7989H14.7989H14.799H14.7991H14.7991H14.7992H14.7993H14.7993H14.7994H14.7994H14.7995H14.7996H14.7996H14.7997H14.7998H14.7998H14.7999H14.8H14.8H14.8001H14.8002H14.8003H14.8003H14.8004H14.8005H14.8006H14.8006H14.8007H14.8008H14.8009H14.8009H14.801H14.8011H14.8012H14.8013H14.8013H14.8014H14.8015H14.8016H14.8017H14.8018H14.8018H14.8019H14.802H14.8021H14.8022H14.8023H14.8024H14.8025H14.8025H14.8026H14.8027H14.8028H14.8029H14.803H14.8031H14.8032H14.8033H14.8034H14.8035H14.8036H14.8037H14.8038H14.8039H14.804H14.8041H14.8042H14.8043H14.8044H14.8045H14.8046H14.8047H14.8048H14.8049H14.805H14.8051H14.8052H14.8053H14.8054H14.8055H14.8056H14.8057H14.8059H14.806H14.8061H14.8062H14.8063H14.8064H14.8065H14.8066H14.8068H14.8069H14.807H14.8071H14.8072H14.8073H14.8075H14.8076H14.8077H14.8078H14.8079H14.808H14.8082H14.8083H14.8084H14.8085H14.8087H14.8088H14.8089H14.809H14.8092H14.8093H14.8094H14.8095H14.8097H14.8098H14.8099H14.81H14.8102H14.8103H14.8104H14.8106H14.8107H14.8108H14.811H14.8111H14.8112H14.8114H14.8115H14.8116H14.8118H14.8119H14.812H14.8122H14.8123H14.8125H14.8126H14.8127H14.8129H14.813H14.8131H14.8133H14.8134H14.8136H14.8137H14.8139H14.814H14.8141H14.8143H14.8144H14.8146H14.8147H14.8149H14.815H14.8152H14.8153H14.8155H14.8156H14.8158H14.8159H14.816H14.8162H14.8163H14.8165H14.8167H14.8168H14.817H14.8171H14.8173H14.8174H14.8176H14.8177H14.8179H14.818H14.8182H14.8183H14.8185H14.8187H14.8188H14.819H14.8191H14.8193H14.8194H14.8196H14.8198H14.8199H14.8201H14.8202H14.8204H14.8206H14.8207H14.8209H14.8211H14.8212H14.8214H14.8215H14.8217H14.8219H14.822H14.8222H14.8224H14.8225H14.8227H14.8229H14.823H14.8232H14.8234H14.8235H14.8237H14.8239H14.8241H14.8242H14.8244H14.8246H14.8247H14.8249H14.8251H14.8252H14.8254H14.8256H14.8258H14.8259H14.8261H14.8263H14.8265H14.8266H14.8268H14.827H14.8272H14.8273H14.8275H14.8277H14.8279H14.8281H14.8282H14.8284H14.8286H14.8288H14.8289H14.8291H14.8293H14.8295H14.8297H14.8298H14.83H14.8302H14.8304H14.8306H14.8308H14.8309H14.8311H14.8313H14.8315H14.8317H14.8319H14.832H14.8322H14.8324H14.8326H14.8328H14.833H14.8332H14.8333H14.8335H14.8337H14.8339H14.8341H14.8343H14.8345H14.8347H14.8348H14.835H14.8352H14.8354H14.8356H14.8358H14.836H14.8362H14.8364H14.8365H14.8367H14.8369H14.8371H14.8373H14.8375H14.8377H14.8379H14.8381H14.8383H14.8385H14.8387H14.8389H14.8391H14.8392H14.8394H14.8396H14.8398H14.84H14.8402H14.8404H14.8406H14.8408H14.841H14.8412H14.8414H14.8416H14.8418H14.842H14.8422H14.8424H14.8426H14.8428H14.843H14.8432H14.8434H14.8436H14.8438H14.844H14.8442H14.8444H14.8446H14.8448H14.845H14.8452H14.8454H14.8456H14.8458H14.846H14.8462H14.8464H14.8466H14.8468H14.847H14.8472H14.8474H14.8476H14.8478H14.848H14.8482H14.8484H14.8486H14.8488H14.849H14.8492H14.8494H14.8496H14.8498H14.85H14.8502H14.8505H14.8507H14.8509H14.8511H14.8513H14.8515H14.8517H14.8519H14.8521H14.8523H14.8525H14.8527H14.8529H14.8531H14.8533H14.8535H14.8537H14.854H14.8542H14.8544H14.8546H14.8548H14.855H14.8552H14.8554H14.8556H14.8558H14.856H14.8562H14.8564H14.8567H14.8569H14.8571H14.8573H14.8575H14.8577H14.8579H14.8581H14.8583H14.8585H14.8587H14.859H14.8592H14.8594H14.8596H14.8598H14.86H14.8602H14.8604H14.8606H14.8608H14.861H14.8613H14.8615H14.8617H14.8619H14.8621H14.8623H14.8625H14.8627H14.8629H14.8631H14.8634H14.8636H14.8638H14.864H14.8642H14.8644H14.8646H14.8648H14.865H14.8653H14.8655H14.8657H14.8659H14.8661H14.8663H14.8665H14.8667H14.8669H14.8672H14.8674H14.8676H14.8678H14.868H14.8682H14.8684H14.8686H14.8939L14.9191 21.76C15.8206 21.6992 16.5186 20.9266 16.5186 20.0597V13.0248L17.6826 14.0585ZM5.50863 1.42969H24.1566C24.7238 1.42969 25.1441 1.85509 25.1706 2.36247V25.9417C25.1706 26.4057 24.7554 26.8577 24.1566 26.8577H5.50863C4.90987 26.8577 4.49463 26.4057 4.49463 25.9417V2.34569C4.49463 1.88171 4.90988 1.42969 5.50863 1.42969Z"
+          stroke="white"
+          stroke-width="1.5"
+        />
+        <path
+          d="M29.4481 32.5699H10.8361C9.66132 32.5699 8.77808 31.6759 8.77808 30.6679C8.77808 30.5779 8.86932 30.4319 9.07208 30.4319C9.27483 30.4319 9.36608 30.5779 9.36608 30.6679C9.36608 31.4959 10.0668 32.0979 10.8361 32.0979H29.4841C30.2533 32.0979 30.9541 31.4959 30.9541 30.6679V7.07192C30.9541 6.24389 30.2533 5.64192 29.4841 5.64192C29.2813 5.64192 29.1901 5.49589 29.1901 5.40592C29.1901 5.31595 29.2813 5.16992 29.4841 5.16992C30.6588 5.16992 31.5421 6.06395 31.5421 7.07192V30.6579C31.5121 31.6809 30.615 32.5699 29.4481 32.5699Z"
+          stroke="white"
+          stroke-width="1.5"
+        />
+      </svg>

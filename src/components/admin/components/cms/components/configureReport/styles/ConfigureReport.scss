@@ -1,0 +1,79 @@
+@use "../../../../../../../scss/abstract" as *;
+.report-wrapper {
+  display: flex;
+  height: calc(100vh - 220px);
+  // overflow: hidden;
+  .q-wrapper {
+    width: 50%;
+    height: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  .r-wrapper {
+    width: 50%;
+    height: 30%;
+    padding: 0 10px !important;
+    // margin: auto;
+    min-height: 250px !important;
+    margin-top: 2.5%;
+    border-radius: 16px;
+    overflow: hidden;
+    // padding-bottom:10px !important;
+    // @include themed(){
+    //     box-shadow: t($shadow);
+    // }
+    .descriptive-text {
+      // border:1px solid red;
+      height: 70% !important;
+      overflow: hidden;
+      padding-bottom: 10px !important;
+    }
+    .scroll {
+      // border:1px solid red;
+      height: 140px !important;
+      p {
+        @include themed() {
+          color: t($textColor2) !important;
+        }
+      }
+    }
+    @include themed() {
+      background-color: t($calenderrange);
+      box-shadow: t($webinarcardshadow);
+    }
+    h3 {
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+    h6 {
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+  }
+}
+// .report-wrapper{
+//     display: flex;
+//     height: 100%;
+//     overflow: hidden;
+//     .q-wrapper{
+//         width: 50%;
+//         padding: 0 10px;
+//         overflow-y: scroll;
+//     }
+//     .r-wrapper{
+//         width: 50%;
+//         padding: 0 10px;
+// scroll{
+// }
+//         .topic-wrapper{
+//             width: 100%;
+//             height: 10rem;
+//             margin: auto;
+//             @include themed(){
+//                 box-shadow: t($shadow);
+//             }
+//         }
+//     }
+// }

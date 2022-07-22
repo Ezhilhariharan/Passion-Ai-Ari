@@ -1,0 +1,462 @@
+@use "../../../../../scss/abstract" as *;
+.footer_section8 {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(267.23deg, #282b45 54.11%, #2b3058 96.82%);
+  @include xsBreakPoint {
+    height: auto;
+  }
+  @include smBreakPoint {
+    height: auto;
+  }
+  @include mdBreakPoint {
+    height: auto;
+  }
+  @include lgBreakPoint {
+    height: auto;
+  }
+  .inside_footer_section {
+    width: 100%;
+    display: flex;
+    @include xsBreakPoint {
+      flex-direction: column;
+    }
+    @include smBreakPoint {
+      flex-direction: column;
+    }
+    @include mdBreakPoint {
+      flex-direction: column;
+    }
+    .left_footer_section {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent !important;
+      @include xsBreakPoint {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @include smBreakPoint {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+      @include mdBreakPoint {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 2px solid blue;
+        margin: 0 auto;
+      }
+      @include lgBreakPoint {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+      @include xlBreakPoint {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+      @include xxlBreakPoint {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+      img {
+        width: 43%;
+        object-fit: cover;
+        padding: 30px;
+        background: transparent;
+        @include xsBreakPoint {
+          width: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          padding: 0px;
+          padding-top: 4vh;
+        }
+        @include smBreakPoint {
+          width: 35%;
+          margin: 0 auto;
+          padding: 0px;
+          padding-top: 4vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @include mdBreakPoint {
+          width: 35%;
+          margin: 0 auto;
+          padding: 0px;
+          padding-top: 4vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @include lgBreakPoint {
+          width: 35%;
+          margin: 0 auto;
+          padding: 0px;
+          padding-top: 4vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @include xlBreakPoint {
+          width: 38%;
+          margin: 0 auto;
+          padding: 0px;
+          padding-top: 4vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @include xxlBreakPoint {
+          width: 40%;
+          margin: 0 auto;
+          padding: 0px;
+          padding-top: 4vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .right_footer_section {
+      width: 50%;
+      padding-top: 6vh;
+      @include xsBreakPoint {
+        width: 100%;
+      }
+      @include smBreakPoint {
+        width: 100%;
+      }
+      @include mdBreakPoint {
+        width: 100%;
+      }
+      @include lgBreakPoint {
+        width: 100%;
+      }
+      @include xlBreakPoint {
+        width: 100%;
+      }
+      @include xxlBreakPoint {
+        width: 100%;
+      }
+      .footer_right_inside {
+        width: 100%;
+        display: flex;
+        @include xsBreakPoint {
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+        }
+        @include smBreakPoint {
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+        }
+        @include mdBreakPoint {
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+        }
+        .left_footer_inside {
+          width: 50%;
+          @include xsBreakPoint {
+            width: 100%;
+          }
+          @include smBreakPoint {
+            width: 100%;
+          }
+          @include mdBreakPoint {
+            width: 100%;
+          }
+          @include lgBreakPoint {
+            width: 100%;
+          }
+          @include xlBreakPoint {
+            width: 100%;
+          }
+          @include xxlBreakPoint {
+            width: 100%;
+          }
+          .footer_content {
+            color: $goldenYellow--light;
+            font-size: 1.5em;
+            font-weight: 700;
+            @include xsBreakPoint {
+              text-align: center;
+              font-size: 1.3em;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @include smBreakPoint {
+              text-align: center;
+              font-size: 1.3em;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @include mdBreakPoint {
+              text-align: center;
+              font-size: 1.3em;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @include lgBreakPoint {
+              font-size: 1.4em;
+            }
+            @include xlBreakPoint {
+              font-size: 1.5em;
+            }
+            @include xxlBreakPoint {
+              font-size: 1.6em;
+            }
+          }
+          .links_page {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-bottom: 3vh;
+            @include xsBreakPoint {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @include smBreakPoint {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @include mdBreakPoint {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .nav-links {
+              font-size: 1.1rem;
+              color: white;
+              text-decoration: none;
+            }
+          }
+          .footer_p {
+            color: $orange_text;
+            font-size: 1em;
+            @include xsBreakPoint {
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @include smBreakPoint {
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @include mdBreakPoint {
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+        .right_footer_inside {
+          width: 50%;
+          @include xsBreakPoint {
+            width: 100%;
+          }
+          @include smBreakPoint {
+            width: 100%;
+          }
+          @include mdBreakPoint {
+            width: 100%;
+          }
+          @include lgBreakPoint {
+            width: 100%;
+          }
+          @include xlBreakPoint {
+            width: 100%;
+          }
+          @include xxlBreakPoint {
+            width: 100%;
+          }
+          .footer_content {
+            color: $goldenYellow--light;
+            font-size: 1.5em;
+            font-weight: 700;
+            @include xsBreakPoint {
+              text-align: center;
+              font-size: 1.3em;
+              display: flex;
+              align-items: center;
+              padding-top: 2vh;
+              justify-content: center;
+            }
+            @include smBreakPoint {
+              text-align: center;
+              font-size: 1.3em;
+              display: flex;
+              align-items: center;
+              padding-top: 2vh;
+              justify-content: center;
+            }
+            @include mdBreakPoint {
+              text-align: center;
+              font-size: 1.3em;
+              display: flex;
+              align-items: center;
+              padding-top: 2vh;
+              justify-content: center;
+            }
+            @include lgBreakPoint {
+              font-size: 1.4em;
+            }
+            @include xlBreakPoint {
+              font-size: 1.5em;
+            }
+            @include xxlBreakPoint {
+              font-size: 1.6em;
+            }
+          }
+          .logo_footer {
+            display: flex;
+            gap: 40px;
+            width: 42%;
+            @include xsBreakPoint {
+              margin: 0 auto;
+              width: 50%;
+            }
+            @include smBreakPoint {
+              margin: 0 auto;
+            }
+            @include mdBreakPoint {
+              margin: 0 auto;
+              gap: 0px !important;
+            }
+            @include lgBreakPoint {
+              gap: 30px;
+            }
+            .facebook {
+              width: 100%;
+              padding-top: 3vh;
+              img {
+                width: 100%;
+                @include smBreakPoint {
+                  width: 80%;
+                  margin: 0 auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                @include mdBreakPoint {
+                  width: 40%;
+                  margin: 0 auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                @include lgBreakPoint {
+                  width: 50px;
+                  margin: 0 auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                @include xlBreakPoint {
+                  width: 50px;
+                  margin: 0 auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+                @include xxlBreakPoint {
+                  width: 50px;
+                  margin: 0 auto;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              }
+            }
+          }
+          .terms_conditions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+            @include xsBreakPoint {
+              width: 100%;
+              text-align: center;
+              gap: 20px;
+              padding: 20px;
+            }
+            @include smBreakPoint {
+              width: 100%;
+              text-align: center;
+            }
+            @include mdBreakPoint {
+              width: 100%;
+              text-align: center;
+              gap: 20px;
+              padding: 20px;
+            }
+            @include lgBreakPoint {
+              width: 100%;
+            }
+            @include xlBreakPoint {
+              width: 100%;
+            }
+            @include xxlBreakPoint {
+              width: 100%;
+            }
+            .linksed {
+              text-decoration: none;
+              color: white;
+              font-size: 1.1em;
+              text-align: center;
+              @include xsBreakPoint {
+                font-size: 15px;
+                text-align: center;
+              }
+              @include smBreakPoint {
+                font-size: 17px;
+                text-align: center;
+              }
+              @include mdBreakPoint {
+                font-size: 18px;
+                text-align: center;
+              }
+              @include lgBreakPoint {
+                font-size: 20px;
+                text-align: center;
+              }
+            }
+            .linksed:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.copys {
+  text-align: center;
+}

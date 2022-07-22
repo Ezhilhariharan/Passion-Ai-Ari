@@ -1,0 +1,38 @@
+@use "../../../../../../../scss/abstract" as *;
+.logo-upload {
+  height: 100px;
+  width: 100px;
+  // border:1px solid red;
+  border-radius: 50%;
+  background-color: #d7d7d7;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.table-wrapper {
+  thead,
+  .p-datatable-thead {
+    > tr {
+      > th {
+        background: transparent !important;
+        font-size: 20px;
+        font-family: "Open Sans" !important;
+        @include themed() {
+          color: t($titlefont) !important;
+        }
+      }
+    }
+  }
+  .p-datatable-tbody {
+    > tr {
+      max-height: 150px !important;
+      @include themed() {
+        background: t($calenderrange) !important;
+        color: t($titlefont) !important;
+      }
+    }
+  }
+}

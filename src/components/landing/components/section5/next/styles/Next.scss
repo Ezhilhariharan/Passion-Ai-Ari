@@ -1,0 +1,28 @@
+@use "../../../../../../scss/abstract" as *;
+@import "https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css";
+.slide-next::before {
+  content: none !important;
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  background-color: #40457e !important;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 6 Pro" !important;
+  font-weight: 500 !important;
+  font-size: 2.5rem !important;
+  content: "\f061" !important;
+  padding: 10px 12px 10px 12px !important;
+  border: 2px solid red !important;
+  color: $orange_text !important;
+  // display: none !important;
+ 
+}
+
+
+.slick-next:before
+{
+  display: none !important;
+}

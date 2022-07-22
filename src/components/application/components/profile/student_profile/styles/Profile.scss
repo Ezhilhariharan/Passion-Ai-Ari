@@ -1,0 +1,1425 @@
+@use "../../../../../../scss/abstract/" as *;
+.profile {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  // background: rgba(227, 223, 237, 0.32);
+  // border: 1px solid green;
+  font-family: "Open Sans" !important;
+  @include themed() {
+    background: t($secondaryColor);
+  }
+  @include hlBreakPoint {
+    height: auto;
+  }
+  // @include xlBreakPoint {
+  //   height: auto !important;
+  // }
+  // @include lgBreakPoint {
+  //   height: auto !important;
+  // }
+  // @include xxlBreakPoint {
+  //   height: auto !important;
+  // }
+  @include mdBreakPoint {
+    height: 100% !important;
+    padding-top: 30px;
+    overflow-x: hidden;
+  }
+  @include xsBreakPoint {
+    height: auto !important;
+  }
+  @include smBreakPoint {
+    height: auto !important;
+  }
+}
+.profile-upper {
+  height: 40vh;
+  position: relative;
+  // width: 100%;
+  padding-top: 70px;
+  // border: 1px solid blue;
+  margin-left: 80px;
+  font-family: "Open Sans" !important;
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  @include xsBreakPoint {
+    // background-color: red;
+    margin-left: 0;
+    padding-top: 13vh;
+    height: auto;
+  }
+  @include smBreakPoint {
+    height: 70%;
+    margin-left: 0;
+  }
+  @include mdBreakPoint {
+    margin-left: 65px;
+    // height: 70%;
+    // height: auto;
+    // flex-direction: column !important;
+    // background-color: orange;
+  }
+  @include hlBreakPoint {
+    padding-top: 180px;
+  }
+  .btn-circle-blue {
+    width: 55px !important;
+    height: 55px !important;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+.profile-upper-inner {
+  font-family: "Open Sans" !important;
+  @include xxxlBreakPoint {
+    width: 1435px;
+  }
+  @include xxlBreakPoint {
+    width: 1355px;
+    // border: 1px solid green;
+  }
+  @include xlBreakPoint {
+    width: 1130px;
+  }
+  @include lgBreakPoint {
+    width: 910px;
+  }
+  @include mdBreakPoint {
+    width: 680px !important;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    // margin: 0 auto;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+}
+.profile-upper-left {
+  font-family: "Open Sans" !important;
+  height: 100%;
+  width: 60%;
+  // border: 1px solid red;
+  @include tabBreakPoint() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include mdBreakPoint {
+    // padding-left: 4vw;
+    // background-color: red;
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include smBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    // border: 1px solid red;
+    @include themed() {
+      // background-color: t($goldenYellow);
+      // border: 1px solid t($goldenYellow);
+    }
+  }
+  @include xsBreakPoint {
+    height: 50%;
+    width: 100%;
+    // @include themed() {
+    //         // background-color: t($goldenYellow);
+    //         border:1px solid t($goldenYellow);
+    //       }
+  }
+}
+.profile-upper-right {
+  font-family: "Open Sans" !important;
+  height: 100%;
+  width: 40%;
+  // border: 1px solid red;
+  @include mdBreakPoint {
+    font-size: 14px;
+    // background-color: red;
+    // width: 45%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.profile-details-box {
+  font-family: "Open Sans" !important;
+  margin-top: 30px;
+  overflow: hidden;
+  // border: 3px solid blue;
+  @include hlBreakPoint {
+    margin-top: 0px;
+    height: 230px !important;
+  }
+  border-radius: 16px;
+  @include xxxlBreakPoint {
+    width: 800px;
+    height: 280px;
+  }
+  @include xxlBreakPoint {
+    width: 730px;
+    height: 255px;
+  }
+  @include xlBreakPoint {
+    width: 650px;
+    height: 255px;
+  }
+  @include lgBreakPoint {
+    width: 500px;
+    height: 255px;
+  }
+  @include mdBreakPoint {
+    width: 385px;
+    height: 220px;
+  }
+  @include smBreakPoint {
+    width: 385px;
+    height: 220px;
+  }
+  @include xsBreakPoint {
+    width: 300px;
+    height: 220px;
+  }
+  @include themed() {
+    background: t($profilebox);
+    color: t($feedsfont) !important;
+  }
+  .profile-details-box-left {
+    font-family: "Open Sans" !important;
+    height: 100%;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    .studentprofile-img {
+      font-family: "Open Sans" !important;
+      height: 160px;
+      width: 160px;
+      padding: 0;
+      border-radius: 50%;
+      // border: 5px solid red;
+      overflow: hidden;
+      @include themed() {
+        background-color: t($goldenYellow);
+        border: 5px solid t($goldenYellow);
+      }
+      @include mdBreakPoint {
+        height: 120px !important;
+        width: 120px !important;
+      }
+      @include smBreakPoint {
+        height: 120px !important;
+        width: 120px !important;
+      }
+      @include xsBreakPoint {
+        height: 110px !important;
+        width: 110px !important;
+      }
+      @include xlBreakPoint {
+        width: 120px !important;
+        height: 120px !important;
+      }
+    }
+    .profilein-img {
+      font-family: "Open Sans" !important;
+      margin: 0;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .profile-details-box-right {
+    font-family: "Open Sans" !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    .username {
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 21px;
+      color: #e3e4eb;
+      @include mdBreakPoint {
+        font-size: 14px;
+      }
+      @include smBreakPoint {
+        font-size: 14px;
+      }
+      @include xsBreakPoint {
+        font-size: 12px;
+      }
+      // @include themed() {
+      //   color: t($textColor1);
+      // }
+    }
+    .collegename {
+      overflow: hidden;
+      // border:1px solid red;+
+      height: 25px;
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      color: #e3e4eb;
+      @include mdBreakPoint {
+        font-size: 12px;
+      }
+      @include smBreakPoint {
+        font-size: 12px;
+      }
+      @include xsBreakPoint {
+        font-size: 12px;
+      }
+      // @include themed() {
+      //   color: t($textColor1);
+      // }
+    }
+    .department {
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      @include mdBreakPoint {
+        font-size: 12px;
+      }
+      @include smBreakPoint {
+        font-size: 12px;
+      }
+      @include xsBreakPoint {
+        font-size: 10px;
+      }
+      @include themed() {
+        color: t($goldenYellow);
+      }
+    }
+    .email {
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 21px;
+      color: #a0a0a0;
+      @include mdBreakPoint {
+        font-size: 14px;
+      }
+      @include smBreakPoint {
+        font-size: 12px;
+      }
+      @include xsBreakPoint {
+        font-size: 10px;
+      }
+      i {
+        color: white;
+      }
+    }
+  }
+}
+.mentors-card {
+  font-family: "Open Sans" !important;
+  margin-top: 35px;
+  // border: 3px solid orange;
+  @include hlBreakPoint {
+    margin-top: 0px;
+    height: 230px !important;
+  }
+  border-radius: 16px;
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  @include xxxlBreakPoint {
+    width: 212px;
+    height: 276px;
+  }
+  @include xxlBreakPoint {
+    width: 212px;
+    height: 255px;
+  }
+  @include xlBreakPoint {
+    width: 212px;
+    height: 255px;
+  }
+  @include lgBreakPoint {
+    width: 212px;
+    height: 255px;
+  }
+  @include mdBreakPoint {
+    width: 212px;
+    font-size: 14px !important;
+    height: 220px;
+  }
+  // @include themed() {
+  //     background:t($componentGradient1);
+  //     filter:t($drop-shadow);
+  //   }
+  @include xsBreakPoint {
+    margin: 10px auto;
+    width: 212px;
+    height: 255px;
+  }
+  @include smBreakPoint {
+    margin: 10px auto;
+    width: 212px;
+    height: 255px;
+  }
+  @include themed() {
+    background: t($profilebox);
+    color: t($feedsfont) !important;
+  }
+}
+.mentors-card-img {
+  font-family: "Open Sans" !important;
+  width: 75.67px;
+  height: 75.67px;
+  // border:3px solid $goldenYellow;
+  border-radius: 50%;
+  .card-img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include themed() {
+    border: 3px solid t($goldenYellow);
+  }
+}
+.mentors-name {
+  font-family: "Open Sans" !important;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #e3e4eb !important;
+  // @include themed() {
+  //   color: t($textColor1);
+  // }
+  @include mdBreakPoint {
+    font-size: 13px;
+  }
+}
+.mentors-industry {
+  font-family: "Open Sans" !important;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  text-align: center;
+  color: #e3e4eb !important;
+  // @include themed() {
+  //   color: t($textColor1);
+  // }
+  @include mdBreakPoint {
+    font-size: 13px;
+  }
+}
+.mentors-role {
+  font-family: "Open Sans" !important;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  text-align: center;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+  @include mdBreakPoint {
+    font-size: 13px;
+  }
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// .profile-middle {
+//   height: 5%;
+//   // margin-left: 18%;
+//   width: 70%;
+//   // border:1px solid #2B2E4A;
+//   display: flex;
+//   align-items: end;
+//   justify-content: center;
+//   // padding-left: 20%;
+//   @include mdBreakPoint {
+//     // margin-left: 20%;
+//   }
+//   @include xsBreakPoint {
+//     width: 100%;
+//     margin-left: 0%;
+//   }
+//   @include smBreakPoint {
+//     width: 100%;
+//     margin-left: 0%;
+//   }
+// }
+.profile-middle-component {
+  font-family: "Open Sans" !important;
+  // border: 1px solid #2b2e4a;
+  width: 100%;
+  margin-right: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  @include xsBreakPoint {
+    text-align: center;
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 100%;
+    // border:1px solid #2B2E4A;
+    margin-right: 200px;
+    text-align: center;
+  }
+  @include smBreakPoint {
+    // width: 75%;
+    margin-right: 100px;
+    text-align: center;
+    width: 100%;
+  }
+}
+.profile-personal-details {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  cursor: pointer;
+  @include mdBreakPoint {
+    font-size: 18px;
+    white-space: nowrap;
+    text-align: center;
+  }
+  @include smBreakPoint {
+    font-size: 22px;
+  }
+  @include xsBreakPoint {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  @include themed() {
+    color: t($profleheader) !important;
+  }
+}
+.border_bottom {
+  font-family: "Open Sans" !important;
+  height: 1px;
+  width: 100%;
+  @include themed() {
+    border: 1px solid t($profileheaderborder) !important;
+  }
+}
+.questionandanswer {
+  font-family: "Open Sans" !important;
+  // border: 3px solid blue;
+  button {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 10%;
+  }
+  .question {
+    font-family: "Open Sans" !important;
+    width: 100%;
+    .serial-num {
+      font-family: "Open Sans" !important;
+      height: 30px;
+      width: 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      @include themed() {
+        background-color: t($secondaryColor);
+      }
+    }
+    .question-type {
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      @include themed() {
+        color: t($textColor2);
+      }
+      @include xsBreakPoint {
+        font-size: 13px;
+      }
+      @include mdBreakPoint {
+        font-size: 16px;
+      }
+    }
+  }
+  // .carousel-indicators li { visibility: hidden; }
+  .answer {
+    font-family: "Open Sans" !important;
+    min-height: 45px;
+    width: 95%;
+    font-size: 18px;
+    // line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    line-break: anywhere;
+    display: inline-block;
+    @include xsBreakPoint {
+      font-size: 13px;
+    }
+    @include mdBreakPoint {
+      font-size: 15px;
+    }
+    @include themed() {
+      background-color: t($secondaryColor);
+      color: t($textColor2);
+    }
+  }
+}
+.profile-personal-details:active {
+  font-family: "Open Sans" !important;
+  // color: $goldenYellow;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+}
+.profile-personal-details:focus {
+  font-family: "Open Sans" !important;
+  // color: $goldenYellow;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+}
+.ActiveTab {
+  font-family: "Open Sans" !important;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+}
+.ActiveTab-feeds {
+  font-family: "Open Sans" !important;
+  @include themed() {
+    color: t($goldenYellow);
+    background-color: t($primaryColor);
+  }
+  font-weight: 600;
+  transition: background-color 350ms ease-in-out, color 350ms ease-in-out;
+}
+.profile-lower {
+  font-family: "Open Sans" !important;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 80px;
+  // margin-top:50px;
+  padding: 0px;
+  // border: 3px solid orange;
+  // @include themed() {
+  //   background-color: t($secondaryColor);
+  // }
+  @include hhlBreakPoint {
+    padding-top: 20px;
+    justify-content: flex-start;
+  }
+  @include hlBreakPoint {
+    padding-top: 120px;
+    justify-content: flex-start;
+    height: auto;
+  }
+  // background-color: black;
+  @include xsBreakPoint {
+    margin-left: 0;
+    width: 100% !important;
+  }
+  @include smBreakPoint {
+    margin-left: 0;
+    height: auto;
+  }
+  // @include mdBreakPoint {
+  //   padding-top: 2vh;
+  //   width: 87%;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   margin-left: 89px;
+  //   padding-bottom: 3vh;
+  // }
+  // @include lgBreakPoint {
+  //   height: 550px !important;
+  // }
+  // @include xlBreakPoint {
+  //   height: 690px !important;
+  // }
+  // @include xxlBreakPoint {
+  //   height: 720px !important;
+  // }
+}
+.report {
+  font-family: "Open Sans" !important;
+  height: 100%;
+  // border:1px solid #2B2E4A;
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+}
+.graph {
+  font-family: "Open Sans" !important;
+  width: 100%;
+  @include lgBreakPoint {
+    padding-left: 70px;
+  }
+}
+.graph {
+  font-family: "Open Sans" !important;
+  path {
+    stroke-width: 2;
+  }
+  line {
+    stroke: transparent;
+  }
+  line:first-child {
+    stroke: black;
+  }
+}
+.report-left {
+  font-family: "Open Sans" !important;
+  width: 50%;
+  // border:1px solid #2B2E4A;
+  @include lgBreakPoint {
+    width: 55%;
+  }
+  @include mdBreakPoint {
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+}
+.report-right {
+  font-family: "Open Sans" !important;
+  height: 100%;
+  width: 50%;
+  @include lgBreakPoint {
+    width: 50%;
+  }
+  @include mdBreakPoint {
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+}
+.stages-graph {
+  font-family: "Open Sans" !important;
+  // margin-left:200px;
+  .mentorstudent-stagecircle {
+    font-family: "Open Sans" !important;
+    height: 70px;
+    width: 70px;
+  }
+  .mentorstudent-stagenumber {
+    font-family: "Open Sans" !important;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-right: 25px;
+  }
+}
+.topic {
+  // border: 1px solid green;
+  height: 85% !important;
+  min-height: 300px !important;
+  overflow: hidden;
+}
+.Industry-Expert-comments {
+  font-family: "Open Sans" !important;
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  // @include xlBreakPoint {
+  //   height: 100% !important;
+  // }
+  h4 {
+    font-family: "Open Sans" !important;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    @include themed() {
+      color: t($titlefont);
+    }
+  }
+  p {
+    font-family: "Open Sans" !important;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 31px;
+  }
+}
+.stage-hours {
+  font-family: "Open Sans" !important;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+.graph-height {
+  font-family: "Open Sans" !important;
+  // margin-top: 30px;
+  height: 85%;
+  // border:1px solid red;
+  min-height: 350px;
+  @include hlBreakPoint {
+    margin-top: 0px;
+  }
+  // height:10%;
+}
+.Profile_Personaldetails {
+  font-family: "Open Sans" !important;
+  height: 80% !important;
+  min-height: 420px;
+  // border:1px solid green;
+  @include hlBreakPoint {
+    // height: 950px !important;
+    // border:1px solid red !important;
+  }
+  @include hhlBreakPoint {
+    // height: 90% !important;
+    // border:1px solid green;
+  }
+  @include themed() {
+    background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+  border-radius: 10px;
+  overflow: hidden;
+  @include xxxlBreakPoint {
+    width: 1435px;
+  }
+  @include xxlBreakPoint {
+    width: 1355px;
+  }
+  @include xlBreakPoint {
+    width: 1130px;
+    height: auto;
+  }
+  @include lgBreakPoint {
+    width: 910px;
+    height: 85%;
+    // border: 1px solid blue;
+  }
+  @include mdBreakPoint {
+    width: 680px;
+    height: 85%;
+    // border: 2px solid blue;
+  }
+  @include smBreakPoint {
+    width: 580px;
+    height: 80%;
+    // border: 1px solid blue;
+    padding-bottom: 50px;
+  }
+  @include xsBreakPoint {
+    width: 300px;
+    height: 88%;
+    margin-bottom: 100px;
+  }
+  .scroll {
+    font-family: "Open Sans" !important;
+    width: 100%;
+    min-height: 300px !important;
+    height: 30vh !important;
+    // border: 1px solid blue;
+    // min-height: 320px;
+    overflow: hidden;
+    // @include xlBreakPoint {
+    //   height: 50vh;
+    // }
+    // @include lgBreakPoint {
+    //   height: 44vh;
+    // }
+    // @include xxlBreakPoint {
+    //   height: 50vh;
+    // }
+  }
+  .scroll-comment {
+    font-family: "Open Sans" !important;
+    width: 100%;
+    height: 35vh !important;
+    min-height: 300px !important;
+    // border: 1px solid blue;
+    overflow: hidden;
+    // @include lgBreakPoint {
+    //   height: 45vh !important;
+    // }
+    // @include xsBreakPoint {
+    //   height: 500px !important;
+    // }
+    // @include mdBreakPoint {
+    //   height: 400px !important;
+    //   overflow: hidden;
+    //   overflow-y: scroll;
+    //   scrollbar-width: none;
+    // }
+    // @include xlBreakPoint {
+    //   height: 430px !important;
+    //   overflow: hidden;
+    //   overflow-y: scroll;
+    //   scrollbar-width: none;
+    // }
+    // @include xxlBreakPoint {
+    //   height: 530px !important;
+    //   width: 100%;
+    // }
+    // @include lgBreakPoint {
+    //   height: 370px !important;
+    // }
+  }
+  .report-graph {
+    font-family: "Open Sans" !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // border: 2px solid blue;
+    // padding: 40px 0px;
+    height: 35vh;
+    min-height: 300px;
+    @include themed() {
+      background-color: t($secondaryColor);
+    }
+    border-radius: 10px;
+    @include xlBreakPoint {
+      width: 850px;
+      height: 39vh !important;
+    }
+    @include xsBreakPoint {
+      width: 100%;
+    }
+    path {
+      stroke-width: 2;
+    }
+    line {
+      stroke: transparent;
+    }
+    line:first-child {
+      stroke: #979797;
+    }
+  }
+  .report-stages {
+    font-family: "Open Sans" !important;
+    width: 142px;
+    height: 35vh;
+    min-height: 300px;
+    // border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @include xlBreakPoint {
+      height: 39vh;
+    }
+    .carousel {
+      width: 300px;
+      height: 140px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-family: "Open Sans" !important;
+      @include xsBreakPoint {
+        background: transparent;
+        .carousel-indicators,
+        .carousel-indicators li {
+          cursor: default;
+          pointer-events: none;
+        }
+      }
+      .carousel-inner {
+        // border: 1px solid red;
+      }
+    }
+    .carousel-control-next-icon::after {
+      display: none;
+    }
+    @include themed() {
+      background-color: t($secondaryColor);
+    }
+    @include smBreakPoint {
+      margin-top: 10px !important;
+    }
+    @include xsBreakPoint {
+      width: 300px;
+      height: 140px;
+      // position: absolute;
+    }
+    .rotate-lefts {
+      @include xsBreakPoint {
+        display: left;
+        position: absolute;
+        left: 10px;
+        width: 28px;
+        height: 28px;
+        top: 39%;
+        z-index: 100;
+        font-size: 10px;
+        font-size: 10px;
+        transform: rotate(-90deg);
+      }
+      // @include mdBreakPoint
+      // {
+      //   position: absolute;
+      //   top:-14px;
+      //   transform: rotate(-360deg);
+      //   left:42%;
+      // }
+    }
+    .rotate-rights {
+      @include xsBreakPoint {
+        position: absolute;
+        top: 37%;
+        width: 28px;
+        height: 28px;
+        right: 10px;
+        transform: rotate(-90deg);
+        font-size: 10px;
+        // right: 50px;
+        z-index: 100;
+        display: left;
+      }
+      // @include mdBreakPoint
+      // {
+      //   position: absolute;
+      //   top:96%;
+      //   bottom:-14px;
+      //   transform: rotate(-360deg);
+      //   left:42%;
+      // }
+    }
+    img {
+      width: 22px;
+      height: 22px;
+    }
+    .carousel-item {
+      width: 100%;
+      font-family: "Open Sans" !important;
+      .stages-scroll {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        background: transparent !important;
+        // background-color: green !important;
+        width: 100%;
+        .mentorstudent-stagecircle {
+          font-family: "Open Sans" !important;
+          width: 80px !important;
+          height: 80px !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          h5 {
+            font-family: "Open Sans" !important;
+            font-weight: 600;
+            font-size: 12px;
+            @include themed() {
+              color: t($textColor1);
+            }
+          }
+        }
+        .stage-hours {
+          font-family: "Open Sans" !important;
+          font-size: 14px;
+        }
+      }
+    }
+    .main-box {
+      width: 100%;
+      height: 35vh;
+      overflow-y: hidden;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      padding: 10px 5px;
+      background: transparent;
+      @include mdBreakPoint {
+        // border: 6px solid orange;
+      }
+      .box-first {
+        width: 100%;
+        // border: 2px solid lightgray;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 0px;
+        border-radius: 20px;
+        .stage-circle-box {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          // border: 4px solid orange;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          // background-color: blue;
+          @include themed() {
+            background: t($stagecircle);
+            border: 5px solid t($goldenYellow);
+            box-shadow: t($stagecircleshadow);
+          }
+          h5 {
+            font-family: "Open Sans" !important;
+            font-weight: 500;
+            font-size: 14px;
+            color: white;
+          }
+        }
+      }
+    }
+    .report-stages-circle {
+      font-family: "Open Sans" !important;
+      width: 100%;
+      height: 300px;
+      // padding-top: 20vh;
+      overflow: hidden;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      // background: transparent;
+      // background-color: red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      // overflow: auto;
+      // border: 1px solid;
+      padding: 10px 4px;
+      @include xsBreakPoint {
+        width: 250px;
+        height: 125px;
+        // border: 1px solid;
+      }
+      .stages-scroll {
+        font-family: "Open Sans" !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        width: 100%;
+        // border:1px solid;
+        height: 100%;
+        padding: 20px 0px;
+        // border: 1px solid green;
+        // .mentorstudent-stagecircle {
+        //   width: 75px !important;
+        //   height: 75px !important;
+        //   display: flex !important;
+        //   flex-direction: column !important;
+        //   align-items: center !important;
+        //   justify-content: center !important;
+        //   h5 {
+        //     font-family: "Open Sans" !important;
+        //     font-weight: 600;
+        //     font-size: 11px;
+        //     @include themed() {
+        //       color: t($textColor1);
+        //     }
+        //   }
+        // }
+        .stage-hours {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.atlaststage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans" !important;
+  // border: 1px solid;
+  img {
+    height: 120px;
+  }
+  p {
+    font-style: normal;
+    font-family: "Open Sans" !important;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+.Appointment-card {
+  // width: 462px;
+  // height: 280px;
+  // background: #2c2f4b;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  .carousel {
+    width: 100%;
+    // border:1px solid red;
+  }
+  @include themed() {
+    background: t($profilebox);
+    color: t($feedsfont) !important;
+  }
+  // border:1px solid red;
+  @include hlBreakPoint {
+    margin-top: 0px;
+    font-family: "Open Sans" !important;
+    height: 230px !important;
+  }
+  overflow: hidden;
+  font-family: "Open Sans" !important;
+  margin-top: 30px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include xxxlBreakPoint {
+    width: 462px;
+    height: 280px;
+  }
+  @include xxlBreakPoint {
+    width: 462px;
+    height: 255px;
+    // border:1px solid white;
+  }
+  @include xlBreakPoint {
+    width: 462px;
+    height: 255px;
+  }
+  @include lgBreakPoint {
+    width: 462px;
+    height: 255px;
+    // border:1px solid ;
+  }
+  @include mdBreakPoint {
+    width: 462px;
+    height: 220px;
+  }
+  @include smBreakPoint {
+    width: 462px;
+    height: 255px;
+    margin: 10px auto;
+  }
+  @include xsBreakPoint {
+    width: 300px;
+    height: 255px;
+    // border:1px solid
+    margin: 10px auto;
+  }
+  .btn-blue {
+    font-family: "Open Sans" !important;
+    width: 80px !important;
+    height: 35px !important;
+    // margin:  auto auto;
+  }
+  .Appointment-card-body {
+    font-family: "Open Sans" !important;
+    width: 100%;
+    @include themed() {
+      background: t($profilebox);
+      color: t($feedsfont) !important;
+    }
+    .p {
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: white;
+      // @include themed() {
+      //   color: t($textColor1);
+      // }
+      @include mdBreakPoint {
+        font-size: 11px;
+        line-height: 5px;
+      }
+      @include xsBreakPoint {
+        font-size: 10px;
+      }
+    }
+    .Appointment-card-profile-img {
+      width: 75.67px;
+      height: 75.67px;
+      // border:3px solid $goldenYellow;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      // .card-img {
+      //   border-radius: 50%;
+      // }
+      @include themed() {
+        border: 3px solid t($goldenYellow);
+      }
+      @include mdBreakPoint {
+        width: 65.67px;
+        height: 65.67px;
+      }
+    }
+    .Appointment-card-profile-info {
+      h1 {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 19px;
+        color: white;
+        // @include themed() {
+        //   color: t($textColor1);
+        // }
+        @include mdBreakPoint {
+          font-size: 12px;
+        }
+        @include xsBreakPoint {
+          font-size: 10px;
+        }
+      }
+    }
+    .appointment-shedule {
+      p {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: white;
+        // @include themed() {
+        //   color: t($textColor1);
+        // }
+        @include mdBreakPoint {
+          font-size: 11px;
+        }
+        @include xsBreakPoint {
+          font-size: 10px;
+        }
+      }
+      img {
+        height: 13px;
+      }
+    }
+    .Appointment-card-calender {
+      img {
+        height: 100px;
+        // width:100px;
+        @include mdBreakPoint {
+          height: 80px;
+        }
+        @include xsBreakPoint {
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+.no-appointment {
+  font-family: "Open Sans" !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 150px;
+  }
+  h1 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: white;
+    // @include themed() {
+    //   color: t($textColor1);
+    // }
+  }
+}
+.answer-mentor {
+  width: 90%;
+  height: 80px;
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+}
+.bottom-box {
+  // margin-top: 18px;
+  // height: 400px !important ;
+  // padding: 15px 0px;
+  position: relative;
+  // border:1px solid red;
+  // @include xsBreakPoint {
+  //   height: 620px !important;
+  // }
+  // @include lgBreakPoint {
+  //   height: 437px !important;
+  //   // margin-top: 20px;
+  // }
+  // @include mdBreakPoint {
+  //   height: 450px !important;
+  // }
+  // @include xxlBreakPoint {
+  //   height: 615px !important;
+  //   // margin-top: 20px;
+  // }
+  // @include xlBreakPoint {
+  //   height: 560px !important;
+  //   // margin-top: 50px;
+  //   // border: 2px solid blue;
+  // }
+}

@@ -1,0 +1,187 @@
+// $loginPrimaryColor: #2a2e4b;
+// $loginSecondaryColor: #e9eafc;
+// $loginbtncolor: rgb(255, 136, 0);
+// $borderbox: 0 0 10px blue;
+$primaryColor--light: #2a2e4b;
+$secondaryColor--light: rgba(
+  227,
+  223,
+  237,
+  0.32
+); //#e9eafc;background: rgba(227, 223, 237, 0.32);
+$primaryGradient--light: linear-gradient(
+  24.18deg,
+  #2b2e4a 64.51%,
+  rgba(43, 46, 74, 0) 233.27%
+);
+$componentGradient1--light: linear-gradient(
+  165.66deg,
+  #e9ebfc 59.08%,
+  rgba(254, 254, 254, 0) 207.46%
+);
+$left-layout--light: rgba(227, 223, 237, 0.32);
+$leftlayout-fontcolor--light: #04294b;
+$modal-background--light: white;
+$background--light: white;
+$modal-header--light: linear-gradient(
+  92.93deg,
+  #e9ebfc -7.11%,
+  #fefefe 326.99%
+);
+$goldenYellow--light: #ff7a00;
+$lightPurple--light: #444b92;
+$lightGray--light: lightgray;
+$stagecircle--light: #2b2e4a;
+$darkGray--light: #797979;
+$textColor1--light: white;
+$textColor2--light: black;
+$formInputBackground--light: #2a2e4b;
+$formInputFocusedBackground--light: #35395e;
+$shadow--light: 4px 0px 11px 2px rgba(0, 0, 0, 0.25);
+$drop-shadow--light: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+$stagecircleshadow--light: 4px 2px 9px 5px rgba(0, 0, 0, 0.2);
+$webinar-card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$error-color--light: red;
+$feeds-background--light: white;
+$feeds-font--light: #2a2e4b;
+$title-font--light: #2a2e4b;
+$btn-color--light: #2a2e4b;
+$btn-invert--light: 0;
+$profile-box--light: linear-gradient(
+  24.18deg,
+  #2b2e4a 64.51%,
+  rgba(43, 46, 74, 0) 233.27%
+);
+$profile-header--light: linear-gradient(
+  24.18deg,
+  #2b2e4a 64.51%,
+  rgba(43, 46, 74, 0) 233.27%
+);
+$profile-headerborder--light: rgba(240, 240, 240);
+$mentor-profile--light: white;
+$mentor-profilecard--light: hsl(257, 32%, 96.9%);
+$mentor-profilecard2--light: #2a2e4b; //admin colors
+$formInputBackground2--light: #e9eafc;
+$formInputFocusedBackground2--light: #dcdcfc;
+$purpletowhite--light: #444b92;
+$webinarlist--light: #444b92;
+$calenderborder--light: rgba(230, 230, 230);
+$calender-range--light: white;
+$dashboard-box--light: rgba(227, 223, 237, 0.32);
+$header-background--light: white;
+$header-input--light: hsl(257, 32%, 96.9%);
+$feeds-cmmnt--light: rgba(234, 236, 253, 0.4);
+$tableborder--light: lightgray;
+// ******************
+$back_linear: linear(#fff500 100%, #ff7a00 100%);
+$person_image_load: #f3f4fd;
+//Dark theme
+$primaryColor--dark: #222121;
+$secondaryColor--dark: #181818;
+$primaryGradient--dark: #181818;
+$goldenYellow--dark: #ff7a00;
+$componentGradient1--dark: linear-gradient(
+  165.66deg,
+  #e9ebfc 59.08%,
+  rgba(254, 254, 254, 0) 207.46%
+);
+$drop-shadow--dark: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+$left-layout--dark: rgba(227, 223, 237, 0.32);
+$leftlayout-fontcolor--dark: #04294b;
+$modal-background--dark: #181818;
+$webinarlist--dark: #222121;
+$background--dark: orange;
+$modal-header--dark: #363537;
+$shadow--dark: 4px 0px 11px 2px rgba(0, 0, 0, 0.25);
+$goldenYellow--dark: #ff7a00;
+$lightPurple--dark: #444b92;
+$lightGray--dark: lightgray;
+$stagecircle--dark: #2b2e4a;
+$darkGray--dark: #797979;
+$formInputBackground2--dark: #e9eafc;
+$formInputFocusedBackground2--dark: #dcdcfc;
+$feeds-background--dark: #222121;
+$feeds-font--dark: #979797;
+$title-font--dark: #e3e4eb;
+$btn-color--dark: #2a2e4b;
+$btn-invert--dark: 1;
+$profile-box--dark: #222121;
+$profile-header--dark: #e3e4eb;
+$profile-headerborder--dark: #323232;
+$mentor-profile--dark: #323232;
+$mentor-profilecard--dark: #323232;
+$mentor-profilecard2--dark: #323232;
+$purpletowhite--dark: white;
+$calenderborder--dark: #323232;
+$calender-range--dark: #323232;
+$dashboard-box--dark: #323232;
+$header-background--dark: #222121;
+$header-input--dark: #e3e4eb;
+$feeds-cmmnt--dark: #323232;
+$tableborder--dark: #181818;
+// text color dark
+$textColor1--dark: black;
+$textColor2--dark: white;
+$formInputBackground--dark: #2a2e4b;
+$formInputFocusedBackground--dark: #35395e;
+$error-color--dark: red;
+// $shadow--dark: 4px 0px 11px 2px rgba(0, 0, 0, 0.25);
+// $drop-shadow--dark: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)  );
+$stagecircleshadow--dark: 4px 2px 9px 5px rgba(0, 0, 0, 0.2);
+// landing_background_colors
+$text_color: #39407f;
+$orange_text: #ff7a00;
+$white_text: white;
+$black_text: black;
+$back_round_color: #24273f;
+$gradient_color: linear-gradient(100deg, #ff7a00, #ffe600);
+// another dark color updatecolor
+// $create-college-bg--dark: #232222;
+// $contentmanage-bg--dark: #323232;
+// $instruction-guide--dark: #263238;
+// $slect-industry--dark: #ed790e;
+// $rate-us-bg--dark: #282727;
+// $careerpath-bg-dark: #2c2f4b;
+// $career-light--dark: #f8963d;
+// $career-think--dark: #fafafa;
+// text colors darktheme
+// $textcolor-naveen--dark: #e6e4eb;
+// $textcolor--dark: #e3e4eb;
+// $textcoolor-ai--dark: #4f548b;
+// $text-day--dark: #979797;
+// $text-join--dark: #ffffff;
+// $icon-plus--dark: #000000;
+// $text-visual-designer--dark: #9c9c9c;
+// $text-lorem--dark: #c4c4c4;
+// $text-report--dark: #d6d7de;
+// $text-course--dark: #e3dfed;
+// $text-number--dark: #f6f5f9;
+// icon color darktheme
+// $person-picture--dark: #ff7a00;
+// $icon-like--dark: #6e7080;
+// $tick-success--dark: #52de71;
+// $search-bg--dark: #222121;
+// background darkthemes colors
+// $join-bg--dark: #2b2e4a;
+// chat background darktheme
+// $chat-notification--dark: #df384c;
+// $online-active--dark: #82b378;
+// background color linergradients darktheme
+// $person-border--dark: liner-gardient(#ff7a00 0%, #2b2e4a 100%);
+// $satus-active--dark: liner-gardient(#2b2e4a 100%, #2b2e4a 0%);
+// $industry-title-bg--dark: liner gradient(#e9ebfc 0%, rgba(254, 254, 254, 0) 100%);
+// chart backgroundcolors darktheme
+// $doot-bg--dark: #4b5081;
+// $circle-bg--dark: #5f628d;
+// $chart-bg--dark: #fb9b51;
+// $chart-bcak--dark: #f88125;
+// $chart-lightblue--dark: #5c83c4;
+// $chart-darkblue--dark: #2c599d;
+// $chart-fulldarkblue--dark: #1a3b70;
+// $chart-darkblue--dark: #11224e;
+// $chart-line--dark: liner gradient(rgba(255, 122, 0, 0.38) 0%, #ff7a00 33%, rgba(43, 46, 74, 0.66) 72.19%, #2b2e4a 100%);
+//  ***********************
+// dark themes
+// $primaryColor--dark: #2a2e4b;
+// $secondaryColor--dark: rgba(227, 223, 237, 0.32); //#e9eafc;background: rgba(227, 223, 237, 0.32);
+// $primaryGradient--dark: linear-gradient(24.18deg, #2b2e4a 64.51%, rgba(43, 46, 74, 0) 233.27%);

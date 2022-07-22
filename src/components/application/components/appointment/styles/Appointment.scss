@@ -1,0 +1,942 @@
+@use "../../../../../scss/abstract/" as *;
+// .p-blockui-container{
+//     height: 100%;
+//     background: transparent !important;
+//     //   opacity: 0.1 !important;
+//       filter: blur(1px);
+//       position:absolute;
+// }
+.noappointment_list {
+  img {
+    height: 300px;
+  }
+  // width: 100vw;
+}
+.Appointment {
+  height: 100vh;
+  width: 100vw;
+  // position: relative;
+  // background-color: orange !important;
+  // border: 2px solid red;
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+  @include mdBreakPoint {
+    height: auto;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  @include smBreakPoint {
+    // height: 100%;
+    padding-bottom: 70px;
+    height: auto;
+  }
+  @include xsBreakPoint {
+    height: auto;
+    padding-bottom: 70px;
+    // height: ;
+  }
+  @include lgBreakPoint {
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  @include hlBreakPoint {
+    height: auto !important;
+    // padding-bottom: 20px;
+  }
+  @include xlBreakPoint {
+    height: 100%;
+    // margin-bottom: 7px;
+    // padding-bottom: 20px;
+    // margin-bottom: 20px;
+  }
+}
+.appointment-profile {
+  margin-top: 30px;
+  @include hlBreakPoint {
+    margin-top: 20px;
+  }
+  @include hhlBreakPoint {
+    margin-top: 20px;
+  }
+}
+// kalai chnages
+.Appointment-body {
+  height: 100%;
+  width: 100%;
+  padding-top: 80px;
+  // padding-left: 80px;
+  // border: 2px solid red;
+  .Appointment-left-mentor {
+    width: 50%;
+    // padding-top: 80px;
+    // border: 1px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    // padding-left: 100px;
+    @include xxxlBreakPoint {
+      padding-left: 200px;
+    }
+    @include xxlBreakPoint {
+      padding-left: 150px;
+    }
+    @include xlBreakPoint {
+      padding-left: 50px;
+    }
+    // kalai chnages
+    @include lgBreakPoint {
+      padding-left: 7vw;
+      // width: 60%;
+    }
+    // end chnages
+    @include mdBreakPoint {
+      width: 100%;
+    }
+    @include smBreakPoint {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // border: 1px solid blue;
+      //   height:600px;
+    }
+    @include xsBreakPoint {
+      // border: 4px solid orange;
+      padding-left: 0 !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 5vh !important;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    .student-scroll {
+      // border: 1px solid blue;
+      width: 110%;
+      height: 78vh;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+    }
+    .studenthomeFeed-appointment-card-userdomain {
+      img {
+        width: 16px;
+      }
+    }
+    // .appointment-card-middle{
+    //   overflow: hidden !important;
+    //   border:1px solid red;
+    //   background: transparent;
+    // }
+    .studenthomeFeed-appointment-card-content {
+      overflow: hidden !important;
+      // border:1px solid red;
+      padding-right: 15px;
+    }
+    .studenthomeFeed-appointment-card {
+      height: 125px;
+      // border: 2px solid red !important;
+      @include xsBreakPoint {
+        width: 500px !important;
+      }
+      @include xxxlBreakPoint {
+        width: 525px;
+      }
+      @include xxlBreakPoint {
+        width: 480px;
+        // border: 1px solid blue;
+      }
+      @include xlBreakPoint {
+        width: 490px;
+      }
+      @include lgBreakPoint {
+        width: 390px;
+      }
+      @include mdBreakPoint {
+        width: 550px;
+      }
+      @include smBreakPoint {
+        width: 470px;
+      }
+      @include xsBreakPoint {
+        width: 310px !important;
+        // border: 1px solid blue;
+      }
+      .btn-yellow {
+        height: 28px !important;
+        font-size: 14px !important;
+      }
+    }
+  }
+  .Appointment-left {
+    height: 100%;
+    width: 50%;
+    // border: 1px solid red;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    @include xxxlBreakPoint {
+      width: 50%;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-end !important;
+      justify-content: center !important;
+    }
+    @include xxlBreakPoint {
+      width: 50%;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-end !important;
+      justify-content: center !important;
+    }
+    @include xlBreakPoint {
+      // border:1px solid red !important;
+      width: 50%;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    @include lgBreakPoint {
+      width: 50%;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+    @include mdBreakPoint {
+      width: 80%;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      justify-content: center !important;
+      padding-bottom: 70px;
+      padding-top: 40px;
+      margin-left: 15vw;
+    }
+    @include smBreakPoint {
+      width: 100%;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding-top: 40px;
+    }
+    // kalai chnages
+    @include xsBreakPoint {
+      width: 100% !important;
+    }
+
+    .studenthomeFeed-right-webinar {
+      // border: 1px solid green;
+      width: 60%;
+      .appointment {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        // border: 1px solid green;
+      }
+      @include xsBreakPoint {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        // border: 10px solid red;
+      }
+      // kalai changes
+      .studenthomeFeed-appointment-card {
+        // border: 5px solid green;
+        width: 60%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+        margin: 0 auto;
+        @include xsBreakPoint {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        @include xxxlBreakPoint {
+          width: 525px;
+        }
+        @include xxlBreakPoint {
+          width: 480px;
+          // border: 1px solid blue;
+        }
+        @include xlBreakPoint {
+          width: 490px;
+        }
+        @include lgBreakPoint {
+          width: 390px;
+        }
+        @include mdBreakPoint {
+          width: 100%;
+        }
+        @include smBreakPoint {
+          width: 470px;
+        }
+        @include xsBreakPoint {
+          width: 310px !important;
+          // border: 1px solid blue;
+        }
+        .studenthomeFeed-appointment-card-img {
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .studenthomeFeed-appointment-card:hover {
+        // opacity:0.8;
+        cursor: pointer;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+      }
+      .done-img {
+        height: 30px;
+      }
+    }
+    .Appointment-left-img {
+      // height:100%;
+      width: 80%;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin-top: 50px;
+      @include hlBreakPoint {
+        margin-top: 0px;
+      }
+      img {
+        // border:1px solid;
+        height: 300px;
+        width: 450px;
+        margin-top: 50px;
+        @include hlBreakPoint {
+          margin-top: 10px;
+        }
+        @include xxlBreakPoint {
+          height: 300px;
+          width: 450px;
+        }
+        @include xlBreakPoint {
+          height: 300px;
+          width: 420px;
+        }
+        // kalai chnages
+        @include lgBreakPoint {
+          width: 90%;
+          margin-left: 50px;
+          object-fit: contain;
+        }
+        @include xsBreakPoint {
+          display: none;
+        }
+        @include mdBreakPoint {
+          display: none;
+        }
+        // chnage end kalai
+      }
+    }
+  }
+  .Appointment-right {
+    height: 100%;
+    width: 50%;
+    // border: 2px solid blue;
+    // display: flex !important;
+    // flex-direction: column !important;
+    // justify-content: center !important;
+    @include lgBreakPoint {
+      // width: 0%;
+      // overflow-x: scroll;
+      width: auto;
+    }
+    @include mdBreakPoint {
+      width: 70%;
+      align-items: center !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    @include smBreakPoint {
+      width: 100%;
+      align-items: center !important;
+      height: auto !important;
+    }
+    // chnages kalia
+    @include xsBreakPoint {
+      width: 90%;
+      align-items: center !important;
+      // border: 10px solid blue;
+      margin: 0 auto;
+      height: auto !important;
+    }
+    // chnages end
+    .Appointment-selection-card {
+      width: 70%;
+      height: 99%;
+      position: relative;
+      min-height: 730px;
+      max-height: 870px;
+      // margin-top:50px;
+      // border:1px solid red;
+      margin: 0 auto;
+      @include hlBreakPoint {
+        margin-top: 0px;
+        height: 100%;
+      }
+      @include themed() {
+        background: t($feedsbackground);
+        color: t($feedsfont) !important;
+      }
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px;
+      @include xlBreakPoint {
+        //    border:1px solid red;
+        width: 550px;
+      }
+      @include lgBreakPoint {
+        height: 780px;
+        width: 480px;
+      }
+      @include mdBreakPoint {
+        height: 780px;
+        // width: 530px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      @include smBreakPoint {
+        height: 780px;
+        width: 500px;
+        // border:1px solid red;
+      }
+      // kalai chnage
+      @include xsBreakPoint {
+        height: 700px;
+        width: 99%;
+      }
+      .availabale_slots {
+        padding: 5px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        // border: 2px solid blue;
+        @include xsBreakPoint {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+        @include hlBreakPoint {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+        @include themed() {
+          border-top: 1px solid t($calenderborder);
+        }
+        h3 {
+          font-family: "Open Sans" !important;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 26px;
+          padding-bottom: 8px;
+          // position: fixed;
+          @include xsBreakPoint {
+            font-size: 20px;
+          }
+          @include themed() {
+            color: t($textColor2);
+          }
+          @include hlBreakPoint {
+            padding-bottom: 0px;
+          }
+        }
+        h4 {
+          color: darkgrey !important;
+        }
+        i {
+          font-size: 18px;
+          color: grey;
+        }
+        .slots {
+          padding: 0px 5px !important;
+          width: 78px;
+          height: 35px;
+          background: rgba(227, 223, 237, 0.32);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          border: none;
+          text-align: center;
+          align-items: center;
+          transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+          // color: white !important;
+          @include themed() {
+            color: t($textColor2);
+          }
+        }
+        // .slots:hover {
+        //     outline: none;
+        //     @include themed() {
+        //         background-color: t($goldenYellow);
+        //         color: t($textColor1);
+        //     }
+        // }
+        .slots-active {
+          padding: 0px 5px !important;
+          width: 78px;
+          height: 35px;
+          background: #ff7a00 !important;
+          color: white !important;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          border: none;
+          text-align: center;
+          align-items: center;
+          transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+        }
+        .slots-disable {
+          padding: 0px 5px !important;
+          width: 78px;
+          height: 35px;
+          background: lightgrey !important;
+          color: white !important;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          border: none;
+          text-align: center;
+          align-items: center;
+          transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+        }
+      }
+      .book-appointment {
+        // padding-top: 15px;
+        // border: 2px solid blue;
+        height: auto;
+        // @include xsBreakPoint
+        // {
+        //     border: 6px solid orange;
+        //     height:100%;
+        // }
+        @include hlBreakPoint {
+          // padding-top: 5px !important;
+        }
+        @include themed() {
+          border-top: 1px solid t($calenderborder);
+        }
+        .btn-yellow {
+          // margin-top:40px;
+          // border: 10px solid blue;
+          // kalai chnage
+          @include hlBreakPoint {
+            margin-top: 20px !important;
+            width: 140px !important;
+            height: 40px !important;
+          }
+          // end chnages
+        }
+        .book-appointment-profile-img {
+          width: 50.76px;
+          height: 50.87px;
+          border-radius: 50%;
+          overflow: hidden;
+          @include themed() {
+            border: 2px solid t($goldenYellow);
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+        h4 {
+          font-family: "Open Sans" !important;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 19px;
+          line-height: 19px;
+          @include themed() {
+            color: t($textColor2);
+          }
+        }
+        p {
+          font-family: "Open Sans" !important;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 17px;
+          line-height: 16px;
+          @include themed() {
+            color: t($textColor2);
+          }
+        }
+        .appointmentdate {
+          height: 17px;
+        }
+      }
+    }
+  }
+}
+.selection_card {
+  // margin: auto auto;
+  height: 100% !important;
+  padding-top: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 400px !important;
+  }
+  // border: 1px solid red;
+}
+.hide-calender {
+  height: 400px;
+  img {
+    height: 270px;
+  }
+}
+.calender_opacity {
+  opacity: 0.7;
+}
+.Calendar {
+  // border: 1px solid green;
+  margin-top: 20px;
+  @include hlBreakPoint {
+    margin-top: 00px;
+  }
+  @include hhlBreakPoint {
+    margin-top: 5px;
+  }
+  width: 100%;
+  padding-left: 0px !important;
+  p {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    @include themed() {
+      color: t($textColor2);
+    }
+    @include xsBreakPoint {
+      font-size: 20px;
+    }
+  }
+  .rotate-left-calender {
+    height: 15px;
+    transform: rotate(90deg);
+  }
+  .rotate-right-calender {
+    height: 15px;
+    transform: rotate(90deg);
+  }
+  .monthandyear {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    @include themed() {
+      color: t($textColor2);
+    }
+    @include xsBreakPoint {
+      font-size: 11px;
+      width: 85px;
+    }
+  }
+  .calender-table {
+    // border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    // @include xsBreakPoint {
+    //     justify-content: start;
+    //  }
+    @media (max-width: 400px) {
+      justify-content: start;
+      padding-left: 4px;
+    }
+    @media (max-width: 415px) {
+      justify-content: start;
+      padding-left: 10px;
+    }
+  }
+  .table {
+    width: 70%;
+    margin-top: 15px;
+    margin-left: 0px !important;
+    @include hlBreakPoint {
+      margin-top: 0px;
+    }
+    // border: 1px solid green;
+  }
+  th {
+    @include themed() {
+      border-bottom: 1px solid t($calenderborder);
+    }
+  }
+  tr {
+    text-align: center;
+    // width:100px !important;
+    // height:100px;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+  td {
+    // border: 1px solid green;
+    text-align: center;
+    cursor: pointer;
+    border: 0px !important;
+    border-radius: 12px !important;
+    @include themed() {
+      color: t($textColor2);
+    }
+    @include xsBreakPoint {
+      width: 10px;
+    }
+  }
+  td:hover {
+    color: #fff;
+    background: rgba(255, 122, 0, 0.64);
+  }
+  .today {
+    color: #fff;
+    background: rgba(255, 122, 0, 0.64);
+  }
+  .range {
+    color: #fff;
+    background: rgba(255, 122, 0, 0.64);
+  }
+  .in-prev-month,
+  .in-next-month {
+    opacity: 0.2;
+  }
+}
+.selecting-date {
+  height: 27px;
+  width: 100%;
+  padding: 0px 20px;
+  margin-bottom: 2vh;
+  // border: 1px solid;
+  // margin-left: 100px;
+  // chnage kalai
+  @include xsBreakPoint {
+    margin-left: 0px;
+    padding: 0px 10px;
+  }
+  @include smBreakPoint {
+    padding: 0px 20px;
+  }
+  @include mdBreakPoint {
+    padding: 0px 30px;
+  }
+  @include lgBreakPoint {
+    padding: 0px 30px;
+  }
+  @include xlBreakPoint {
+    padding: 0px 30px;
+  }
+  // end kalai
+  // @include smBreakPoint {
+  //     margin-left:0px;
+  // }
+  button {
+    height: 27px;
+    width: 150px;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+  .ActiveTab-date {
+    height: 27px;
+    width: 150px;
+    @include themed() {
+      color: t($textColor2);
+      background: t($calenderrange);
+    }
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    i {
+      @include themed() {
+        color: t($goldenYellow);
+      }
+    }
+  }
+}
+// kalai changes
+.scrolls {
+  // border: 1px solid blue;
+  overflow-x: scroll; /* Hide horizontal scrollbar */
+  // overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  width: 100%;
+  // scrollbar-width: none !important;
+  // ::-webkit-scrollbar{display:none;}
+  // ::-webkit-scrollbar {
+  //     width: 0;
+  //     background: transparent;
+  // }
+  // ::-webkit-scrollbar-thumb {
+  //     background: #FF0000;
+  // }
+}
+.btn-yellows {
+  width: 10em;
+  height: 2.8rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 2px 5px black; //rgb(54, 53, 53);
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Gilroy-Bold";
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+}
+.appointment {
+  // font-weight: 700;
+  // font-size: 26px;
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  // background-color: blue !important   ;
+  @include mdBreakPoint {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+// kalai changes
+.studenthomeFeed-right-webinar {
+  // border: 2px solid green;
+  padding-left: 20px;
+  height: auto;
+  // overflow-y: auto;
+  overflow: hidden;
+  @include lgBreakPoint {
+    padding-left: 0px;
+  }
+  @include xsBreakPoint {
+    height: 300px !important;
+    // overflow: hidden;
+    padding-left: 7% !important;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  @include smBreakPoint {
+    height: 300px !important;
+    padding-left: 120px !important;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  @include mdBreakPoint {
+    padding-left: 170px !important;
+    height: 300px !important;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-bottom: 5vh !important;
+  }
+  .appointment {
+    // border: 2px solid green;
+    @include mdBreakPoint {
+      padding-left: 70px !important;
+    }
+  }
+}
+.studenthomeFeed-right-appointment {
+  width: 100%;
+  // border: 2px solid red !important;
+  height: auto;
+  // overflow-y: auto;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+  overflow: hidden;
+  padding-right: 10%;
+  @include lgBreakPoint {
+    padding-right: 2%;
+  }
+  @include xsBreakPoint {
+    height: 300px !important;
+    // overflow: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  @include smBreakPoint {
+    height: 300px !important;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  @include mdBreakPoint {
+    height: 300px !important;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-bottom: 5vh !important;
+  }
+  .appointments {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    // text-align: center; border:1px solid red;
+  }
+  .studenthomeFeed-appointment-card {
+    @include xsBreakPoint {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include xxxlBreakPoint {
+      width: 525px;
+    }
+    @include xxlBreakPoint {
+      width: 480px;
+    }
+    @include xlBreakPoint {
+      width: 460px;
+    }
+    @include lgBreakPoint {
+      width: 390px;
+    }
+    @include mdBreakPoint {
+      width: 100%;
+    }
+    @include smBreakPoint {
+      width: 470px;
+    }
+  }
+}
+// end changes

@@ -1,0 +1,577 @@
+@use "../../../../../scss/abstract/" as *;
+.stages {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  // border:3px solid red;
+  @include tabBreakPoint {
+    height: auto;
+  }
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+  .modal-content {
+    min-height: 450px !important;
+    min-width: 650px;
+    color: #2b2e4a !important ;
+    @include themed() {
+      background: t($modal-background) !important;
+    }
+  }
+  .modal-header {
+    h3 {
+      font-size: 25px;
+      color: #2b2e4a !important;
+    }
+    border-bottom: 1px solid transparent;
+  }
+  .btn-yellow {
+    width: 10em;
+    height: 2.8rem;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 5px black; //rgb(54, 53, 53);
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+    font-family: "Gilroy-Bold";
+    @include themed() {
+      background-color: t($primaryColor) !important;
+      color: t($goldenYellow) !important;
+    }
+    @include xsBreakPoint {
+      width: 8em;
+    }
+    @include smBreakPoint {
+      width: 8em;
+    }
+    @include mdBreakPoint {
+      width: 8em;
+      height: 2rem;
+    }
+  }
+  .btn-yellow:hover {
+    @include themed() {
+      background-color: t($goldenYellow) !important;
+      color: t($primaryColor) !important;
+    }
+  }
+}
+.contenttype_img {
+  height: 60vh;
+  width: 100%;
+  // border:1px solid red;
+  img {
+    height: 100%;
+    object-fit: cover;
+    // border:1px solid red;
+    width: 100%;
+  }
+}
+.stages-header {
+  height: 12%;
+  width: 100%;
+  // border:1px solid red;
+}
+.stages-button {
+  width: 50%;
+  margin-top: 2%;
+  // border:1px solid red;
+  margin-left: 7%;
+  @include mdBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.stages-profile-img {
+  width: 50%;
+  // border:1px solid red;
+  @include mdBreakPoint {
+    width: 20%;
+  }
+  @include smBreakPoint {
+    width: 30%;
+    top: 0;
+  }
+}
+.font-icon {
+  font-size: 3.2rem;
+}
+.font-icon-menu {
+  font-size: 2.5rem;
+}
+.font-color {
+  // color: #FFFFFF;
+  cursor: pointer;
+  @include themed() {
+    color: t($textColor1);
+  }
+}
+.font-color:hover {
+  // color:$goldenYellow;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+}
+.stages-body {
+  padding-top: 100px;
+  height: 100%;
+  width: 100%;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  //    padding-left:5%;
+  @include smBreakPoint {
+    padding-top: 100px;
+    display: block;
+  }
+  @include xsBreakPoint {
+    padding-top: 100px;
+    display: block;
+  }
+}
+.stages-body-card {
+  height: 85vh;
+  overflow: hidden;
+  border-radius: 15px;
+  // border: 1px solid red;
+  margin-left: 50px;
+  color: black;
+  width: 85% !important;
+  @include mdBreakPoint {
+    width: 88% !important;
+    height: 83vh;
+  }
+  @include smBreakPoint {
+    height: 80%;
+    margin: 0 auto;
+    width: 95% !important;
+  }
+  @include xsBreakPoint {
+    height: 60%;
+    margin: 0 auto;
+    width: 95% !important;
+  }
+  @include themed() {
+    background: t($feedsbackground);
+    // color: t($feedsfont) !important;
+  }
+}
+.menu-bar {
+  height: 100%;
+  color: aliceblue !important;
+  width: 25% !important;
+  // border:1px solid green ;
+  @include themed() {
+    background-color: t($primaryColor);
+  }
+  overflow: hidden;
+}
+.course-video {
+  height: 100%;
+  width: 75% !important;
+  position: relative;
+  // border:1px solid green;
+  // @include xxxlBreakPoint {
+  //   width: 1350px;
+  //   // border: 1px solid green;
+  // }
+  // @include xxlBreakPoint {
+  //   width: 1030px;
+  //   // border:1px solid ;
+  // }
+  // @include xlBreakPoint {
+  //   width: 810px;
+  // }
+  // @include lgBreakPoint {
+  //   width: 700px;
+  //   // border: 1px solid green;
+  // }
+  // @include mdBreakPoint {
+  //   width: 600px;
+  //   // border: 1px solid green;
+  // }
+  .viewbutton {
+    top: 70%;
+    right: 5%;
+    position: absolute;
+  }
+}
+.menu-bar-down {
+  .menu {
+    width: 100%;
+  }
+  display: none;
+  @include xlBreakPoint {
+    display: none;
+  }
+  @include lgBreakPoint {
+    display: none;
+  }
+  @include mdBreakPoint {
+    display: none;
+  }
+  @include smBreakPoint {
+    display: flex;
+    // margin: 0 auto;
+    width: 100%;
+    // border:1px solid black;
+  }
+  @include xsBreakPoint {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+.player-wrapper {
+  position: relative;
+  padding-top: 31.25%; /* Player ratio: 100 / (1280 / 720) */
+  // border:1px solid red;
+  // height:auto;
+  // aspect-ratio: 9 / 16;
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  // padding: 0px 15%;
+  // padding-top: 1.5%;
+}
+.stage-image-description {
+  padding: 5.25% 75px 0px 75px;
+  // border:1px solid red;
+  height: 100%;
+  @include mdBreakPoint {
+    padding: 10.25% 25px 0px 25px;
+  }
+}
+.stage-video-description {
+  padding: 29.25% 75px 0px 75px;
+  // border:1px solid red;
+  height: 100%;
+  @include mdBreakPoint {
+    padding: 29.25% 25px 0px 25px;
+  }
+  @include themed() {
+    background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+}
+.stages-body-menu {
+  width: 15%;
+  // border: 1px solid red;
+  @include lgBreakPoint {
+    width: 20%;
+  }
+  @include mdBreakPoint {
+    width: 30%;
+  }
+  @include smBreakPoint {
+    display: none;
+  }
+  @include xsBreakPoint {
+    display: none;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+.body-padding {
+  width: 100px;
+  // border:1px solid red;
+  @include smBreakPoint {
+    display: none;
+  }
+  @include xsBreakPoint {
+    display: none;
+  }
+}
+.stages-body-card-title {
+  font-size: 34px;
+  line-height: 40px;
+  // color: #FFFFFF;
+  // @include themed() {
+  //   color: t($textColor2);
+  // }
+}
+.stages-body-card-para {
+  // border: 1px solid red;
+  height: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  // color: #FFFFFF;
+  // @include themed() {
+  //   color: t($textColor2);
+  // }
+}
+.stages-video-name {
+  font-size: 14px;
+  line-height: 16px;
+  // color: #2B2E4A;
+  color: black;
+  width: 30%;
+  cursor: pointer;
+  @include noSelectionAllowed;
+  @include themed() {
+    color: t($stagecircle);
+  }
+}
+.stages-video-para {
+  width: 50%;
+  p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: black;
+    cursor: pointer;
+    @include noSelectionAllowed;
+    // color: #2B2E4A;
+    // @include themed() {
+    //   color: t($stagecircle);
+    //  }
+  }
+}
+.area-reactplayer {
+  height: 100px;
+  width: 1800px;
+  // border:1px solid $goldenYellow;
+  @include themed() {
+    border: 1px solid t($goldenYellow);
+  }
+}
+.area-course {
+  height: 80%;
+  // border:1px solid yellow;
+  .multiple-video {
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    @include noSelectionAllowed;
+    img {
+      height: 25px;
+    }
+    .bar-left {
+      // border: 1px solid red;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+    }
+    .video-menu-title {
+      width: 80%;
+      // border: 1px solid red;
+      p {
+        // border: 1px solid red;
+        height: 30px;
+        overflow: hidden;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 25px;
+        color: white;
+        // @include themed() {
+        //   color: t($textColor1);
+        // }
+      }
+    }
+    .video-time {
+      font-size: 11px;
+      line-height: 13px;
+      @include themed() {
+        color: t($goldenYellow);
+      }
+    }
+    .menu-bar-heading {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: white;
+      // @include themed() {
+      //   color: t($textColor1);
+      // }
+    }
+    .menubar-sideline {
+      border-left: 2px solid white;
+      height: 48px;
+      // margin-left: 58%;
+      cursor: pointer;
+      @include noSelectionAllowed;
+      // @include themed() {
+      //   border-left: t($stagecircle);
+      //  }
+    }
+  }
+  // .active{
+  // }
+  .multiple-video:hover {
+    background-color: rgba(255, 122, 0, 0.1);
+  }
+  .multiple-video:hover:before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 100px;
+    @include themed() {
+      background-color: t($goldenYellow);
+    }
+  }
+  .course-active {
+    background-color: rgba(255, 122, 0, 0.1);
+  }
+  .course-active:before {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 100px;
+    @include themed() {
+      background-color: t($goldenYellow);
+    }
+  }
+}
+.horizontal-reactplayer {
+  width: 100px;
+}
+// .ActiveTab-one {
+// color: blue !important;
+//   @include themed() {
+//     color: t($goldenYellow ) !important;
+// }
+// }
+.congratulation {
+  // border: 5px solid yellow;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  p {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  img {
+    height: 200px;
+  }
+  i {
+    font-size: 40px;
+    margin: 5px;
+    color: #2a2e4b !important;
+  }
+  .active-star {
+    color: #ff7a00 !important;
+  }
+  Button {
+    width: 10em;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+    font-family: "Gilroy-Bold";
+    background: #2a2e4b !important;
+    color: #ff7a00 !important;
+    // @include themed() {
+    //   background-color: t($goldenYellow) !important;
+    //   color: t($primaryColor) !important;
+    // }
+  }
+  Button:hover {
+    text-decoration: none;
+    @include themed() {
+      color: t($goldenYellow) !important;
+      background-color: t($primaryColor) !important;
+    }
+  }
+}
+.rateus-textarea {
+  width: 550px;
+  height: 95px;
+  border: 1px solid lightgrey !important;
+  border-radius: 10px;
+}
+.stage-navigation {
+  // border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  .nav-button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #b3b3b3;
+    @include smBreakPoint {
+      font-size: 15px;
+    }
+    @include xsBreakPoint {
+      font-size: 12px;
+    }
+  }
+  p {
+    cursor: pointer;
+  }
+  .btn-active {
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+  .active {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    @include smBreakPoint {
+      font-size: 15px;
+    }
+    @include xsBreakPoint {
+      font-size: 12px;
+    }
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+  .finished {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    // color: green;
+    @include smBreakPoint {
+      font-size: 15px;
+    }
+    @include xsBreakPoint {
+      font-size: 12px;
+    }
+    @include themed() {
+      color: t($titlefont);
+    }
+  }
+}

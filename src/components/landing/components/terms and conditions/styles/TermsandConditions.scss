@@ -1,0 +1,114 @@
+@use "../../../../../scss/" as *;
+.terms-main {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll !important;
+  overflow: hidden;
+  // border: 2px solid red;
+  .nav-bar {
+    // border: 2px solid red;
+    display: flex;
+    gap: 20px;
+    padding: 10px 30px;
+    align-items: center;
+    height: 10%;
+    .termsed {
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 5px;
+      @include xsBreakPoint {
+        font-size: 1.2rem;
+      }
+      @include smBreakPoint {
+        font-size: 1.4rem;
+      }
+      @include mdBreakPoint {
+        font-size: 1.6rem;
+      }
+      @include lgBreakPoint {
+        font-size: 1.6rem;
+      }
+      @include xlBreakPoint {
+        font-size: 1.8rem;
+      }
+    }
+    .round-icon {
+      width: 40px;
+      height: 40px;
+      border: 2px solid $primaryColor--dark;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.7rem;
+      border-radius: 50%;
+      background-color: $primaryColor--dark;
+      color: white;
+      font-weight: 800;
+      @include xsBreakPoint {
+        width: 30px;
+        height: 30px;
+        font-size: 1.2rem;
+      }
+      @include mdBreakPoint {
+        width: 40px;
+        height: 40px;
+        font-size: 1.6rem;
+      }
+      @include lgBreakPoint {
+        width: 35px;
+        height: 35px;
+        font-size: 1.5rem;
+      }
+    }
+    .round-icon:hover {
+      background-color: lightgray;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: black;
+    }
+  }
+  .terms-body-content {
+    // border: 2px solid green;
+    height: 90%;
+    // overflow: hidden;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background: url("../../../../../assets/back_passion_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    // margin-bottom: 5vh;
+    @include xsBreakPoint {
+      overflow-y: scroll;
+      height: 100%;
+    }
+    @include smBreakPoint {
+      overflow-y: scroll;
+      height: 100%;
+    }
+    @include mdBreakPoint {
+      overflow-y: scroll;
+      height: 100%;
+    }
+    @include lgBreakPoint {
+      overflow-y: scroll;
+      height: 100%;
+    }
+    @include xlBreakPoint {
+      overflow-y: scroll;
+      height: 100%;
+    }
+    .terms-content-text {
+      padding: 10px 30px;
+      line-height: 2;
+      @include xsBreakPoint {
+        width: 100%;
+      }
+    }
+  }
+}

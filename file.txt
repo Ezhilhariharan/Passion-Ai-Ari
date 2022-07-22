@@ -1,0 +1,429 @@
+import React, { Component } from "react";
+import "../../components/navbar/navbar.scss";
+import StudentAppointmentCreate from "./StudentAppointmentCreate";
+import StudentAppointmentReshedule from "./StudentAppointmentReshedule";
+import StudentAppointmentDetail from "./StudentAppointmentDetail";
+import StudentHomeFeed from "./StudentHomFeed";
+import Sidenavbar from "../navbar/Sidenavbar";
+import "../../components/home/StudentHomePage.scss";
+import axios from "axios";
+import { courseURL } from "index";
+import { withRouter } from "react-router-dom";
+import { UserConsumer } from "../router/UserContext";
+import { feedAPI } from "./utils/Api";
+import { GitHub } from "@material-ui/icons";
+const { Skeleton } = window.primereact.skeleton;
+const { BlockUI } = window.primereact.blockui;
+const { Panel } = window.primereact.panel;
+class StudentHomePage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      blockedPanel: true,
+      studentAnalysis: "",
+      completedpercentage: "",
+    };
+    this.feedAPI = new feedAPI();
+  }
+  componentDidMount() {
+    // 
+    if (typeof axios.defaults.headers.common["Authorization"] === "undefined") {
+      axios.defaults.headers.common["Authorization"] =
+        "Token " + localStorage.getItem("passion_token");
+    }
+    this.feedAPI.getAnalysis().then((data) => {
+      if (data === null) {
+        this.setState({ studentAnalysis: "" });
+      } else {
+        this.setState({
+          studentAnalysis: data,
+          completedpercentage: parseInt(data.percentage)
+        });
+      }
+    });
+    // localStorage.clear();
+  }
+  logout = () => {
+    delete axios.defaults.headers.common["Authorization"];
+    axios
+      .get("logout/")
+      .then((res) => {
+        if (res.data === true) {
+          // this.props.history.push("/login");
+          // window.location.reload(true);
+          window.location = "/login";
+          localStorage.clear();
+          // <Redirect to="/login" />
+        }
+      })
+      .catch((error) => {
+      });
+  };
+  render() {
+    return (
+      <UserConsumer>
+        {(image) => (
+          //   {
+          <div>
+            {/* {this.state.studentAnalysis.stage_no == 1 || this.state.studentAnalysis.stage_no == 2 ? */}
+              <div className="studenthomepage">
+                <Sidenavbar />
+                <div className="studenthomepage-header d-flex flex-row">
+                  <div className="header-logo my-auto d-flex flex-row col-7">
+                    <div className="app-name my-auto ms-3"><span className="app-name-yellow">Passion</span> Ai Ari </div>
+                  </div>
+                  <div className="header-logo my-auto col-2">
+                    <div className="input-group">
+                      <input type="text" className="form-control type-search" />
+                      <div className="input-group-append">
+                        <button className="btn search-color" type="button">
+                          <i className="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="header-logo my-auto d-flex flex-row col-3">
+                    <h1 className="my-auto ms-auto "> Thamarai Selvan  </h1>
+                    <div className=" profile-img-reg d-flex my-auto ms-auto me-4">
+                      <img
+                        src="image/dab86b9.png"
+                        alt=""
+                        className="img-fluid ms-2"
+                        onClick={() => this.logout()}
+                      />
+                      <div className="app-name my-auto ms-3"><span className="app-name-yellow">Passion</span> Ai Ari </div>
+                    </div>
+                    <div className="header-logo my-auto col-2">
+                      <div class="input-group">
+                        <input type="text" class="form-control type-search" />
+                        <div class="input-group-append">
+                          <button class="btn search-color" type="button">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="header-logo my-auto d-flex flex-row col-3">
+                      <h1 className="my-auto ms-auto "> Thamarai Selvan  </h1>
+                      <div className=" profile-img-reg d-flex my-auto ms-auto me-4">
+                        <img
+                          src={image}
+                          alt=""
+                          className="profile-imgin"
+                          onClick={() => this.logout()}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="studenthomepage-upper d-md-flex flex-row">
+                    <div className="studenthomepage-upper-left">
+                      <div className="studenthomepage-upper-left-padding d-flex flex-row justify-content-center">
+                        <div>
+                          <p className="pt-5 pb-2 ps-1">Progress</p>
+                          <div className="studenthomepage-upper-left-card d-flex flex-row">
+                            <div className="mentorstudent-stage my-auto ms-sm-3 ms-md-3 ms-lg-3 ms-xl-3">
+                              <div className="mentorstudent-stagecircle">
+                                <h5 className="mentorstudent-stagenumber ">
+                                  Stage
+                                  {this.state.studentAnalysis === ""
+                                    ? 0
+                                    : this.state.studentAnalysis.stage_no}
+                                </h5>
+                              </div>
+                            </div>
+                            <div className="student-analytics my-auto ms-3">
+                              <h1 className="">Student analytics</h1>
+                              <h1 className="">
+                                {this.state.studentAnalysis === ""
+                                  ? 0
+                                  : this.state.completedpercentage}
+                                %{" "}
+                                <span className="student-analytics-completed">
+                                  Completed
+                                </span>
+                              </h1>
+                            </div>
+                            <button
+                              className="studenthomepage-card-btn "
+                              onClick={() => this.props.history.push("/course")}
+                            >
+                              Resume
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="studenthomepage-upper-middle d-flex flex-row justify-content-start ps-1">
+                      {/* <StudentAppointmentCreate /> */}
+                      {/* <StudentAppointmentReshedule /> */}
+                      <StudentAppointmentDetail />
+                    </div>
+                  </div>
+                  {/* <div className="studenthomepage-fotter d-md-flex flex-row">
+                    <div className="studenthomepage-fotter-right d-flex d-sm-flex d-md-none d-lg-none d-xl-none">
+                      <div>
+                        <p className="pb-4 ps-3 pt-2">Webinars</p>
+                        <div className="studenthomepage-fotter-right-middle d-flex flex-row">
+                          <div className="studenthomepage-fotter-cards ms-md-5 me-5">
+                            <p className="studenthomepage-card-Title pt-4">
+                              Webinar Title
+                            </p>
+                            <p className="studenthomepage-card-description pt-2">
+                              Lorem ipsum dolor sit amet
+                            </p>
+                            <div className="studenthomepage-card-date pt-3">
+                              18 July 2021 |{" "}
+                              <span className="studenthomepage-card-date-time">
+                                9 AM
+                              </span>
+                            </div>
+                            <div className=" d-flex flex-row justify-content-center pt-3">
+                              <div className="studenthomepage-cards-img"></div>
+                            </div>
+                            <p className="studenthomepage-card-name pt-2">
+                              Naveen Rajendran
+                            </p>
+                            <p className="studenthomepage-card-domain pt-1">
+                              Visual Designer
+                            </p>
+                            <button className="studenthomepage-cards-join mt-3">
+                              Join
+                            </button>
+                          </div>
+                          <div className="studenthomepage-fotter-cards d-none d-lg-block">
+                            <p className="studenthomepage-card-Title pt-4">
+                              Webinar Title
+                            </p>
+                            <p className="studenthomepage-card-description pt-2">
+                              Lorem ipsum dolor sit amet
+                            </p>
+                            <div className="studenthomepage-card-date pt-3">
+                              18 July 2021 |{" "}
+                              <span className="studenthomepage-card-date-time">
+                                9 AM
+                              </span>
+                            </div>
+                            <div className=" d-flex flex-row justify-content-center pt-3">
+                              <div className="studenthomepage-cards-img"></div>
+                            </div>
+                            <p className="studenthomepage-card-name pt-2">
+                              Naveen Rajendran
+                            </p>
+                            <p className="studenthomepage-card-domain pt-1">
+                              Visual Designer
+                            </p>
+                            <button className="studenthomepage-cards-join mt-3">
+                              Join
+                            </button>
+                          </div>
+                        </div>
+                        <div className=" d-flex flex-row justify-content-end ">
+                          <p className="pt-4 me-md-5 me-sm-5 mb-2"> View all</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="studenthomepage-fotter-left d-flex flex-row justify-content-center pb-3">
+                      <div>
+                        <div className="studenthomepage-fotter-left-padding">
+                          <p className="pb-2">Feeds</p>
+                          <div className="studenthomepage-fotter-left-feed my-auto">
+                            <BlockUI
+                              blocked={this.state.blockedPanel}
+                              template={
+                                <i
+                                  className="pi pi-lock"
+                                  style={{ fontSize: "6rem", color: "white" }}
+                                />
+                              }
+                            >
+                              <Panel>
+                                <Skeleton
+                                  width="10rem"
+                                  className="p-mb-2 mt-3 p-2"
+                                  borderRadius="16px"
+                                ></Skeleton>
+                                <Skeleton
+                                  width="5rem"
+                                  borderRadius="16px "
+                                  className="p-mb-2 mt-3"
+                                ></Skeleton>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <Skeleton
+                                  className="p-mb-2 p-2"
+                                  borderRadius="16px"
+                                ></Skeleton>
+                                <Skeleton
+                                  className="p-mb-2 mt-1 p-2"
+                                  borderRadius="16px"
+                                ></Skeleton>
+                                <Skeleton
+                                  className="p-mb-2 mt-1 p-2"
+                                  borderRadius="16px"
+                                ></Skeleton>
+                                <Skeleton
+                                  className="p-mb-2 mt-1 p-2"
+                                  borderRadius="16px"
+                                ></Skeleton>
+                                <Skeleton
+                                  className="p-mb-2 mt-1 p-2"
+                                  borderRadius="16px"
+                                ></Skeleton>
+                              </Panel>
+                            </BlockUI>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="studenthomepage-fotter-right d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                      <div className="webinar-card mt-2 ms-1">
+                        <div className="webinar-card-title d-flex flex-row">
+                          <div className="webinar-card-title-name my-auto me-auto ms-4">
+                            Webinar Title
+                          </div>
+                          <div className="webinar-card-view my-auto ms-auto me-4">
+                            View More
+                          </div>
+                        </div>
+                        {
+                          this.state.Iswebinar ?
+                            <div className="webinor-illustration">
+                              <div className="webinor-illustration-img ">
+                                <img
+                                  src="image/Group276.svg"
+                                  alt=""
+                                  className="mt-5"
+                                />
+                              </div>
+                              <p className="">No Webinor Scheduled</p>
+                            </div>
+                            : <>
+                              <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+                                <div className="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div className="carousel-inner">
+                                  <div className="carousel-item active">
+                                    <div className=" d-flex flex-row mt-4">
+                                      <div className=" col-3">
+                                        <div className="studenthomeFeed-appointment-card-img mx-auto">
+                                        </div>
+                                      </div>
+                                      <div className="webinar-title mt-4 ms-4">Webinar Title</div>
+                                      <p className="webinar-description mt-3 ms-4">Lorem ipsum dolor sit amet ghbht fhh  hbtbht  hbftht </p>
+                                      <div className=" d-flex flex-row ms-4 mt-3">
+                                        <i class="fa-regular fa-clock icon-studenthomeFeed me-3 mt-1"></i>
+                                        <p>3.00 pm</p>
+                                      </div>
+                                      <div className=" d-flex flex-row ms-4 mt-1">
+                                        <i class="fa-regular fa-calendar icon-studenthomeFeed me-3 mt-1"></i>
+                                        <p>3.00 pm</p>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <div className=" d-flex flex-row mt-4">
+                                        <div className=" col-3">
+                                          <div className="studenthomeFeed-appointment-card-img mx-auto">
+                                          </div>
+                                        </div>
+                                        <div className="studenthomeFeed-appointment-card-content my-auto col-6">
+                                          <p className="studenthomeFeed-appointment-card-username">Naveen Rajendran 2</p>
+                                          <p className="studenthomeFeed-appointment-card-userdomain">Visual Designer</p>
+                                        </div>
+                                        <div className="my-auto col-3">
+                                          <div className=" mt-4">
+                                            <button className="studenthomepage-cards-join ">
+                                              join
+                                            </button>
+                                          </div>
+                                          <div className="webinar-title mt-4 ms-4">Webinar Title</div>
+                                          <p className="webinar-description mt-3 ms-4">Lorem ipsum dolor sit amet ghbht fhh  hbtbht  hbftht </p>
+                                          <div className=" d-flex flex-row ms-4 mt-3">
+                                            <i className="fa-regular fa-clock icon-studenthomeFeed me-3 mt-1"></i>
+                                            <p>3.00 pm</p>
+                                          </div>
+                                          <div className=" d-flex flex-row ms-4 mt-1">
+                                            <i className="fa-regular fa-calendar icon-studenthomeFeed me-3 mt-1"></i>
+                                            <p>3.00 pm</p>
+                                          </div>
+                                        </div>
+                                        <div className="carousel-item">
+                                          <div className=" d-flex flex-row mt-4">
+                                            <div className=" col-3">
+                                              <div className="studenthomeFeed-appointment-card-img mx-auto">
+                                              </div>
+                                            </div>
+                                            <div className="webinar-title mt-4 ms-4">Webinar Title</div>
+                                            <p className="webinar-description mt-3 ms-4">Lorem ipsum dolor sit amet ghbht fhh  hbtbht  hbftht </p>
+                                            <div className=" d-flex flex-row ms-4 mt-3">
+                                              <i class="fa-regular fa-clock icon-studenthomeFeed me-3 mt-1"></i>
+                                              <p>3.00 pm</p>
+                                            </div>
+                                            <div className=" d-flex flex-row ms-4 mt-1">
+                                              <i class="fa-regular fa-calendar icon-studenthomeFeed me-3 mt-1"></i>
+                                              <p>3.00 pm</p>
+                                            </div>
+                                          </div>
+                                          <div class="carousel-item">
+                                            <div className=" d-flex flex-row mt-4">
+                                              <div className=" col-3">
+                                                <div className="studenthomeFeed-appointment-card-img mx-auto">
+                                                </div>
+                                              </div>
+                                              <div className="studenthomeFeed-appointment-card-content my-auto col-6">
+                                                <p className="studenthomeFeed-appointment-card-username">Naveen Rajendran 3</p>
+                                                <p className="studenthomeFeed-appointment-card-userdomain">Visual Designer</p>
+                                              </div>
+                                              <div className="my-auto col-3">
+                                                <div className=" mt-4">
+                                                  <button className="studenthomepage-cards-join ">
+                                                    join
+                                                  </button>
+                                                </div>
+                                                <div className="webinar-title mt-4 ms-4">Webinar Title</div>
+                                                <p className="webinar-description mt-3 ms-4">Lorem ipsum dolor sit amet ghbht fhh  hbtbht  hbftht </p>
+                                                <div className=" d-flex flex-row ms-4 mt-3">
+                                                  <i className="fa-regular fa-clock icon-studenthomeFeed me-3 mt-1"></i>
+                                                  <p>3.00 pm</p>
+                                                </div>
+                                                <div className=" d-flex flex-row ms-4 mt-1">
+                                                  <i className="fa-regular fa-calendar icon-studenthomeFeed me-3 mt-1"></i>
+                                                  <p>3.00 pm</p>
+                                                </div>
+                                              </div>
+                                              <div className="carousel-item">
+                                                <div className=" d-flex flex-row mt-4">
+                                                  <div className=" col-3">
+                                                    <div className="studenthomeFeed-appointment-card-img mx-auto">
+                                                    </div>
+                                                  </div>
+                                                  <div className="webinar-title mt-4 ms-4">Webinar Title</div>
+                                                  <p className="webinar-description mt-3 ms-4">Lorem ipsum dolor sit amet ghbht fhh  hbtbht  hbftht </p>
+                                                  <div className=" d-flex flex-row ms-4 mt-3">
+                                                    <i class="fa-regular fa-clock icon-studenthomeFeed me-3 mt-1"></i>
+                                                    <p>3.00 pm</p>
+                                                  </div>
+                                                  <div className=" d-flex flex-row ms-4 mt-1">
+                                                    <i class="fa-regular fa-calendar icon-studenthomeFeed me-3 mt-1"></i>
+                                                    <p>3.00 pm</p>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </>
+                      } */}
+                  {/* </div> */}
+                  {/* </div> */}
+                </div>
+              </div>                                    
+          </div>
+        )}
+      </UserConsumer>
+    );
+  }
+}
+export default withRouter(StudentHomePage);

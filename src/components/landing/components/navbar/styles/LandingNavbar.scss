@@ -1,0 +1,113 @@
+@use "../../../../../scss/abstract" as *;
+.navbar {
+  width: 100%;
+  background-color: #24273f;
+  // position: absolute !important;
+  overflow: hidden !important;
+  // border: 2px solid white;
+  z-index: 3;
+  transition: all 0.6s ease-out !important;
+  .fa {
+    color: #ff7a00 !important;
+  }
+  .nav-link{
+    color: #ff7a00 !important;
+   cursor: pointer;
+  }
+  .login {
+    color: #ff7a00 !important;
+    font-size: 1.1em;
+    position: relative;
+  }
+  .navbar-nav {
+    transition: 10s ease-in-out;
+    @include xsBreakPoint {
+      padding-left: 14px;
+    }
+    @include smBreakPoint {
+      padding-left: 14px;
+    }
+    @include mdBreakPoint {
+      padding-left: 14px;
+    }
+  }
+  .navbar-toggler {
+    border: 1px solid $orange_text !important;
+    border-radius: 10px;
+    background-color: #303774;
+    // position: absolute;
+    // right: 20px;
+    @include xsBreakPoint {
+      height: 40px;
+    }
+    @include smBreakPoint {
+      height: 40px;
+    }
+    @include mdBreakPoint {
+      height: 40px;
+    }
+  }
+  .navbar-toggler:focus {
+    outline: none;
+  }
+}
+.inside_navbar {
+  width: 100%;
+  background-color: #24273f;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 2;
+  position: relative;
+  .box_navbar {
+    padding-left: 50px !important;
+    img {
+      width: 130px;
+      @include xsBreakPoint {
+        width: 50px;
+      }
+      @include smBreakPoint {
+        width: 60px;
+      }
+      @include mdBreakPoint {
+        width: 80px;
+      }
+      @include lgBreakPoint {
+        width: 130px;
+      }
+    }
+  }
+  .middle_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    p {
+      color: $orange_text !important;
+    }
+    .nav-link{
+      color: #ff7a00 !important;
+     cursor: pointer;
+    }
+    .login {
+      color: #ff7a00 !important;
+      font-size: 1.1em;
+      position: relative;
+    }
+  }
+  .end_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .login {
+      color: $orange_text !important;
+      list-style: none;
+    }
+    .nav-link,
+    .login {
+      color: #ff7a00 !important;
+      font-size: 1.1em;
+      position: relative;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+@use "../../../../../scss/abstract" as *;
+.bulkimport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-wrapper-bulk {
+  width: 55%;
+  height: 600px;
+  @include hlBreakPoint {
+    margin-top: 45px;
+    height: 560px;
+  }
+  // background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-top: 90px;
+  // border:1px solid;
+  @include themed() {
+    background: t($feedsbackground);
+    // color:t($feedsfont) !important;
+  }
+  .video_upload {
+    .p {
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+  }
+}
+.ExceptionList-heading {
+  font-size: 18px;
+  font-weight: 600;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+.ExceptionList {
+  @include themed() {
+    background: t($feedsbackground);
+    // color:t($feedsfont) !important;
+  }
+  // border: 1px solid #000000;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  .error {
+    overflow: hidden;
+    // background: red;
+    color: red !important;
+  }
+  .content {
+    overflow: hidden;
+    @include themed() {
+      color: t($textColor2) !important;
+    }
+  }
+}
+.information {
+  h1 {
+    font-size: 22px;
+    line-height: 26px;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+  p {
+    font-size: 14px;
+    color: #979797;
+    // @include themed() {
+    //     color: t($textColor2);
+    // }
+  }
+}
+.download-button {
+  width: 150px !important;
+  height: 33px;
+  // background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @include themed() {
+    background: t($mentorprofilecard) !important;
+  }
+  a {
+    text-decoration: none;
+    @include themed() {
+      color: t($textColor2) !important;
+    }
+  }
+  i {
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+}

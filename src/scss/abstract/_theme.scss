@@ -1,0 +1,195 @@
+@use "variables" as *;
+$primaryColor: "primaryColor";
+$secondaryColor: "secondaryColor";
+$primaryGradient: "primaryGradient";
+$componentGradient1: "componentGradient1";
+$leftlayout: "leftlayout";
+$leftlayout-font: " leftlayout-font";
+$modal-background: "modal-background";
+$background: "background";
+$modalheader: "modalheader";
+$goldenYellow: "goldenYellow";
+$lightPurple: "lightPurple";
+$lightGray: "lightGray";
+$darkGray: "darkGray";
+$feedsbackground: "feedsBackground";
+$feedsfont: "feedsfont";
+$titlefont: "titlefont";
+$buttonbackground: "buttonbackground";
+$profilebox: "profilebox";
+$profleheader: "profleheader";
+$profileheaderborder: "profileheaderborder";
+$mentorprofile: "mentorprofile";
+$mentorprofilecard: "mentorprofilecard";
+$mentor-profilecard2: "mentor-profilecard2";
+$purpletowhite: "purpletowhite";
+$calenderborder: "calenderborder";
+$calenderrange: "calenderrange";
+$dashboard-box: "dashboard-box";
+$header-background: "header-background";
+$header-input: "header-input";
+$feeds-cmmnt: "feeds-cmmnt";
+$tableborder-right: "tableborder-right";
+$webinarlist: "webinarlist";
+// text color
+$textColor1: "textColor1"; //white - Black
+$textColor2: "textColor2"; //Black - Black
+$invert: "buttonclose";
+$stagecircle: "stagecircle";
+$stagecircleshadow: "stagecircleshadow";
+$formInputBackground: "formInputBackground";
+$formInputFocusedBackground: "formInputFocusedBackground";
+$shadow: "shadow";
+$drop-shadow: "drop-shadow";
+$error-color: "error-color";
+$webinarcardshadow: "webinar-card-shadow";
+//admin colors
+$formInputBackground2: "formInputBackground2";
+$formInputFocusedBackground2: "formInputFocusedBackground2";
+$themes: (
+  light: (
+    primaryColor: $primaryColor--light,
+    secondaryColor: $secondaryColor--light,
+    primaryGradient: $primaryGradient--light,
+    goldenYellow: $goldenYellow--light,
+    lightPurple: $lightPurple--light,
+    shadow: $shadow--light,
+    drop-shadow: $drop-shadow--light,
+    webinar-card-shadow: $webinar-card-shadow,
+    textColor1: $textColor1--light,
+    formInputBackground: $formInputBackground--light,
+    formInputFocusedBackground: $formInputFocusedBackground--light,
+    textColor2: $textColor2--light,
+    formInputBackground2: $formInputBackground2--light,
+    formInputFocusedBackground2: $formInputFocusedBackground2--light,
+    error-color: $error-color--light,
+    lightGray: $lightGray--light,
+    componentGradient1: $componentGradient1--light,
+    stagecircle: $stagecircle--light,
+    stagecircleshadow: $stagecircleshadow--light,
+    darkGray: $darkGray--light,
+    leftlayout: $left-layout--light,
+    leftlayout-font: $leftlayout-fontcolor--light,
+    modal-background: $modal-background--light,
+    background: $background--light,
+    modalheader: $modal-header--light,
+    feedsBackground: $feeds-background--light,
+    feedsfont: $feeds-font--light,
+    titlefont: $title-font--light,
+    buttonbackground: $btn-color--light,
+    buttonclose: $btn-invert--light,
+    profilebox: $profile-box--light,
+    profleheader: $profile-header--light,
+    profileheaderborder: $profile-headerborder--light,
+    mentorprofile: $mentor-profile--light,
+    mentorprofilecard: $mentor-profilecard--light,
+    mentor-profilecard2: $mentor-profilecard2--light,
+    purpletowhite: $purpletowhite--light,
+    calenderborder: $calenderborder--light,
+    calenderrange: $calender-range--light,
+    dashboard-box: $dashboard-box--light,
+    header-background: $header-background--light,
+    header-input: $header-input--dark,
+    feeds-cmmnt: $feeds-cmmnt--light,
+    tableborder-right: $tableborder--light,
+    webinarlist: $webinarlist--light,
+  ),
+  dark: (
+    primaryColor: $primaryColor--dark,
+    secondaryColor: $secondaryColor--dark,
+    primaryGradient: $primaryGradient--dark,
+    goldenYellow: $goldenYellow--dark,
+    lightPurple: $lightPurple--dark,
+    shadow: $shadow--dark,
+    drop-shadow: $drop-shadow--dark,
+    webinar-card-shadow: $webinar-card-shadow,
+    textColor1: $textColor1--dark,
+    formInputBackground: $formInputBackground--dark,
+    formInputFocusedBackground: $formInputFocusedBackground--dark,
+    componentGradient1: $componentGradient1--dark,
+    textColor2: $textColor2--dark,
+    formInputBackground2: $formInputBackground2--dark,
+    formInputFocusedBackground2: $formInputFocusedBackground2--dark,
+    error-color: $error-color--dark,
+    lightGray: $lightGray--dark,
+    stagecircle: $stagecircle--dark,
+    stagecircleshadow: $stagecircleshadow--dark,
+    darkGray: $darkGray--dark,
+    leftlayout: $left-layout--dark,
+    leftlayout-font: $leftlayout-fontcolor--dark,
+    modal-background: $modal-background--dark,
+    background: $background--dark,
+    modalheader: $modal-header--dark,
+    feedsBackground: $feeds-background--dark,
+    feedsfont: $feeds-font--dark,
+    titlefont: $title-font--dark,
+    buttonbackground: $btn-color--dark,
+    buttonclose: $btn-invert--dark,
+    profilebox: $profile-box--dark,
+    profleheader: $profile-header--dark,
+    profileheaderborder: $profile-headerborder--dark,
+    mentorprofile: $mentor-profile--dark,
+    mentorprofilecard: $mentor-profilecard--dark,
+    mentor-profilecard2: $mentor-profilecard2--dark,
+    purpletowhite: $purpletowhite--dark,
+    calenderborder: $calenderborder--dark,
+    calenderrange: $calender-range--dark,
+    dashboard-box: $dashboard-box--dark,
+    header-background: $header-background--dark,
+    header-input: $header-input--light,
+    feeds-cmmnt: $feeds-cmmnt--dark,
+    tableborder-right: $tableborder--dark,
+    webinarlist: $webinarlist--dark,
+    // anolther dark themes
+    // // create-college-bg: $create-college-bg--dark,
+    // // contentmanage-bg: $contentmanage-bg--dark,
+    // // instruction-guide: $instruction-guide--dark,
+    // // slect-industry: $slect-industry--dark,
+    // // rate-us-bg: $rate-us-bg--dark,
+    // // careerpath-bg: $careerpath-bg-dark,
+    // // career-light: $career-light--dark,
+    // // career-think: $career-think--dark,
+    // // textcolor-naveen: $textcolor-naveen--dark,
+    // textcolor: $textcolor--dark,
+    // // textcolor-ai: $textcoolor-ai--dark,
+    // text-join: $text-join--dark,
+    // // icon-plus: $icon-plus--dark,
+    // // text-visual-designer: $text-visual-designer--dark,
+    // // text-lorem: $text-lorem--dark,
+    // // text-report: $text-report--dark,
+    // // text-course: $text-course--dark,
+    // // text-number: $text-number--dark,
+    // // person-picture: $person-picture--dark,
+    // // icon-like: $icon-like--dark,
+    // // tick-success: $tick-success--dark,
+    // // search-bg: $search-bg--dark,
+    // // join-bg: $join-bg--dark,
+    // // chat-notification: $chat-notification--dark,
+    // // online-active: $online-active--dark,
+    // // person-border: $person-border--dark,
+    // // satus-active: $satus-active--dark,
+    // // industry-title-bg: $industry-title-bg--dark,
+    // // doot-bg: $doot-bg--dark,
+    // // circle-bg: $circle-bg--dark,
+    // // chart-bg: $chart-bg--dark,
+    // // chart-bcak: $chart-bcak--dark,
+    // // chart-lightblue: $chart-lightblue--dark,
+    // // chart-darkblue: $chart-darkblue--dark,
+    // // chart-fulldarkblue: $chart-fulldarkblue--dark,
+    // // chart-line: $chart-line--dark,
+    // lightPurple: $lightPurple--light,
+    // shadow: $shadow--light,
+    // drop-shadow: $drop-shadow--light,
+    // textColor1: $textColor1--light,
+    // formInputBackground: $formInputBackground--light,
+    // formInputFocusedBackground: $formInputFocusedBackground--light,
+    // textColor2: $textColor2--light,
+    // formInputBackground2: $formInputBackground2--light,
+    // formInputFocusedBackground2: $formInputFocusedBackground2--light,
+    // error-color: $error-color--light,
+    // lightGray: $lightGray--light,
+    // componentGradient1:$componentGradient1--light,
+    // stagecircle:$stagecircle--light,
+    // stagecircleshadow:$stagecircleshadow--light,,,
+  ),
+);

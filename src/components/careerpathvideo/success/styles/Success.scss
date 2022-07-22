@@ -1,0 +1,32 @@
+@use "../../../../scss/abstract/" as *;
+.sample_pop_up {
+  width: 100%;
+  height: 5%;
+  overflow: hidden;
+  .pop_ups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slicks {
+    text-align: center;
+    border: 1px solid red;
+  }
+  .slick {
+    border: 1px solid red;
+  }
+}
+#modals_show {
+  border-radius: 20px !important;
+  .instructions {
+    margin: 0 auto;
+  }
+  .loreams {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .img-instructions {
+    width: 250px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,411 @@
+@use "../../../../../scss/abstract" as *;
+.section3 {
+  width: 100%;
+  .inside_section3 {
+    width: 100%;
+    .img2 {
+      position: absolute;
+      width: 50px;
+      @include xsBreakPoint {
+        display: none;
+      }
+      @include lgBreakPoint {
+        width: 30px;
+      }
+      @include xlBreakPoint {
+        width: 40px;
+      }
+    }
+    .student_map {
+      font-size: 2.8em;
+      font-family: "Open Sans" !important;
+      color: $text_color;
+      padding-left: 6vw;
+      font-weight: 700;
+      padding-top: 2vh;
+      @include xsBreakPoint {
+        font-size: 1.3em;
+        padding-bottom: 2vh;
+        padding-left: 30px;
+      }
+    }
+    .student_image {
+      width: 100%;
+    }
+    .over_content {
+      padding: 3em;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background: $back_round_color;
+      .main-person-images {
+        // width: 100%;
+        display: flex;
+        position: relative;
+        // background-color: green;
+        .inside_land_content {
+          font-family: "Gilroy-Bold";
+          padding-left: 14vh;
+          width: 60%;
+          @include xlBreakPoint {
+            padding-left: 1vw;
+          }
+          .whats {
+            font-size: 3em;
+            color: $white-text;
+            font-family: "Open Sans" !important;
+            font-weight: 800;
+            @include xlBreakPoint {
+              font-size: 3em;
+            }
+            .colors {
+              color: $orange_text;
+              font-size: 1em;
+            }
+          }
+        }
+        .landing_smilys {
+          width: 40%;
+          height: 10px;
+          .person-backs {
+            // background-color: blue;
+            img {
+              width: 20%;
+              position: absolute;
+              right: 0;
+              z-index: 10;
+              @include xlBreakPoint {
+                width: 25%;
+              }
+              @include xxlBreakPoint {
+                width: 26%;
+              }
+            }
+          }
+          .empty-colors {
+            position: relative;
+            background: rgba(255, 122, 0, 0.73);
+            filter: blur(80px);
+            transform: rotate(3.26deg);
+            height: 280px;
+            width: 45%;
+            float: right;
+            top: 7vh;
+            border-radius: 50%;
+            @include xlBreakPoint {
+              position: relative;
+              background: rgba(255, 122, 0, 0.73);
+              filter: blur(55px);
+              transform: rotate(3.26deg);
+              height: 220px;
+              width: 52%;
+              left: 3%;
+              top: 5vh;
+              border-radius: 80%;
+            }
+            @include xxlBreakPoint {
+              position: relative;
+              background: rgba(255, 122, 0, 0.73);
+              filter: blur(60px);
+              transform: rotate(3.26deg);
+              height: 270px;
+              width: 53%;
+              float: right;
+              top: 6vh;
+            }
+            .we {
+              display: none;
+            }
+          }
+        }
+      }
+      .splits {
+        width: 100%;
+        padding-left: 14vh;
+        padding-top: 10vh;
+        position: relative;
+        .card {
+          height: 100%;
+          border-radius: 20px;
+          padding: 15px;
+          border-color: $orange_text;
+          border-width: 2px;
+          transition: transform 0.2s;
+          @include xlBreakPoint {
+            width: 13vw;
+          }
+          @include xxlBreakPoint {
+            width: 13vw;
+          }
+          .light {
+            height: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .landing-h3 {
+            font-size: 1.2em;
+            font-family: "Open Sans" !important;
+            font-weight: 700;
+            color: $goldenYellow--light;
+            white-space: nowrap;
+            @include xlBreakPoint {
+              font-size: 1em;
+              white-space: normal;
+              line-height: 1.3;
+            }
+            @include xxlBreakPoint {
+              font-size: 1em;
+              white-space: normal;
+              line-height: 1.3;
+            }
+          }
+          .choose_plat {
+            color: $text_color;
+            padding-top: 1vh;
+          }
+        }
+        .card:hover {
+          transform: scale(1.15);
+          cursor: pointer;
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+.block-sliders {
+  width: 100%;
+  height: auto;
+  background-color: #24273f;
+  // position: relative;
+  overflow: hidden;
+  .slide_split_class {
+    width: 100%;
+    display: flex;
+    position: relative;
+    .left_inside_land_content {
+      width: 60%;
+      padding-top: 7vh;
+      padding-left: 1.2em;
+      // background-color: blue;
+      @include smBreakPoint {
+        padding-left: 2em;
+      }
+      @include mdBreakPoint {
+        padding-left: 3em;
+      }
+      @include lgBreakPoint {
+        padding-left: 3.7em;
+      }
+      .whats {
+        width: 120%;
+        font-size: 1.3em;
+        color: $white-text;
+        line-height: 1.6;
+        font-family: "Open Sans" !important;
+        @include smBreakPoint {
+          font-size: 1.8em;
+        }
+        @include mdBreakPoint {
+          font-size: 2.4em;
+        }
+        @include lgBreakPoint {
+          font-size: 3.2em;
+        }
+        .colors {
+          color: $orange_text;
+          font-size: 1em;
+        }
+      }
+    }
+    .rigfht_smile_image {
+      width: 40%;
+      position: relative;
+      img {
+        width: 70%;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        z-index: 10;
+        @include xsBreakPoint {
+          top: 20px;
+        }
+        @include smBreakPoint {
+          width: 130px;
+          right: 30px;
+          top: 30px;
+        }
+        @include mdBreakPoint {
+          right: 30px;
+          top: 20px;
+        }
+        @include lgBreakPoint {
+          width: 200px;
+          right: 80px;
+          top: 20px;
+        }
+      }
+      .empty-color-apply {
+        position: relative;
+        background: rgba(255, 122, 0, 0.73);
+        filter: blur(40px);
+        transform: rotate(3.26deg);
+        height: 100px;
+        width: 45%;
+        left: 10%;
+        margin: 0 auto;
+        top: 5vh;
+        border-radius: 50%;
+        @include xsBreakPoint {
+          position: relative;
+          background: rgba(255, 122, 0, 0.73);
+          filter: blur(30px);
+          transform: rotate(3.6deg);
+          height: 70%;
+          width: 50%;
+          top: 20%;
+          left: 15px;
+          border-radius: 50%;
+        }
+        @include smBreakPoint {
+          position: relative;
+          background: rgba(255, 122, 0, 0.73);
+          filter: blur(30px);
+          transform: rotate(3.6deg);
+          height: 80%;
+          width: 50%;
+          top: 25%;
+          left: 25px;
+          border-radius: 50%;
+        }
+        @include mdBreakPoint {
+          position: relative;
+          background: rgba(255, 122, 0, 0.73);
+          filter: blur(40px);
+          transform: rotate(3.6deg);
+          height: 140px;
+          width: 55%;
+          top: 35%;
+          left: 15%;
+          border-radius: 50%;
+        }
+        @include lgBreakPoint {
+          position: relative;
+          background: rgba(255, 122, 0, 0.73);
+          filter: blur(55px);
+          transform: rotate(3.6deg);
+          height: 80%;
+          width: 50%;
+          top: 25%;
+          left: 30px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .move_slick {
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+    @include mdBreakPoint {
+      padding-top: 10vh;
+      padding-bottom: 10vh;
+    }
+    @include lgBreakPoint {
+      padding-top: 15vh;
+      padding-bottom: 10vh;
+    }
+    .slick-dots li button:before {
+      color: $goldenYellow--light;
+      font-size: 10px;
+      padding-top: 2vh;
+    }
+  }
+  .cards {
+    width: 55%;
+    height: 100%;
+    border: 3px solid $orange_text;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    padding: 10px 5px;
+    @include xsBreakPoint {
+      width: 90%;
+      height: 100%;
+    }
+    @include smBreakPoint {
+      width: 70%;
+      height: 100%;
+    }
+    @include mdBreakPoint {
+      width: 56%;
+      height: 100%;
+    }
+    @include lgBreakPoint {
+      width: 50%;
+      height: 100%;
+    }
+    .light {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .landing-h3 {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: $orange-text;
+      font-family: "Open Sans" !important;
+      @include smBreakPoint {
+        font-size: 1.3em;
+      }
+    }
+    .choose_plat {
+      font-size: 1em;
+      color: $text_color;
+      font-weight: 500;
+      font-family: "Open Sans" !important;
+      @include smBreakPoint {
+        font-size: 1.2em;
+      }
+    }
+  }
+}
+.split {
+  width: 100%;
+  padding-top: 3vh;
+  .card {
+    border-color: $orange_text;
+    border-width: 2px;
+    height: 240px;
+    border-radius: 25px;
+    padding: 10px;
+    transition: transform 0.2s;
+    @include xlBreakPoint {
+      width: 100%;
+      height: 100%;
+    }
+    .landing-h3 {
+      font-size: 1.2em;
+      font-family: "Open Sans" !important;
+      color: $orange-text;
+      text-align: center;
+      @include xlBreakPoint {
+        font-size: 1.1em;
+      }
+    }
+    .choose_plat {
+      color: $text_color;
+      padding-top: 1vh;
+      text-align: center;
+      font-family: "Open Sans" !important;
+    }
+  }
+  .card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

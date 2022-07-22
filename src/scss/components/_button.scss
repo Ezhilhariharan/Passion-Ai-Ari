@@ -1,0 +1,664 @@
+@use "../abstract" as *;
+.btn-h1 {
+  width: 7em;
+  height: 1.8rem;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  // box-shadow: 0px 1.5px 5px black;
+  // box-shadow: 0px 1px 5px darkgrey; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  @include themed() {
+    color: t($goldenYellow);
+    background-color: t($buttonbackground);
+  }
+}
+.btn-h1-hover {
+  width: 7em;
+  height: 1.8rem;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  // box-shadow: 0px 1.5px 5px black;
+  // box-shadow: 0px 1px 5px darkgrey; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  @include themed() {
+    color: t($goldenYellow);
+    background-color: t($buttonbackground);
+  }
+}
+.btn-blue {
+  width: 10em;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  // box-shadow: 0px 1.5px 5px black;
+  box-shadow: 0px 1px 5px darkgrey; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+  @include xsBreakPoint {
+    width: 80%;
+  }
+  @include smBreakPoint {
+    width: 80%;
+  }
+  @include mdBreakPoint {
+    width: 8em;
+    height: 2rem;
+  }
+}
+.btn-blue:hover {
+  text-decoration: none;
+  @include themed() {
+    color: t($goldenYellow);
+    background-color: t($buttonbackground);
+  }
+}
+.btn-blue-model {
+  width: 10em;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  background: #2a2e4b;
+  color: #ff7a00;
+  cursor: pointer;
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 8em;
+    height: 2rem;
+  }
+}
+.btn-blue-model:hover {
+  text-decoration: none;
+  background: #ff7a00;
+  color: #2a2e4b;
+}
+.btn-circle-blue {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  font-family: "Open Sans" !important;
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 30px;
+    height: 30px;
+  }
+}
+.btn-circle-blue:hover {
+  text-decoration: none;
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.btn-white {
+  border: none;
+  width: 100%;
+  height: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  @include themed() {
+    color: t($textColor2);
+    background-color: t($header-background);
+  }
+  &:hover {
+    @include themed() {
+      color: t($goldenYellow);
+      background-color: t($primaryColor);
+    }
+  }
+}
+.btn-white-circle {
+  border: none;
+  width: 100%;
+  height: 2rem;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  @include themed() {
+    color: t($textColor2);
+    background-color: t($header-background);
+  }
+  &:hover {
+    @include themed() {
+      color: t($goldenYellow);
+      background-color: t($primaryColor);
+    }
+  }
+}
+.studenthomepage-card-btn {
+  width: 8em;
+  height: 2.3rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  margin-top: 110px;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include lgBreakPoint {
+    width: 7em;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  @include mdBreakPoint {
+    width: 6em;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  @include xsBreakPoint {
+    width: 6.5em;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+}
+.studenthomepage-card-btn:hover {
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+  @include xsBreakPoint {
+    width: 6.5em;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+}
+.btn-blue-appointment-create {
+  width: 12em;
+  height: 2.3rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+}
+.btn-blue-appointment-create:hover {
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.studenthomepage-cards-join {
+  width: 7em;
+  height: 2rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  // @include themed() {
+  //   background-color: t($buttonbackground);
+  //   color: t($goldenYellow);
+  // }
+  background: #2a2e4b;
+  // background:green;
+  color: #ff7a00;
+  @include mdBreakPoint {
+    width: 6em;
+    height: 2rem;
+    // font-size: 12px;
+  }
+  @include lgBreakPoint {
+    width: 6em;
+    height: 2rem;
+    // font-size: 14px;
+  }
+}
+.studenthomepage-cards-join-hover {
+  width: 7em;
+  height: 2rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  // @include themed() {
+  //   background-color: t($buttonbackground);
+  //   color: t($goldenYellow);
+  // }
+  opacity: 0.8;
+  background: #2a2e4b;
+  // background:green;
+  color: #ff7a00;
+  @include xsBreakPoint {
+    width: 4.5em;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+  @include mdBreakPoint {
+    width: 6em;
+    height: 2rem;
+    // font-size: 12px;
+  }
+  @include lgBreakPoint {
+    width: 6em;
+    height: 2rem;
+    // font-size: 14px;
+  }
+}
+.studenthomepage-cards-join:hover {
+  background: #ff7a00;
+  color: #2a2e4b;
+  // @include themed() {
+  //   background-color: t($goldenYellow);
+  //   color: t($buttonbackground);
+  // }
+  @include xsBreakPoint {
+    width: 6.5em;
+    height: 2rem;
+    font-size: 0.7rem;
+  }
+}
+.btn-blue-carrer {
+  width: 10em;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 8em;
+  }
+}
+.btn-blue-post {
+  width: 9em;
+  height: 2.3rem;
+  text-align: center;
+  border-radius: 20px;
+  // margin-left: 50%;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 7em;
+    font-size: 0.8em;
+    height: 2rem;
+  }
+}
+.btn-blue-post:hover {
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.btn-blue-stages {
+  width: 29em;
+  height: 3rem;
+  color: #ffffff;
+  font-size: 18px;
+  // text-align: center;
+  // border-radius: 20px;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Gilroy-regular";
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 54.5px;
+  cursor: pointer;
+}
+.btn-verify {
+  width: 16em;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 20px;
+  margin-left: 30%;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 8em;
+    height: 2rem;
+  }
+}
+.btn-verify:hover {
+  text-decoration: none;
+  @include themed() {
+    color: t($goldenYellow);
+    background-color: t($buttonbackground);
+  }
+}
+.btn-blue-mentor {
+  width: 14em;
+  height: 2.5rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 12em;
+    height: 2.5rem;
+  }
+}
+.btn-blue-mentor:hover {
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.btn-yellow {
+  width: 10em;
+  height: 2.8rem;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 2px 5px black; //rgb(54, 53, 53);
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 6em;
+  }
+  @include smBreakPoint {
+    width: 7em;
+  }
+  @include mdBreakPoint {
+    width: 8em;
+    height: 2rem;
+  }
+}
+.btn-yellow:hover {
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.btn-next {
+  width: 10em;
+  height: 2.5rem;
+  // margin-left: 40%;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 80%;
+    margin-left: 0%;
+  }
+  @include smBreakPoint {
+    width: 45%;
+    margin-left: 0%;
+  }
+  @include mdBreakPoint {
+    width: 8em;
+    height: 2rem;
+  }
+}
+.btn-next:hover {
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.btn-next-opacity {
+  width: 10em;
+  height: 2.5rem;
+  // margin-left: 40%;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  opacity: 0.4;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 80%;
+    margin-left: 0%;
+  }
+  @include smBreakPoint {
+    width: 45%;
+    margin-left: 0%;
+  }
+  @include mdBreakPoint {
+    width: 8em;
+    height: 2rem;
+  }
+}
+.btn-submit {
+  width: 10em;
+  height: 2.5rem;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 8em;
+    height: 2rem;
+  }
+}
+.btn-submit:hover {
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.btn-comment {
+  background-color: $buttonbackground;
+  width: 5em;
+  height: 1.8rem;
+  color: $goldenYellow;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  margin-left: 55%;
+  margin-top: 6%;
+  cursor: pointer;
+  // position:absolute;
+}
+.btn-edit {
+  width: 6em;
+  height: 2.5rem;
+  //  margin-left:60%;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  // padding-bottom:58px;
+  border: none;
+  box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    width: 4.5em;
+    height: 2rem;
+  }
+}
+.btn-edit:hover {
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.btn-update {
+  width: 8.9em;
+  height: 2.3rem !important;
+  //  margin-left:60%;
+  text-align: center;
+  line-height: 0px !important;
+  align-items: center;
+  border-radius: 20px;
+  // padding-bottom: 58px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0px !important;
+  border: none;
+  box-shadow: 0px 1px 5px black; //rgb(54, 53, 53
+  transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include themed() {
+    background-color: t($buttonbackground);
+    color: t($goldenYellow);
+  }
+}
+.btn-update:hover {
+  cursor: pointer;
+  @include themed() {
+    background-color: t($goldenYellow);
+    color: t($buttonbackground);
+  }
+}
+.landing_button {
+  width: 100%;
+  background: linear-gradient(84.99deg, #ff7a00 -2.21%, #ff9d44 101.5%);
+  font-size: 1.3em;
+  color: black;
+  font-family: "Gilroy-SemiBold";
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+.read_more {
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $orange_text;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  cursor: pointer;
+}
+.slide_button {
+  width: 100%;
+  background-color: #40457e;
+  border-radius: 10px;
+  color: white;
+  font-weight: 800;
+  font-size: 1.4em;
+  padding: 20x;
+  cursor: pointer;
+}

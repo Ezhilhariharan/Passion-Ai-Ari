@@ -1,0 +1,49 @@
+@use "../../../scss/abstract/" as *;
+.sample_pop_up {
+  width: 100%;
+  .pop_ups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.slicks {
+  @include hlBreakPoint {
+    height: 400px !important;
+  }
+  text-align: center;
+  .carousel {
+    height: 400px !important;
+  }
+}
+#modals_show {
+  border-radius: 20px !important;
+  .instructions {
+    margin: 0 auto;
+  }
+  .img-instruction {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center !important;
+  }
+  .loreams {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .img-instructions {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+.career-footer {
+  position: relative;
+  .buttonsed {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+  }
+}

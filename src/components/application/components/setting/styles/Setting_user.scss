@@ -1,0 +1,825 @@
+@use "../../../../../scss/abstract/" as *;
+.settinguser {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  // background-color: #E5E5E5;
+  @include mdBreakPoint {
+    height: 100vh !important;
+    // background-color: red !important;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  @include xsBreakPoint {
+    height: 100vh;
+  }
+  @include smBreakPoint {
+    height: 100vh;
+  }
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+  // .modal-body{
+  //   @include themed() {
+  //     background-color: t($secondaryColor) !important;
+  //   }
+  // }
+  .otp {
+    @include themed() {
+      background-color: t($modal-background) !important;
+      color: t($feedsfont) !important;
+    }
+  }
+  .modal-small {
+    .modal-content {
+      min-width: 300px !important;
+      width: 450px !important;
+      height: 250px;
+      // border:1px solid red;
+      overflow: hidden;
+      @include xsBreakPoint {
+        min-width: 100% !important;
+      }
+    }
+  }
+  .modal-content {
+    // min-height: 450px !important;
+    min-width: 650px !important;
+    color: #2b2e4a !important ;
+    @include themed() {
+      background-color: t($modal-background) !important;
+      color: t($feedsfont) !important;
+    }
+    @include xsBreakPoint {
+      min-width: 100% !important;
+    }
+    @include smBreakPoint {
+      min-width: 100% !important;
+    }
+    @include mdBreakPoint {
+      min-width: 50% !important;
+    }
+    .otp .otp-content .resend-otpsetting .otp-countersetting {
+      @include themed() {
+        color: t($feedsfont) !important;
+      }
+    }
+    .modal-header {
+      h5 {
+        @include themed() {
+          color: t($titlefont) !important;
+        }
+      }
+      button {
+        @include themed() {
+          filter: invert(t($invert)) !important;
+        }
+      }
+    }
+    .field {
+      @include themed() {
+        color: t($textColor2) !important;
+        // background-color: red;
+      }
+    }
+  }
+  .modal-header {
+    h3 {
+      font-size: 25px;
+      color: #2b2e4a !important;
+    }
+    border-bottom: 1px solid transparent;
+  }
+}
+// .modal-content {
+//   @include themed() {
+//     background-color: t($modal-background);
+//   }
+//   // background-color:$secondaryColor;
+// }
+.settinguser-header {
+  height: 20%;
+  width: 100%;
+  // border: 3px solid red;
+}
+.settinguser-setting {
+  width: 50%;
+  padding-left: 10%;
+  padding-top: 5%;
+  font-size: 34px;
+}
+.settinguser-profile {
+  width: 50%;
+}
+// }
+.settinguser-img {
+  height: 80px;
+  width: 90px;
+  // border:3px solid $goldenYellow;
+  border-radius: 50%;
+  margin-right: 10%;
+  padding: 0;
+  margin-top: 7%;
+  @include themed() {
+    border: 3px solid t($goldenYellow);
+  }
+}
+.settinguser-body {
+  height: 100%;
+  width: 100%;
+  // padding-top: 3%;
+  // border: 2px solid green;
+  // kalai chnages
+  @include xlBreakPoint {
+    padding-top: 4.5% !important;
+  }
+  @include lgBreakPoint {
+    padding-top: 2%;
+    // border:1px solid red;
+  }
+  // kalai chnages
+  @include mdBreakPoint {
+    padding-top: 7% !important;
+    height: 100% !important;
+  }
+  @include smBreakPoint {
+    padding-top: 10% !important;
+  }
+  // kalai chnages
+  @include xsBreakPoint {
+    padding-top: 15% !important;
+  }
+  @include hlBreakPoint {
+    padding-top: 6.2%;
+  }
+  h1 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 13%;
+    @include smBreakPoint {
+      padding-left: 3%;
+    }
+    @include xsBreakPoint {
+      padding-left: 3%;
+    }
+    @include mdBreakPoint {
+      font-size: 18px;
+    }
+    // @include themed() {
+    //   color: t($textColor1--light);
+    // }
+    @include themed() {
+      color: t($titlefont) !important;
+    }
+  }
+}
+.settinguser-cardbox {
+  width: 80%;
+  height: 78vh;
+  overflow: hidden;
+  margin-left: 4.5%;
+  // border: 2px solid blue;
+  .child-comp {
+    height: 90%;
+    width: 100%;
+    overflow: scroll;
+    // overflow:hidden;
+    // border: 2px solid blue;
+    @include hlBreakPoint {
+      height: 80% !important;
+    }
+  }
+  // border: 2px solid blue;
+  // padding-bottom: 40px;
+  // background: linear-gradient(165.66deg, #E9EBFC 59.08%, rgba(254, 254, 254, 0) 207.46%);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 16px;
+  // kalai changes
+  @include xsBreakPoint {
+    width: 100%;
+    height: 73vh !important;
+  }
+  @include mdBreakPoint {
+    // height:  !important;
+    height: 75vh !important;
+    background-color: black;
+  }
+  @include smBreakPoint {
+    height: 78vh;
+    width: 100%;
+    margin-left: 0%;
+  }
+  @include xsBreakPoint {
+    height: 75vh;
+    width: 100%;
+    margin-left: 0%;
+  }
+  // @include themed() {
+  //   background: t($background);
+  //   filter: t($drop-shadow);
+  // }
+  @include themed() {
+    background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+  .cancel-icon {
+    @include themed() {
+      color: t($feedsfont) !important;
+    }
+  }
+  .profile-middle-line {
+    width: 100%;
+  }
+}
+.settinguser-body-header {
+  line-height: 28px;
+  font-size: 20px;
+  // padding-left: 3%;
+  // padding-right:3%;
+  padding-top: 2%;
+  // font-weight: 600;
+  // color: #2B2E4A;
+  // padding:0px 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  // kalai changes
+  @include xsBreakPoint {
+    padding-left: 10px !important;
+  }
+  // end chnages
+  @include lgBreakPoint {
+    font-weight: 600;
+    line-height: 28px;
+    font-size: 18px;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 3%;
+  }
+  @include mdBreakPoint {
+    font-weight: 600;
+    line-height: 28px;
+    font-size: 14px;
+    padding-left: 2%;
+    padding-right: 0%;
+    padding-top: 3%;
+  }
+  @include smBreakPoint {
+    font-weight: 600;
+    line-height: 28px;
+    font-size: 15px;
+    padding-left: 2%;
+    padding-right: 0%;
+    padding-top: 3%;
+  }
+  @include xsBreakPoint {
+    font-weight: 600;
+    line-height: 15px;
+    font-size: 13px;
+    padding-left: 1%;
+    padding-top: 5%;
+  }
+  // @include themed() {
+  //   color: t($stagecircle);
+  // }
+  @include themed() {
+    color: t($titlefont);
+  }
+  // kalai chnages
+  h3 {
+    font-size: 20px;
+    @include xsBreakPoint {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: none !important;
+    }
+    @include mdBreakPoint {
+      font-size: 16px !important;
+    }
+  }
+  // end changes kalai
+}
+.password {
+  width: 350px;
+  height: 49px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: relative;
+  @include xsBreakPoint {
+    width: 180px;
+  }
+  @include themed() {
+    background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+}
+.input-password {
+  width: 100%;
+  height: 100%;
+  border: 1px solid hsla(232, 17%, 91%, 1);
+  border-radius: 15px;
+}
+.input-password-modal {
+  width: 70%;
+  height: 100%;
+  border: 1px solid hsla(232, 17%, 91%, 1);
+  border-radius: 15px;
+}
+.show-icon {
+  position: absolute;
+  // margin-left: 300px;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  @include xsBreakPoint {
+    margin-left: 150px;
+  }
+}
+.input-password:focus {
+  outline: none !important;
+}
+.input-password:disabled {
+  outline: none !important;
+}
+.input-update {
+  width: 300px;
+  height: 40px;
+  background: transparent;
+  outline: none !important;
+  // border:2px solid red;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 0px !important;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+  @include xsBreakPoint {
+    width: 110px;
+  }
+  @include themed() {
+    // background: t($textColor1);
+    // border: 1px solid t($primaryColor);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: t($feedsfont) !important;
+  }
+}
+.input-update-feed {
+  width: 300px;
+  height: 40px;
+  background: transparent;
+  outline: none !important;
+  // border:2px solid $primaryColor;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.input-password:focus {
+  outline: none !important;
+}
+.input-password:disabled {
+  outline: none !important;
+}
+.otp-countersetting {
+  font-size: 1rem;
+  font-family: "Gilroy-Medium";
+  @include xsBreakPoint {
+    font-size: 13px;
+  }
+  // @include themed() {
+  //   color: t($primaryColor);
+  // }
+}
+.otp-fieldsetting {
+  width: 55px;
+  height: 65px;
+  border-radius: 10px;
+  background: #c4c4c4;
+  margin: 2%;
+  text-align: center;
+  align-items: center;
+  border: none;
+  @include themed() {
+    color: t($primaryColor);
+  }
+  @include xsBreakPoint {
+    width: 40px;
+    height: 35px;
+  }
+}
+.otp-fieldsetting:focus {
+  outline: none;
+  @include themed() {
+    background: t($secondaryColor);
+    border: 2px solid t($primaryColor);
+  }
+}
+.resend-otpsetting {
+  font-size: 1rem;
+  font-family: "Gilroy-Medium";
+  cursor: pointer;
+  @include xsBreakPoint {
+    font-size: 13px;
+  }
+  // @include themed() {
+  //   color: t($primaryColor);
+  // }
+}
+.resend-otpsetting-disable {
+  font-size: 1rem;
+  font-family: "Gilroy-Medium";
+  cursor: auto;
+  @include xsBreakPoint {
+    font-size: 13px;
+  }
+  color: lightgray;
+}
+.otpsetting {
+  // color:$primaryColor;
+  font-size: 0.7rem;
+  padding-left: 47%;
+  font-family: "Gilroy-Medium";
+  @include smBreakPoint {
+    padding-left: 43%;
+  }
+  @include mdBreakPoint {
+    padding-left: 15%;
+  }
+  @include lgBreakPoint {
+    padding-left: 30%;
+  }
+  // @include themed() {
+  //   color: t($primaryColor);
+  // }
+}
+.ActiveTab {
+  // color: $goldenYellow !important;
+  @include themed() {
+    color: t($goldenYellow) !important;
+  }
+}
+.otp-width {
+  width: 100px;
+}
+.profile-upload {
+  // border:2px solid$primaryColor ;
+  background: transparent;
+  opacity: 10;
+  width: 70px;
+  position: absolute;
+  @include themed() {
+    border: 2px solid t($primaryColor);
+  }
+}
+.form-position {
+  // border:2px solid $primaryColor;
+  @include themed() {
+    border: 2px solid t($primaryColor);
+  }
+}
+.Settings_changeindustry {
+  height: 65vh;
+  // border:2px solid blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    height: 300px;
+  }
+  .btn-blue {
+    // width: 50%;
+    @include smBreakPoint {
+      width: 35%;
+    }
+    @include mdBreakPoint {
+      width: 50%;
+    }
+    @include xsBreakPoint {
+      width: 70%;
+    }
+  }
+  span {
+    font-family: Gilroy-Medium;
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+  }
+}
+.Settings-helpandsupport {
+  width: 100%;
+  height: 100%;
+  // border: 4px solid blue;
+  display: flex;
+  @include lgBreakPoint {
+    height: 70vh !important;
+  }
+  @include xlBreakPoint {
+    height: 70vh !important;
+  }
+  @include xxlBreakPoint {
+    height: 65vh !important;
+  }
+  @include themed() {
+    // background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+  // border:2px solid blue;
+  .Settings-helpandsupport-left {
+    width: 70%;
+    // border: 2px solid blue;
+    height: 70vh;
+    padding-left: 3%;
+    // kalai change
+    scrollbar-width: none;
+    @include xsBreakPoint {
+      width: 100%;
+      // height: 100% !important;
+      height: 58vh;
+      overflow-y: scroll;
+      scrollbar-width: none !important;
+      // white-space: nowrap;
+      // border: 2px solid orange;
+    }
+    @include smBreakPoint {
+      width: 100%;
+      // height: 100% !important;
+      height: 100vh !important;
+      overflow-y: scroll;
+      scrollbar-width: none !important;
+      // white-space: nowrap;
+      // border: 2px solid orange;
+    }
+    @include lgBreakPoint {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    @include mdBreakPoint {
+      width: 100%;
+      height: 380px;
+      overflow-y: scroll;
+    }
+    @include xlBreakPoint {
+      width: 100%;
+      height: 95% !important;
+      overflow: hidden;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      // border: 3px solid red;
+    }
+    @include xxlBreakPoint {
+      height: 100%;
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+    .para {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      padding-top: 10%;
+      // add classname new
+      @include themed() {
+        color: t($feedsfont) !important;
+      }
+      @include xsBreakPoint {
+        font-size: 15px;
+      }
+      @include mdBreakPoint {
+        width: 100% !important;
+        font-size: 20px;
+        line-height: 1.2;
+      }
+      @include lgBreakPoint {
+        line-height: 1.3;
+      }
+    }
+    .heading {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      padding-top: 5%;
+      // add classname new
+      @include themed() {
+        color: t($titlefont) !important;
+      }
+    }
+    .phone-number {
+      font-weight: normal;
+      font-size: 34px;
+      line-height: 40px;
+      // add classname new
+      @include themed() {
+        color: t($titlefont) !important;
+      }
+      // change kalai start
+      @include xsBreakPoint {
+        font-size: 15px;
+      }
+      @include mdBreakPoint {
+        font-size: 15px;
+      }
+      @include lgBreakPoint {
+        font-size: 20px;
+      }
+      // end chnages
+    }
+    .TermsandCondtion {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 35px;
+      // add classname new
+      @include themed() {
+        color: t($feedsfont) !important;
+      }
+      // chnage kalai xs
+      @include xsBreakPoint {
+        font-size: 15px;
+        line-height: 1.6;
+      }
+      @include mdBreakPoint {
+        font-size: 14px;
+        line-height: 1.3;
+      }
+      @include lgBreakPoint {
+        line-height: 1.7;
+      }
+      // chnage end
+    }
+    .btn-blue {
+      width: 7em;
+    }
+    @include lgBreakPoint {
+      width: 80%;
+    }
+    @include smBreakPoint {
+      width: 100%;
+    }
+    // kalai changes
+    @include xsBreakPoint {
+      width: 95%;
+    }
+  }
+  .Settings-helpandsupport-right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 250px;
+      @include smBreakPoint {
+        display: none;
+      }
+      @include xsBreakPoint {
+        display: none;
+      }
+    }
+    .btn-blue {
+      width: 11em;
+      @include lgBreakPoint {
+        width: 9em;
+      }
+      @include mdBreakPoint {
+        width: 8em;
+      }
+    }
+    @include lgBreakPoint {
+      width: 20%;
+    }
+    @include smBreakPoint {
+      display: none;
+    }
+    @include xsBreakPoint {
+      display: none;
+    }
+  }
+}
+.profile-img-setting {
+  width: 165px;
+  height: 165px;
+  border: 4px solid #ff7a00;
+  border-radius: 50%;
+  overflow: hidden;
+  .profile-imgi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.settingcard-middle-line {
+  border: 1px solid rgba(151, 151, 151, 0.23);
+  transform: rotate(-0.24deg);
+}
+.btn-icon {
+  border: none;
+  background: transparent;
+}
+.profile-img-reg {
+  cursor: pointer !important;
+}
+.error-msg {
+  line-height: 0px;
+  font-weight: 100;
+  font-size: 14px;
+}
+.field-width-setting {
+  width: 500px;
+  min-height: 60px;
+  height: auto;
+  font-weight: 600;
+  font-size: 18px;
+  // line-height: 60px;
+  border: 1px solid green;
+  @include mdBreakPoint {
+    // font-weight: 600;
+    font-size: 15px;
+    // line-height: 50px;
+  }
+  @include xsBreakPoint {
+    // font-weight: 600;
+    font-size: 15px;
+    // line-height: 20px;
+    width: 270px;
+    // border: 1px solid green;
+  }
+}
+.form-cancel {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  // color: #FF7A00;
+  cursor: pointer;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+}
+.otp-content {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  // color: #000000;
+}
+.changeindustry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  img {
+    height: 150px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+}
+// button kalai chnage
+.btn-yellow {
+  @include xsBreakPoint {
+    width: 50% !important;
+    // border: 2px solid blue;
+  }
+  @include mdBreakPoint {
+    width: 30% !important;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding-bottom: 2vh;
+  }
+}
+// chnage kalai
+.no-industry {
+  @include xsBreakPoint {
+    width: 100%;
+    height: 170px !important;
+    object-fit: contain;
+  }
+  @include mdBreakPoint {
+    width: 50%;
+    height: 265px !important;
+    object-fit: contain;
+  }
+  @include xlBreakPoint {
+    width: 100%;
+    height: 220px !important;
+    object-fit: contain;
+  }
+}
+.terms_conditions {
+  height: 10px !important;
+}

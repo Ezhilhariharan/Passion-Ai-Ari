@@ -1,0 +1,259 @@
+@use "../../../../../../../scss/abstract/" as *;
+.homepage-wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 280px);
+  // overflow:hidden;
+  // background:red;
+  .blog-wrapper {
+    width: 50%;
+    height: 100%;
+    padding: 0 10px;
+    h5 {
+      @include themed() {
+        color: t($titlefont) !important;
+      }
+    }
+    .blog-table-wrapper {
+      height: 60vh !important;
+      // border:1px solid red;
+      overflow: hidden;
+      @include hlBreakPoint {
+        // height: calc(100vh - 250px) !important;
+        height: 53vh !important;
+      }
+      .p-datatable-tbody {
+        > tr {
+          @include themed() {
+            background: t($calenderrange) !important;
+            color: t($titlefont) !important;
+          }
+        }
+      }
+    }
+  }
+  .paged-content-wrapper {
+    width: 50%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+    @include hlBreakPoint {
+      height: 100% !important;
+      overflow: scroll;
+      overflow-x: hidden !important;
+    }
+    .pc-wrapper {
+      width: 100%;
+      height: 35%;
+      min-height: 240px;
+      margin: 1%;
+      border-radius: 16px;
+      padding: 15px 25px;
+      overflow: hidden;
+      @include themed() {
+        background-color: t($calenderrange);
+        box-shadow: t($webinarcardshadow);
+      }
+      .title {
+        font-size: 1.4rem;
+        font-family: "Gilroy-Medium";
+        @include themed() {
+          color: t($textColor2) !important;
+        }
+      }
+      .content {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        @include themed() {
+          color: t($textColor2) !important;
+        }
+        @include noSelectionAllowed;
+      }
+      .content-text {
+        width: 100%;
+        height: 125px;
+        // min-height:110px;
+        // border:1px solid;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.themewhite_modal {
+  .modal-content {
+    min-height: 450px !important;
+    min-width: 650px;
+    color: #2b2e4a !important ;
+    background: white !important;
+    margin-left: 0% !important;
+    padding-left: 0% !important;
+    @include xsBreakPoint {
+      min-height: 100%;
+      min-width: 90%;
+    }
+    @include smBreakPoint {
+      min-height: 100%;
+      min-width: 90%;
+    }
+    @include mdBreakPoint {
+      min-width: 600px;
+    }
+  }
+  .modal-header {
+    h3 {
+      font-size: 25px;
+      color: #2b2e4a !important;
+    }
+    h4 {
+      font-size: 25px;
+      color: #2b2e4a !important;
+    }
+    border-bottom: 1px solid transparent;
+  }
+  .label {
+    color: #2b2e4a !important;
+  }
+  .input {
+    color: #2b2e4a !important;
+  }
+  .input-cms {
+    color: #2b2e4a !important;
+  }
+  .studenthomepage-fotter-cards {
+    color: white !important;
+    background: #444b92;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .studenthomepage-cards-join-hover {
+    opacity: 0.8;
+    background: #2a2e4b;
+    color: #ff7a00;
+  }
+  //   }
+  .comment-title {
+    color: black !important ;
+  }
+  .comment-description {
+    color: black !important ;
+  }
+}
+.themeblack_modal {
+  .modal-content {
+    min-height: 450px !important;
+    min-width: 650px;
+    color: white !important ;
+    background: #181818;
+    margin-left: 0% !important;
+    padding-left: 0% !important;
+    @include xsBreakPoint {
+      min-height: 100%;
+      min-width: 100%;
+    }
+    @include smBreakPoint {
+      min-height: 100%;
+      min-width: 100%;
+    }
+    @include mdBreakPoint {
+      min-width: 600px;
+    }
+  }
+  .modal-header {
+    h3 {
+      font-size: 25px;
+      color: white !important;
+    }
+    h4 {
+      font-size: 25px;
+      color: white !important;
+    }
+    border-bottom: 1px solid transparent;
+  }
+  .label {
+    color: white !important;
+  }
+  .input {
+    color: white !important;
+  }
+  .input-cms {
+    color: white !important;
+  }
+  .studenthomepage-fotter-cards {
+    background: #222121;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .studenthomepage-cards-join-hover {
+    width: 7em;
+    height: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+    font-family: "Gilroy-Bold";
+    opacity: 0.8;
+    background: #2a2e4b;
+    color: #ff7a00;
+  }
+  .comment-title {
+    color: white !important ;
+  }
+  .comment-description {
+    color: white !important ;
+  }
+}
+.add_video_icon {
+  // border: 1px solid red;
+  width: 30px;
+  height: 30px !important;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff7a00;
+  i {
+    color: white !important;
+  }
+}
+.p {
+  font-size: 1.2rem;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+span {
+  font-size: 0.9rem;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+// }
+.editor {
+  min-height: 400px !important;
+  // border:1px solid red;
+}
+.modal-dialog-scrollable {
+  max-height: 800px !important;
+  // border:1px solid red;
+}
+.ck-editor__editable_inline {
+  min-height: 500px;
+}
+.ck-focused {
+  // outline:none;
+  border: grey !important;
+  box-shadow: none !important;
+}
+table,
+.p-datatable {
+  thead,
+  .p-datatable-thead {
+    > tr {
+      > th {
+        text-align: left !important;
+      }
+    }
+  }
+}

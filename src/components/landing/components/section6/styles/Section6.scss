@@ -1,0 +1,235 @@
+@use "../../../../../scss/abstract" as *;
+.section7 {
+  width: 100%;
+  padding-bottom: 5vh;
+  height: 100vh;
+  overflow: hidden;
+  @include xsBreakPoint {
+    height: auto;
+  }
+  @include smBreakPoint {
+    height: auto;
+  }
+  @include mdBreakPoint {
+    height: auto;
+  }
+  @include lgBreakPoint {
+    height: auto;
+  }
+  @include xlBreakPoint {
+    height: auto;
+  }
+  @include xxlBreakPoint {
+    height: auto;
+  }
+  .inside_section7 {
+    width: 100%;
+    .contact_landing {
+      padding-top: 3vh;
+      font-size: 3.4em;
+      font-family: "Open Sans";
+      text-align: center;
+      color: $text_color;
+      @include xsBreakPoint {
+        font-size: 1.8em;
+      }
+      @include smBreakPoint {
+        font-size: 2.2em;
+      }
+      @include mdBreakPoint {
+        font-size: 2.5em;
+      }
+      @include lgBreakPoint {
+        font-size: 2.8em;
+      }
+      @include xlBreakPoint {
+        font-size: 2.9em;
+      }
+      @include xxlBreakPoint {
+        font-size: 3.2em;
+      }
+    }
+    .main_section7 {
+      width: 100%;
+      padding-top: 7vh;
+      .inside_body_section7 {
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 20px;
+        display: flex;
+        background: #e9ebfc;
+        @include xsBreakPoint {
+          width: 90%;
+          flex-direction: column-reverse;
+        }
+        @include smBreakPoint {
+          width: 90%;
+          flex-direction: column-reverse;
+        }
+        @include mdBreakPoint {
+          width: 90%;
+          flex-direction: column-reverse;
+        }
+        @include lgBreakPoint {
+          width: 90%;
+          flex-direction: column-reverse;
+        }
+        @include xlBreakPoint {
+          width: 90%;
+        }
+        @include xxlBreakPoint {
+          width: 80%;
+        }
+        .left_input_box {
+          width: 60%;
+          @include xsBreakPoint {
+            width: 100%;
+          }
+          @include smBreakPoint {
+            width: 100%;
+          }
+          @include mdBreakPoint {
+            width: 100%;
+          }
+          @include lgBreakPoint {
+            width: 100%;
+          }
+          @include xlBreakPoint {
+            width: 100%;
+          }
+          @include xxlBreakPoint {
+            width: 100%;
+          }
+          form {
+            padding: 10vh 10vw;
+            @include xsBreakPoint {
+              padding-top: 5vh;
+            }
+            @include smBreakPoint {
+              padding-top: 7vh;
+            }
+            @include mdBreakPoint {
+              padding-top: 8vh;
+            }
+            @include lgBreakPoint {
+              padding-top: 7vh;
+            }
+            input {
+              width: 100%;
+              padding: 20px;
+              border-radius: 10px;
+              border: none;
+              box-shadow: #ffffff 0px 1px 2px 0px;
+              text-align: center;
+              font-family: "Open Sans" !important;
+              @include xsBreakPoint {
+                width: 100%;
+              }
+              @include smBreakPoint {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              @include mdBreakPoint {
+                width: 70%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              @include lgBreakPoint {
+                width: 70%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+              @include xlBreakPoint {
+                width: 100%;
+              }
+              @include xxlBreakPoint {
+                width: 100%;
+              }
+            }
+            .buttons_contact {
+              width: 100%;
+              margin: 0px auto;
+              font-family: "Open Sans" !important;
+              .read_more {
+                width: 65%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: black;
+                padding: 10px;
+                font-size: 1.6em;
+                font-family: "Open Sans" !important;
+                border-radius: 10px;
+                background: linear-gradient(
+                  84.99deg,
+                  #ff7a00 -2.21%,
+                  #ff9d44 101.5%
+                );
+              }
+            }
+            ::placeholder {
+              font-size: 1.3em;
+              font-weight: 700;
+              font-family: "Open Sans" !important;
+              color: $text_color;
+            }
+          }
+        }
+        .right_image_landing_box {
+          width: 40%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @include xsBreakPoint {
+            width: 100%;
+            height: 100%;
+          }
+          @include smBreakPoint {
+            width: 100%;
+          }
+          @include mdBreakPoint {
+            width: 100%;
+          }
+          @include lgBreakPoint {
+            width: 100%;
+          }
+          @include xlBreakPoint {
+            width: 100%;
+          }
+          @include xxlBreakPoint {
+            width: 100%;
+          }
+          img {
+            width: 80%;
+            @include xsBreakPoint {
+              width: 60%;
+            }
+            @include smBreakPoint {
+              width: 60%;
+            }
+            @include mdBreakPoint {
+              width: 45%;
+            }
+            @include lgBreakPoint {
+              width: 40%;
+            }
+            @include xlBreakPoint {
+              width: 80%;
+            }
+            @include xxlBreakPoint {
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

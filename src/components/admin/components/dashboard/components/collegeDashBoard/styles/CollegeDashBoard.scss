@@ -1,0 +1,225 @@
+@use "../../../../../../../scss/abstract" as *;
+.college-dashboard {
+  height: calc(100vh - 81px);
+  width: calc(100vw - 88px);
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 81px;
+  overflow: scroll;
+  font-family: "Open Sans" !important;
+  padding: 0px 20px;
+  @include xxxlBreakPoint {
+    padding: 0px 150px;
+  }
+  @include xxlBreakPoint {
+    padding: 0px 70px;
+  }
+  // // chnages kalai
+  // @include xlBreakPoint {
+  //     height: 100%;
+  // }
+  // // change
+  // @include lgBreakPoint {
+  //     height: 100%;
+  // }
+  .modal-content {
+    min-height: 450px !important;
+    min-width: 650px;
+    color: #2b2e4a !important ;
+    @include themed() {
+      background: t($modal-background) !important;
+    }
+  }
+  .modal-header {
+    h3 {
+      font-size: 25px;
+      color: #2b2e4a !important;
+    }
+    border-bottom: 1px solid transparent;
+  }
+}
+.college-picture {
+  width: 87px !important;
+  height: 87px !important;
+  border-radius: 50%;
+  //
+  @include themed() {
+    background-color: t($goldenYellow);
+    border: 3px solid t($goldenYellow);
+  }
+  .college-picture-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover !important;
+  }
+}
+.college-details {
+  span {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+    line-break: anywhere;
+  }
+  .college-address {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px !important;
+    color: grey;
+    span {
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px !important;
+      // color: grey;
+    }
+  }
+  i {
+    font-size: 22px;
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+  .small-font {
+    color: grey !important;
+    span {
+      display: inline-block;
+      line-break: anywhere;
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: grey;
+    }
+    i {
+      cursor: pointer;
+      font-size: 15px;
+    }
+  }
+}
+.department_info-card {
+  .college-picture {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    background-color: grey;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  span {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+  }
+  .college-address {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: grey;
+  }
+  i {
+    font-size: 16px;
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+  .small-font {
+    span {
+      display: inline-block;
+      line-break: anywhere;
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      color: grey;
+    }
+    i {
+      cursor: pointer;
+    }
+  }
+}
+.plan-title {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  @include themed() {
+    color: t($textColor2);
+  }
+  border-bottom: 1px solid lightgrey;
+}
+.plan-type {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  @include themed() {
+    color: t($textColor2);
+  }
+  @include hhlBreakPoint {
+    font-size: 17px;
+  }
+  @include hlBreakPoint {
+    font-size: 16px;
+  }
+}
+.plan-font-color {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+  @include hhlBreakPoint {
+    font-size: 14px;
+  }
+  @include hlBreakPoint {
+    font-size: 15px;
+  }
+}
+.plan-font {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+.downloaded-app {
+  i {
+    font-size: 14px !important;
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+}
+.collegeanddepartment {
+  height: 35%;
+  min-height: 245px !important;
+  // border:1px solid red;
+  @include hlBreakPoint {
+    margin-top: 60px;
+  }
+}
+.college-details {
+  .admin_name {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+  }
+}

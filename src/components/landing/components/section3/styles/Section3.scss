@@ -1,0 +1,502 @@
+@use "../../../../../scss/abstract" as *;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap");
+.section4 {
+  width: 100%;
+  padding-top: 5vh;
+  position: relative;
+  padding-bottom: 5vh;
+  overflow: hidden;
+  .inside_section4 {
+    width: 100%;
+    display: flex;
+    .left_section4 {
+      width: 45%;
+      .react-player {
+        position: absolute;
+        z-index: 2;
+        left: 32.2%;
+        border-radius: 20px !important;
+        top: 32%;
+        @include xlBreakPoint {
+          left: 31.5%;
+          top: 30%;
+        }
+        @include xxlBreakPoint {
+          left: 31.7%;
+          top: 33%;
+        }
+        .videos {
+          width: 15.9vw !important;
+          height: 34vh !important;
+          border-radius: 20px !important;
+          overflow: hidden;
+          object-fit: contain;
+                    background: linear-gradient(267.23deg, #282b45 54.11%, #2b3058 96.82%);
+          @include xlBreakPoint {
+            width: 16.5vw !important;
+            height: 25vh !important;
+          }
+          @include xxlBreakPoint {
+            width: 16.3vw !important;
+            height: 28.8vh !important;
+          }
+        }
+      }
+      .image_mobile {
+        background-color: #e9ebfc;
+        border-radius: 0px 250px 250px 0px;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        z-index: auto;
+        @include xsBreakPoint {
+          width: 100%;
+          height: auto;
+        }
+        @include lgBreakPoint {
+          height: auto;
+        }
+        @include xlBreakPoint {
+          width: 100%;
+          height: auto;
+        }
+        @include xxlBreakPoint {
+          width: 100%;
+          z-index: auto;
+          height: 100%;
+          border-radius: 0px 200px 200px 0px;
+        }
+        .s4-image-holder {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 0px 250px 250px 0px;
+          overflow: hidden;
+          z-index: 1;
+        }
+        .passion-ai-ari-image {
+          width: 85%;
+          height: 100%;
+          margin: 0 auto;
+          border-radius: 0px 250px 250px 0px;
+          .mobile_image {
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin: 0px auto;
+            @include xsBreakPoint {
+              width: 100%;
+            }
+            @include xlBreakPoint {
+              width: 100%;
+            }
+            @include xxlBreakPoint {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .right_section4 {
+      width: 55%;
+      .right_landing_contents {
+        display: flex;
+        flex-direction: column;
+        .what_dos {
+          font-size: 4em;
+          color: $text-color;
+          width: 100%;
+          font-family: "Open Sans" !important;
+          font-weight: 700;
+          @include xsBreakPoint {
+            font-size: 1.4em;
+          }
+          @include xlBreakPoint {
+            font-size: 5em;
+          }
+          @include xxlBreakPoint {
+            font-size: 3.2em;
+            padding-left: 2vw;
+          }
+        }
+        .what_dost {
+          font-size: 3em;
+          color: $text-color;
+          width: 100%;
+          font-family: "Open Sans" !important;
+          font-weight: 700;
+          text-align: center;
+          @include xsBreakPoint {
+            font-size: 1.4em;
+          }
+          @include xlBreakPoint {
+            font-size: 5em;
+          }
+          @include xxlBreakPoint {
+            font-size: 5em;
+          }
+        }
+        .gain {
+          font-size: 4em;
+          color: $text-color;
+          font-family: "Open Sans" !important;
+          font-weight: 700;
+          text-align: center;
+          @include xxlBreakPoint {
+            font-size: 3.2em;
+            padding-left: 2vw;
+          }
+        }
+        .colors {
+          color: $orange-text;
+          font-size: 1em;
+        }
+      }
+      .split_sharing {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 7vh;
+        @include xxlBreakPoint {
+          gap: 30px;
+        }
+        .left_split_sharing {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          @include xxlBreakPoint {
+            width: 100%;
+          }
+          .box1 {
+            width: 65%;
+            height: 100%;
+            @include xxlBreakPoint {
+              width: 78%;
+            }
+            .light {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .konowledge {
+              color: $orange-text;
+              font-size: 1.5em;
+              font-family: "Open Sans" !important;
+              font-weight: 700;
+            }
+            .choose {
+              color: $text_color;
+              font-size: 1.3rem;
+            }
+          }
+        }
+        .right_split_sharing {
+          width: 50%;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          @include xxlBreakPoint {
+            width: 100%;
+          }
+          .box1 {
+            width: 65%;
+            height: 100%;
+            @include xxlBreakPoint {
+              width: 100%;
+            }
+            .light {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .konowledge {
+              color: $orange-text;
+              font-size: 1.5em;
+              font-weight: 700;
+              font-family: "Open Sans" !important;
+            }
+            .choose {
+              color: $text_color;
+              font-size: 1.3rem;
+              font-family: "Open Sans" !important;
+            }
+          }
+        }
+      }
+      .down_image {
+        .screen_person {
+          width: 34%;
+          right: 0;
+          bottom: 6vh;
+          position: absolute;
+          @include xsBreakPoint {
+            left: 0;
+          }
+          @include xlBreakPoint {
+            bottom: -18vh;
+          }
+          @include xxlBreakPoint {
+            bottom: -17vh;
+          }
+        }
+      }
+    }
+  }
+}
+.another_slide {
+  height: 100vh;
+  overflow: hidden;
+  @include xsBreakPoint {
+    height: auto;
+    padding-bottom: 8vh;
+  }
+  @include smBreakPoint {
+    height: auto;
+    padding-bottom: 8vh;
+  }
+  @include mdBreakPoint {
+    height: auto;
+    padding-bottom: 8vh;
+  }
+  @include lgBreakPoint {
+    height: auto;
+    padding-bottom: 8vh;
+  }
+  @include xlBreakPoint {
+    height: auto;
+    padding-bottom: 8vh;
+  }
+  @include xxlBreakPoint {
+    height: auto;
+    padding-bottom: 8vh;
+  }
+  .slick-dots li button:before {
+    font-size: 10px;
+    padding-top: 2vh;
+  }
+  .main {
+    display: flex;
+    margin-bottom: 6vh;
+    padding-top: 4vh;
+    width: 100%;
+    .left_landing_content {
+      width: 60%;
+      @include smBreakPoint {
+        width: 100%;
+      }
+      @include mdBreakPoint {
+        width: 100%;
+      }
+      @include lgBreakPoint {
+        width: 100%;
+      }
+      @include xlBreakPoint {
+        width: 100%;
+      }
+      @include xxlBreakPoint {
+        width: 100%;
+      }
+      .what_do {
+        font-size: 1.2rem;
+        padding-left: 6vw;
+        color: $text_color;
+        font-weight: 700;
+        font-family: "Open Sans" !important;
+        @include xsBreakPoint {
+          font-size: 1rem;
+        }
+        @include smBreakPoint {
+          font-size: 1.52rem;
+          padding-left: 6vw;
+        }
+        @include mdBreakPoint {
+          font-size: 2rem;
+          padding-left: 6vw;
+        }
+        @include lgBreakPoint {
+          font-size: 2.5rem;
+          padding-left: 6vw;
+        }
+        @include xlBreakPoint {
+          font-size: 3rem;
+          padding-left: 5vw;
+        }
+        @include xxlBreakPoint {
+          font-size: 3.3rem;
+          padding-left: 6vw;
+          width: 65%;
+        }
+      }
+      .colors {
+        color: $orange-text;
+        font-size: 1em;
+        font-family: "Open Sans" !important;
+      }
+    }
+    .right_landing_content {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include smBreakPoint {
+        width: 100%;
+      }
+      @include mdBreakPoint {
+        width: 100%;
+      }
+      @include lgBreakPoint {
+        width: 100%;
+      }
+      @include xlBreakPoint {
+        width: 100%;
+      }
+      img {
+        width: 120px;
+        height: 80px;
+        @include smBreakPoint {
+          width: 220px;
+          height: 120px;
+          padding-left: 3vw;
+        }
+        @include mdBreakPoint {
+          width: 260px;
+          height: 140px;
+          padding-left: 6vw;
+        }
+        @include lgBreakPoint {
+          width: 300px;
+          height: 160px;
+          padding-left: 6vw;
+        }
+        @include xlBreakPoint {
+          width: 300px;
+          height: 180px;
+          padding-left: 2vw;
+        }
+        @include xxlBreakPoint {
+          width: 400px;
+          height: 230px;
+          padding-left: 2vw;
+        }
+      }
+    }
+  }
+  .another_resposive {
+    width: 100%;
+    .left_split_sharing {
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 20px;
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 220px;
+        border-radius: 20px;
+        border: 3px solid $orange_text;
+        @include xsBreakPoint {
+          width: 100%;
+        }
+        @include smBreakPoint {
+          width: 70%;
+          margin: 0 auto;
+        }
+        @include mdBreakPoint {
+          width: 70%;
+          margin: 0 auto;
+        }
+        @include lgBreakPoint {
+          width: 70%;
+          margin: 0 auto;
+        }
+        @include xlBreakPoint {
+          width: 60%;
+          margin: 0 auto;
+        }
+        @include xxlBreakPoint {
+          width: 52%;
+          margin: 0 auto;
+        }
+      }
+      .konowledge {
+        color: $orange-text;
+        font-weight: 700;
+        font-family: "Open Sans" !important;
+      }
+      .light {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        color: $text_color;
+        font-weight: 700;
+        font-family: "Open Sans" !important;
+      }
+    }
+    .right_split_sharing {
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 20px;
+      .box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 23px;
+        border: 3px solid $orange_text;
+        height: 220px;
+        border-radius: 20px;
+        @include smBreakPoint {
+          width: 350px;
+          margin: 0 auto;
+        }
+        @include mdBreakPoint {
+          width: 70%;
+          margin: 0 auto;
+        }
+        @include lgBreakPoint {
+          width: 70%;
+          margin: 0 auto;
+        }
+        @include xlBreakPoint {
+          width: 60%;
+          margin: 0 auto;
+        }
+        @include xxlBreakPoint {
+          width: 52%;
+          margin: 0 auto;
+        }
+      }
+      .konowledge {
+        color: $orange-text;
+        font-weight: 700;
+        font-family: "Open Sans" !important;
+      }
+      .light {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        color: $text_color;
+        font-weight: 700;
+        font-family: "Open Sans" !important;
+      }
+    }
+  }
+}

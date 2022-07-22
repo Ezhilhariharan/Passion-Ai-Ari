@@ -1,0 +1,142 @@
+@use "../../../../../../../scss/abstract" as *;
+.chat-layout-body {
+  .chat-left {
+    width: 30%;
+    // min-width: 15rem;
+    max-width: 30rem;
+    min-width: 300px;
+    height: 100%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    //   border:1px solid red;
+    @include themed() {
+      background-color: t($header-background);
+    }
+    @include xsBreakPoint() {
+      width: 100%;
+      min-width: unset;
+      max-width: unset;
+    }
+    @include smBreakPoint() {
+      width: 100%;
+      min-width: unset;
+      max-width: unset;
+    }
+    .chat-left-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px;
+      height: 10%;
+      @include themed() {
+        border-bottom: 1px solid t($profileheaderborder) !important;
+      }
+      span {
+        font-size: 1.9rem;
+        font-weight: 600;
+      }
+      .btn-white {
+        width: 2rem;
+      }
+      .form-group {
+        width: 60%;
+      }
+    }
+    .chat-left-body {
+      position: relative;
+      height: 90%;
+      padding: 10px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .chat-left-img {
+        position: absolute;
+        width: 70%;
+        max-width: 400px;
+        top: 60%;
+      }
+      .chat-message-card {
+        width: 100%;
+        max-height: 8rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        .chat-card-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: 10px;
+          .left {
+            width: 80%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            // border:1px solid red;
+            .pic {
+              width: 50px;
+              height: 50px;
+              min-width: 49px;
+              overflow: hidden;
+              border-radius: 50%;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .name {
+              font-weight: 600;
+            }
+          }
+          .right {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .time {
+              font-size: 0.8rem;
+              font-family: 200;
+              color: darkgrey;
+            }
+            .online,
+            .offline {
+              padding-left: 10px;
+              position: relative;
+              &::before {
+                content: "";
+                width: 7px;
+                height: 7px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                border-radius: 50%;
+              }
+            }
+            .online::before {
+              background: green;
+            }
+            .offline::before {
+              background: red;
+            }
+          }
+        }
+        .chat-card-body {
+          height: 25px;
+          width: 100%;
+          // border:1px solid red;
+          overflow: hidden;
+          padding: 5px;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

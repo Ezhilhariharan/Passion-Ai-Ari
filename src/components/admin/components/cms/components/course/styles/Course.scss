@@ -1,0 +1,119 @@
+@use "../../../../../../../scss/abstract" as *;
+@import "https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css";
+.stage-width {
+  width: auto;
+}
+.course-row {
+  .btn-yellow {
+    width: 500px !important;
+  }
+}
+.t-wrapper {
+  // border: 1px solid red;  
+    @include hlBreakPoint {
+      margin-top: 0px !important;
+    }  
+  .p-datatable-tbody {
+    > tr {
+      @include themed() {
+        background: t($calenderrange) !important;
+        color: t($titlefont) !important;
+      }
+    }
+  }
+}
+.modal-backdrop.show {
+  opacity: 0.2 !important;
+}
+.stage-wrapper {
+  height: 40px;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  // padding: 0 10px;
+  background: #2a2e4b;
+  @include themed() {
+    // background: t($primaryColor);
+    box-shadow: t($shadow);
+  }
+  button,
+  a {
+    text-decoration: none;
+    padding: 5px 23px !important;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    color: white;
+    // @include themed() {
+    //     color: t($textColor1) !important;
+    // }
+    @include noSelectionAllowed;
+  }
+  .active {
+    @include themed() {
+      color: t($goldenYellow) !important;
+    }
+  }
+  button::after,
+  a::after {
+    position: absolute;
+    // top: -1.95rem;
+    // right: -10px;
+    // display: inline-block;
+    // font-style: normal;
+    // font-variant: normal;
+    // text-rendering: auto;
+    // -webkit-font-smoothing: antialiased;
+    // font-family: "Font Awesome 6 Pro";
+    // font-weight: 200;
+    // font-size: 4rem;
+    // // \203a
+    // // content: "\203a";
+    // cursor: pointer;
+    // color: white;
+    content: ' ';
+  display: inline-block;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  height: 25px;
+  width: 25px;
+  transform: rotate(-45deg);
+    @include noSelectionAllowed;
+  }
+  button:hover,
+  a:hover {
+    cursor: pointer;
+    @include themed() {
+      color: t($goldenYellow) !important;
+    }
+  }
+  button:last-child,
+  a:last-child {
+    padding: 5px 20px !important;
+  }
+  button:last-child::after,
+  a:last-child::after {
+    content: " ";
+    border:1px solid transparent;
+  }
+}
+.video-img {
+  height: 100px !important;
+  width: 100% !important;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.ClassicEditor {
+  // border:1px solid red;
+  // max-height :350px !important;
+  .ck-editor__editable_inline {
+    min-height: 250px !important;
+  }
+}
+.course-row {
+  // border:1px solid red;
+}

@@ -1,0 +1,271 @@
+@use "../../../../../scss/abstract" as *;
+.landing-section1 {
+  width: 100%;
+  background-color: #e9ebfc;
+  border-radius: 0px 0px 0px 200px;
+  position: relative;
+  z-index: auto;
+  height: 100vh;
+  overflow-x: hidden;
+  @include xsBreakPoint {
+    height: auto;
+  }
+  @include smBreakPoint {
+    height: auto;
+  }
+  @include mdBreakPoint {
+    height: auto;
+  }
+  @include lgBreakPoint {
+    height: auto;
+  }
+  @include xlBreakPoint {
+    height: auto;
+  }
+  @include xxlBreakPoint {
+    height: auto;
+  }
+  .main-section_image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    border-radius: 0px 0px 0px 200px;
+    .img1 {
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      object-fit: cover;
+    }
+  }
+  .main-section1 {
+    display: flex;
+    z-index: 10;
+    position: relative;
+    height: 100%;
+    @include xsBreakPoint {
+      flex-direction: column;
+    }
+    @include smBreakPoint {
+      flex-direction: column;
+    }
+    @include mdBreakPoint {
+      flex-direction: column;
+    }
+    @include lgBreakPoint {
+      flex-direction: column;
+    }
+    .left_box_content {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      @include xsBreakPoint {
+        width: 100%;
+      }
+      @include smBreakPoint {
+        width: 100%;
+      }
+      @include mdBreakPoint {
+        width: 100%;
+      }
+      @include lgBreakPoint {
+        width: 100%;
+      }
+      @include xlBreakPoint {
+        width: 100%;
+      }
+      @include xxlBreakPoint {
+        width: 100%;
+      }
+      .box_middle {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 25vh;
+        @include xsBreakPoint {
+          padding-left: 0;
+        }
+        @include smBreakPoint {
+          padding-left: 0;
+        }
+        @include mdBreakPoint {
+          padding-left: 0;
+        }
+        @include lgBreakPoint {
+          padding-left: 0;
+        }
+        @include xlBreakPoint {
+          padding-left: 8vh;
+        }
+        .preparation {
+          font-size: 3.8rem;
+          width: 78%;
+          font-weight: 900;
+          color: $text_color;
+          font-family: "Open Sans" !important;
+          @include xsBreakPoint {
+            font-size: 1.5rem;
+            width: 85%;
+            text-align: center;
+            line-height: 1.3;
+            margin: 0 auto;
+          }
+          @include smBreakPoint {
+            font-size: 2.4rem;
+            width: 80%;
+            text-align: center;
+            line-height: 1.3;
+            margin: 0 auto;
+          }
+          @include mdBreakPoint {
+            font-size: 2.6rem;
+            width: 65%;
+            text-align: center;
+            line-height: 1.3;
+            margin: 0 auto;
+          }
+          @include lgBreakPoint {
+            font-size: 2.8rem;
+            width: 55%;
+            text-align: center;
+            line-height: 1.3;
+            margin: 0 auto;
+          }
+          @include xlBreakPoint {
+            font-size: 3rem;
+            width: 100%;
+            line-height: 1.3;
+          }
+          @include xxlBreakPoint {
+            font-size: 3.2rem;
+            width: 100%;
+            line-height: 1.3;
+          }
+        }
+        .indias {
+          width: 80%;
+          font-size: 1.8rem;
+          color: $text_color;
+          font-weight: 600;
+          font-family: "Open Sans" !important;
+          @include xsBreakPoint {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            text-align: center;
+          }
+          @include smBreakPoint {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            text-align: center;
+          }
+          @include mdBreakPoint {
+            width: 70%;
+            margin: 0 auto;
+            font-size: 1.7rem;
+            text-align: center;
+          }
+          @include lgBreakPoint {
+            width: 55%;
+            margin: 0 auto;
+            font-size: 1.8rem;
+            text-align: center;
+          }
+          @include xlBreakPoint {
+            width: 90%;
+            font-size: 1.7rem;
+          }
+          @include xxlBreakPoint {
+            width: 90%;
+            font-size: 1.7rem;
+          }
+        }
+        .landing_button {
+          width: 30%;
+          font-size: 1.8rem;
+          font-weight: 600;
+          padding: 17px;
+          border: none;
+          outline: none;
+          padding: 10px;
+          font-family: "Open Sans" !important;
+          @include xsBreakPoint {
+            width: 40%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            padding: 10px;
+          }
+          @include smBreakPoint {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+          }
+          @include mdBreakPoint {
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            padding: 10px;
+          }
+          @include lgBreakPoint {
+            width: 24%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            padding: 16px;
+          }
+          @include xlBreakPoint {
+            width: 35%;
+            font-size: 1.5rem;
+            padding: 11px;
+          }
+          @include xxlBreakPoint {
+            width: 35%;
+            font-size: 1.5rem;
+            padding: 11px;
+          }
+        }
+      }
+    }
+  }
+  .right_box_image {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include xsBreakPoint {
+      width: 100%;
+    }
+    @include smBreakPoint {
+      width: 100%;
+    }
+    @include mdBreakPoint {
+      width: 100%;
+    }
+    @include lgBreakPoint {
+      width: 100%;
+    }
+    @include xlBreakPoint {
+      width: 100%;
+    }
+    @include xxlBreakPoint {
+      width: 100%;
+    }
+    img {
+      width: 80%;
+      height: 100%;
+    }
+  }
+}

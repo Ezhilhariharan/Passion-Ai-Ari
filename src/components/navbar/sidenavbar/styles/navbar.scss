@@ -1,0 +1,191 @@
+@use "../../../../scss/abstract/" as *;
+.side-navbar {
+  position: fixed !important;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 80px;
+  box-shadow: 4px 0px 11px 2px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  z-index: 100;
+  // border:1px solid red;
+  @include themed() {
+    background-color: t($primaryColor);
+  }
+  @include lgBreakPoint {
+    width: 80px;
+  }
+  @include mdBreakPoint {
+    width: 80px;
+  }
+  @include xsBreakPoint {
+    top: unset;
+    bottom: 0;
+    transform: translateY(0%);
+    min-height: 50px;
+    height: 52px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+  @include smBreakPoint {
+    top: unset;
+    bottom: 0;
+    transform: translateY(0%);
+    min-height: 50px;
+    height: 52px;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+}
+.side-navbar-small {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 400px;
+  width: 95px;
+  box-shadow: 4px 0px 11px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px 50px 50px 5px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 100;
+  @include themed() {
+    background-color: t($primaryColor);
+  }
+  @include lgBreakPoint {
+    width: 80px;
+  }
+  @include mdBreakPoint {
+    width: 80px;
+  }
+  @include xsBreakPoint {
+    top: unset;
+    bottom: 0;
+    transform: translateY(0%);
+    // min-height: 50px;
+    height: 40px;
+    width: 100%;
+    flex-direction: row;
+    border-radius: 50px 50px 0px 0px;
+  }
+  @include smBreakPoint {
+    top: unset;
+    bottom: 0;
+    transform: translateY(0%);
+    min-height: 50px;
+    height: 70px;
+    width: 100%;
+    flex-direction: row;
+    border-radius: 50px 50px 0px 0px;
+  }
+}
+.sidebar-list {
+  text-decoration: none;
+  list-style: none;
+  height: 105px;
+  width: 80px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  //    padding-bottom:30%;
+  // border: 1px solid red;
+  // cursor: pointer;
+  // &:hover {
+  svg:hover {
+    path {
+      @include themed() {
+        stroke: t($goldenYellow);
+      }
+    }
+    circle {
+      @include themed() {
+        fill: t($goldenYellow);
+      }
+    }
+    // }
+  }
+  @include themed() {
+    color: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    padding: 0px 20px;
+    height: 45px;
+    width: 45px;
+  }
+  @include smBreakPoint {
+    padding: 0px 20px;
+    height: 45px;
+    width: 80px;
+  }
+}
+.sidebar-list:nth-child(1) {
+  margin-top: 90px;
+  @include xsBreakPoint {
+    margin-top: 0px;
+  }
+  @include smBreakPoint {
+    margin-top: 0px;
+  }
+}
+.selected {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    path {
+      @include themed() {
+        stroke: t($goldenYellow);
+      }
+    }
+    circle {
+      @include themed() {
+        fill: t($goldenYellow);
+      }
+    }
+  }
+}
+.selected:before {
+  // border:1px solid green;
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 28px;
+  border-radius: 100%;
+  transform: translateX(-155%);
+  @include themed() {
+    background: t($goldenYellow);
+  }
+  @include xsBreakPoint {
+    display: inline;
+    transform: translate(0%, 125%);
+    width: 25px;
+    height: 28px;
+    // left: 5%;
+    // top: 0;
+    // margin-left:1px;
+  }
+  @include smBreakPoint {
+    transform: translate(0%, 125%);
+    width: 25px;
+    height: 28px;
+  }
+}
+.sidebar-list img {
+  height: 33px;
+  @include xsBreakPoint {
+    height: 28px;
+  }
+}

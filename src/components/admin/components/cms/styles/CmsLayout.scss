@@ -1,0 +1,97 @@
+@use "../../../../../scss/abstract" as *;
+.cms-card {
+  width: 100%;
+  // border:1px solid;
+  height: calc(100vh - 220px);
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 10px;
+  @include themed() {
+    box-shadow: t($webinarcardshadow);
+    background: t($feedsbackground);
+  }
+  @include hhlBreakPoint {
+    height: calc(100vh - 180px);
+  } 
+  .modal-content {
+    min-height: 450px !important;
+    min-width: 650px;
+    // color: #2b2e4a !important ;
+    @include themed() {
+      background: t($modal-background) !important;
+    }
+  }
+  .modal-header {
+    h3 {
+      font-size: 25px;
+      // color: green !important;
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+    h4 {
+      font-size: 25px;
+      // color: #2b2e4a !important;
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+    border-bottom: 1px solid transparent;
+  }
+  .label {
+    // color: #2b2e4a !important;
+    @include themed() {
+      color: t($textColor2) !important;
+    }
+  }
+}
+.preview_image {
+  height: 95px;
+  width: 170px;
+  // border:1px solid red;
+  border-radius: 10px;
+  border: 0.5px solid lightgray;
+  img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}
+.cms-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+  @include themed() {
+    border-bottom: 1px solid t($profileheaderborder) !important;
+  }
+  a,
+  button {
+    text-decoration: none;
+    // padding: 5px 50px 5px 0;
+    font-family: "Gilroy-Medium";
+    font-size: 22px;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    @include themed() {
+      color: t($titlefont);
+    }
+  }
+  a:hover,
+  button:hover {
+    text-decoration: none;
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+  .active {
+    @include themed() {
+      color: t($goldenYellow) !important;
+    }
+  }
+}
+.cms-content-wrapper {
+  padding: 10px;
+}

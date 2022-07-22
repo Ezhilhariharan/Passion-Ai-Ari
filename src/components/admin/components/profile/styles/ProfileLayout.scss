@@ -1,0 +1,241 @@
+@use "../../../../../scss" as *;
+@use "../../../styles/AdminLayout.scss" as *;
+.mentorProfile {
+  // border:1px solid red;
+  // position: relative;
+  height: 90vh;
+  font-family: "Gilroy-Medium" !important;
+  .main-heading {
+    margin-top: 50px;
+    @include hlBreakPoint {
+      margin-top: 65px;
+      font-size: 25px;
+    }
+  }
+  .profileback_btn {
+    position: absolute;
+    left: 90px;
+    top: 75px;
+  }
+  .profile-upper {
+    // border:1px solid red;
+    height: 38%;
+    @include xlBreakPoint {
+      padding-top: 90px !important;
+    }
+    .profile-upper-inner {
+      @include xxlBreakPoint {
+        width: 1255px;
+        // border: 1px solid green;
+      }
+      @include xlBreakPoint {
+        width: 1050px;
+      }
+    }
+    .profile-details-box {
+      // @include xlBreakPoint {
+      //     width: 55%;
+      //     border: 1px solid green;
+      // }
+      @include xlBreakPoint {
+        width: 600px;
+        height: 255px;
+      }
+    }
+    @include hhlBreakPoint {
+      margin-top: 30px;
+    }
+  }
+  .Profile_Personaldetails {
+    @include hhlBreakPoint {
+      margin-top: 60px;
+    }
+  }
+  .profile-lower {
+    // border:1px solid red;
+    @include xlBreakPoint {
+      padding-top: 0px;
+    }
+    .Profile_Personaldetails {
+      @include xxlBreakPoint {
+        width: 1255px;
+      }
+      @include xlBreakPoint {
+        width: 1050px;
+      }
+    }
+    @include hhlBreakPoint {
+      height: 450px !important;
+    }
+  }
+  .graph-height {
+    // border: 5px solid green;
+    height: auto !important;
+    margin-top: 20px;
+    @include hhlBreakPoint {
+      margin-top: 5px;
+      height: 350px !important;
+    }
+    .report-graph {
+      @include hhlBreakPoint {
+        // border: 5px solid blue;
+        height: 90% !important;
+      }
+    }
+    .report-stages {
+      @include hhlBreakPoint {
+        // border: 5px solid blue;
+        height: 90% !important;
+      }
+    }
+  }
+}
+.profileback_btn-student {
+  // margin-left:10% !important;
+  position: absolute;
+  left: -130px;
+  top: 30px;
+  //    margin-left:60px;
+}
+.personalRow {
+  display: flex;
+  width: 95%;
+  height: 30vh;
+  // border: 1px solid;
+  padding-top: 50px;
+  @include hlBreakPoint {
+    padding-top: 0px;
+  }
+  .name {
+    height: 160px;
+    font-family: "Open Sans" !important;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  .mentor_profiledetails {
+    width: 40%;
+    height: 220px;
+    background: linear-gradient(
+      24.18deg,
+      #2b2e4a 64.51%,
+      rgba(43, 46, 74, 0) 233.27%
+    );
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
+    .mentoradminprofile-details {
+      h1 {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        color: white;
+        // @include themed() {
+        //     color: t($textColor1);
+        // }
+      }
+      p {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        // color: white
+        @include themed() {
+          color: t($goldenYellow);
+        }
+      }
+      span {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: white;
+        // @include themed() {
+        //     color: t($textColor1);
+        // }
+      }
+    }
+    .mentoradminprofile-img {
+      height: 160px;
+      width: 160px;
+      padding: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      @include themed() {
+        background-color: t($goldenYellow);
+        border: 5px solid t($goldenYellow);
+      }
+      @include mdBreakPoint {
+        height: 120px !important;
+        width: 120px !important;
+      }
+      @include smBreakPoint {
+        height: 120px !important;
+        width: 120px !important;
+      }
+      @include xsBreakPoint {
+        height: 110px !important;
+        width: 110px !important;
+      }
+    }
+    .profilein-img {
+      margin: 0;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .mentor_personaldetails {
+    width: 50%;
+    height: 220px;
+    background: linear-gradient(
+      24.18deg,
+      #2b2e4a 64.51%,
+      rgba(43, 46, 74, 0) 233.27%
+    );
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
+    .mentor_personaldetails-left {
+      .mentor-value {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+        // border:1px solid red;
+        // line-height: ;
+        // @include themed() {
+        //     color: t($textColor1);
+        // }
+      }
+      .mentor-feild {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        // color: white
+        @include themed() {
+          color: t($goldenYellow);
+        }
+      }
+    }
+    .mentor_personaldetails-right {
+      img {
+        height: 145px;
+        @include mdBreakPoint {
+          display: none;
+        }
+        @include smBreakPoint {
+          display: none;
+        }
+        @include xsBreakPoint {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1114 @@
+@use "../../../../../../scss/abstract/" as *;
+.mentorprofile {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  // overflow: hidden;
+  // border: 2px solid green;
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+  @include lgBreakPoint {
+    height: 100vh;
+    padding-bottom: 5px;
+  }
+  @include mdBreakPoint {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  @include smBreakPoint {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100px;
+  }
+  @include xsBreakPoint {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 150px;
+  }
+  @include xlBreakPoint {
+    height: 100vh !important;
+    padding-bottom: 10px;
+    // padding-bottom: 30px ;
+  }
+}
+.modal-content-mentor {
+  // min-height: 450px !important;
+  min-width: 650px !important;
+  color: #2b2e4a !important ;
+  // border:1px solid red;
+  @include themed() {
+    background-color: t($modal-background) !important;
+    color: t($feedsfont) !important;
+  }
+  // change xs kalai
+  @include xsBreakPoint {
+    // border: 2px solid red;
+    width: 400px;
+  }
+  .otp .otp-content .resend-otpsetting .otp-countersetting {
+    @include themed() {
+      color: t($feedsfont) !important;
+    }
+  }
+  .modal-header {
+    h5 {
+      @include themed() {
+        color: t($titlefont) !important;
+      }
+    }
+    button {
+      @include themed() {
+        filter: invert(t($invert)) !important;
+      }
+    }
+  }
+}
+.mentorprofile-align {
+  height: 85%;
+  width: 100%;
+  @include smBreakPoint {
+    width: 90%;
+    // border: 2px solid green;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+}
+.mentorprofile-left {
+  height: 100vh;
+  width: 55%;
+  // min-height:610px;
+  padding-top: 70px;
+  padding-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  // border: 2px solid green;
+  // overflow:scroll;
+  @include xsBreakPoint {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding-top: 100px;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 14vh;
+  }
+  @include smBreakPoint {
+    width: 70%;
+    // border: 2px solid red;
+    padding-left: 0;
+    margin: 0 auto;
+    padding-top: 15vh;
+  }
+  @include mdBreakPoint {
+    margin: 0 auto;
+    width: 85% !important;
+    overflow: none;
+  }
+  // @include xlBreakPoint {
+  //   height: auto;
+  // }
+}
+.mentorprofile-left-card {
+  height: 89% !important;
+  min-height: 490px;
+  margin-bottom: 8px;
+  // border: 2px solid blue;
+  @include hlBreakPoint {
+    margin-top: 40px;
+    // border: 2px solid blue;
+  }
+  @include tabBreakPoint {
+    margin-top: 100px;
+  }
+ 
+  @include hlBreakPoint {
+    height: 90% !important;
+  }
+  @include mdBreakPoint {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    margin: 0 auto;
+    width: 100% !important;
+    // widht:100%;
+    // border: 2px solid blue;
+    margin-top: 18vh;
+  }
+  @include xsBreakPoint {
+    // border: 2px solid blue;
+    width: 100%;
+  }
+  @include smBreakPoint {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  @include themed() {
+    background: t($mentorprofile);
+    color: t($feedsfont) !important;
+  }
+  .field {
+    width: 150px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 60px;
+    // border:1px solid red;
+    @include mdBreakPoint {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 50px;
+    }
+    @include xsBreakPoint {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 50px;
+      width: 95px !important;
+      // border:1px solid red;
+    }
+    @include themed() {
+      color: t($titlefont) !important;
+    }
+  }
+  border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+  @include xxxlBreakPoint {
+    width: 750px;
+    height: 800px;
+    // border:2px solid green;
+  }
+  @include xxlBreakPoint {
+    width: 650px;
+    height: 800px;
+  }
+  @include xlBreakPoint {
+    width: 530px;
+    height: 800px;
+  }
+  @include lgBreakPoint {
+    width: 420px;
+    height: 800px;
+  }
+  @include mdBreakPoint {
+    width: 320px;
+    height: 800px;
+  }
+  @include smBreakPoint {
+    width: 450px;
+    height: 800px;
+  }
+  @include xsBreakPoint {
+    width: 90%;
+    height: 800px;
+  }
+  .mentor-profile-details {
+    font-family: "Open Sans" !important;
+    // font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+}
+.mentorprofile-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  // margin-top: 110px;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  // padding: 20px;
+  @include smBreakPoint {
+    width: 100%;
+    // border: 2px solid red;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    // border: 2px solid red;
+  }
+  @include xlBreakPoint {
+    height: auto;
+    // border: 3px solid blue !important;
+  }
+  @include mdBreakPoint {
+    // border: 2px solid blue;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 13vw;
+  }
+}
+.mentorprofile-card-details {
+  //   @include themed() {
+  //     background: t($feedsbackground);
+  //     color:t($feedsfont) !important;
+  // }
+  // background: #323232;
+  @include themed() {
+    background: t($mentorprofile);
+    color: t($feedsfont) !important;
+  }
+}
+.mentorprofile-card {
+  height: 260px;
+  width: 100%;
+  @include hlBreakPoint {
+    height: 160px;
+    // border:1px solid red;
+  }
+  @include themed() {
+    background: t($profilebox);
+    color: t($feedsfont) !important;
+  }
+  .profile-img {
+    height: 200px;
+    width: 200px;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    @include themed() {
+      background-color: t($goldenYellow);
+      border: 5px solid t($goldenYellow);
+    }
+    @include hlBreakPoint {
+      height: 140px !important;
+      width: 140px !important;
+    }
+    @include lgBreakPoint {
+      height: 160px !important;
+      width: 160px !important;
+    }
+    @include mdBreakPoint {
+      height: 140px !important;
+      object-fit: contain !important;
+      // border: 10px solid yellow;
+      width: 140px !important;
+    }
+    @include smBreakPoint {
+      height: 120px !important;
+      width: 120px !important;
+    }
+    @include xsBreakPoint {
+      height: 110px !important;
+      width: 110px !important;
+    }
+    // @include xlBreakPoint {
+    //   width: 120px;
+    //   height: 120px;
+    //   // border: 3px solid red;
+    // }
+  }
+  .profilein-img {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    @include xsBreakPoint {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      border-radius: 50% !important;
+      // border: 2px solid blue;
+    }
+  }
+  .profile-name {
+    height: 100% !important;
+    // border: 1px solid honeydew;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    span {
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      color: #e3e4eb;
+      // @include themed() {
+      //   color: t($textColor1);
+      // }
+    }
+    p {
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      @include themed() {
+        color: t($goldenYellow);
+      }
+    }
+  }
+}
+.mentorprofile-middle {
+  width: 80%;
+  // border:2px solid red;
+  margin-left: 18%;
+  @include smBreakPoint {
+    width: 100%;
+    margin-left: 5%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.mentor-appointment {
+  width: 100% !important;
+  height: 105px;
+  @include hlBreakPoint {
+    height: 90px;
+  }
+  // border:1px solid red;
+  // background: linear-gradient(165.66deg, #E9EBFC 59.08%, rgba(254, 254, 254, 0) 207.46%);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 16px;
+  // background: hsl(257,32.0%,96.9%);
+  @include themed() {
+    background-color: t($mentorprofilecard);
+    filter: t($drop-shadow);
+  }
+}
+.modal-body {
+  // kalai chnages lg
+  .mentorstudent-appointment {
+    width: 100% !important;
+    // border: 2px solid orange;
+  }
+}
+.mentorstudent-appointment {
+  // width:120%;
+  // border:2px solid blue;
+  cursor: pointer;
+  // height:100px !important;
+  padding: 2px;
+  text-decoration: none;
+  @include xxxlBreakPoint {
+    width: 550px;
+  }
+  @include xxlBreakPoint {
+    width: 500px;
+  }
+  @include xlBreakPoint {
+    width: 90%;
+  }
+  @include mdBreakPoint {
+    width: 90% !important;
+  }
+  @include lgBreakPoint {
+    width: 97%;
+    // border:2px solid blue;
+  }
+  // @include xsBreakPoint {
+  //   width: 97%;
+  // }
+  @include smBreakPoint {
+    width: 90%;
+  }
+  .mentorstudent-Student {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    // border: 2px solid blue;
+    @include themed() {
+      color: t($purpletowhite) !important;
+    }
+    @include xsBreakPoint {
+      // border: 2px solid;
+    }
+  }
+}
+.mentors-student-appointement-md {
+  width: 280px;
+  height: 250px;
+  border-radius: 16px;
+  // border: 2px solid red;
+  // @include themed() {
+  //     background:t($componentGradient1);
+  //     filter:t($drop-shadow);
+  //   }
+  .mentorstudent-details {
+    // @include xsBreakPoint {
+    //   color: white !important;
+    // }
+    color: white !important;
+  }
+  .mentorcompleted-Student {
+    color: white !important;
+  }
+  .mentorcompleted-CollegeName {
+    color: white !important;
+  }
+  .mentorcompleted-Batch {
+    color: white !important;
+  }
+  .mentorstudent-date {
+    color: white !important;
+  }
+  @include themed() {
+    background-color: t($mentor-profilecard2);
+    filter: t($drop-shadow);
+  }
+}
+.mentors-student-completed-md {
+  width: 280px;
+  height: 250px;
+  border-radius: 16px;
+  @include themed() {
+    background: t($primaryGradient);
+    filter: t($drop-shadow);
+  }
+  .mentorstudent-details {
+    // @include xsBreakPoint {
+    //   color: white !important;
+    // }
+    color: white !important;
+  }
+  .mentorcompleted-Student {
+    color: white !important;
+  }
+  .mentorcompleted-CollegeName {
+    color: white !important;
+  }
+  .mentorcompleted-Batch {
+    color: white !important;
+  }
+  .mentorstudent-date {
+    color: white !important;
+  }
+}
+.mentorstudent-profile {
+  width: 70%;
+  // border:2px solid blue;
+}
+// kalai chnages
+.mentorstudent-profiledetails {
+  width: 100%;
+  // border:2px solid red;
+  // height: 100%;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // gap:10px;
+  // kalai changes
+  @include xsBreakPoint {
+    // border: 2px solid blue;
+    padding: 0 !important;
+  }
+}
+.profile-img-reg {
+  height: 72px;
+  width: 72px;
+  // padding:0;
+  // margin-top:8%;
+  border-radius: 50%;
+  overflow: hidden;
+  @include themed() {
+    background-color: t($goldenYellow);
+    border: 3px solid t($goldenYellow);
+  }
+}
+// kalai changes xs
+.mentorstudent-profileimg {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  // margin: 0;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  // kalai changes xs
+  @include themed() {
+    border: 3px solid t($goldenYellow);
+    // @include xsBreakPoint {
+    //   width: 60px !important;
+    //   height: 60px !important;
+    //   border-radius: 50%;
+    // }
+  }
+  @include xsBreakPoint {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+  }
+}
+.profile-imgin {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.mentorstudent-CollegeName {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+.mentorstudent-Batch {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+.mentorstudent-stagecircle {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  // background: #2B2E4A;
+  // border: 5px solid green;
+  // box-sizing: border-box;
+  // box-shadow: 4px 2px 9px 5px rgba(0, 0, 0, 0.2);
+  @include xlBreakPoint {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+  }
+  @include smBreakPoint {
+    width: 70px;
+    height: 70px;
+  }
+  @include xsBreakPoint {
+    width: 70px;
+    height: 70px;
+  }
+  @include themed() {
+    background: t($stagecircle);
+    border: 5px solid t($goldenYellow);
+    box-shadow: t($stagecircleshadow);
+    @include xlBreakPoint {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  h5 {
+    color: white !important;
+    @include xlBreakPoint {
+      white-space: nowrap;
+      margin-top: 4px;
+      margin-left: 5px;
+    }
+  }
+}
+.mentorstudent-stagenumber {
+  // font-weight: normal;
+  font-size: 12px;
+  // line-height: 16px;
+  margin-left: 13px;
+  margin-top: 26px;
+  // left:50%;
+  // border: 10px solid blue;
+  color: #ffffff;
+  // @include themed() {
+  //   color: t($textColor1);
+  // }
+}
+.mentor-appointmenttime {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  // color: #000000;
+  // border: 3px solid orange;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+// chnahge
+.Students-tittle {
+  // margin-top: 40px;
+  // width:120%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  // border: 1px solid red;
+  border-radius: 10px 10px 0px 0px;
+  @include xsBreakPoint {
+    font-size: 15px !important;
+  }
+  @include themed() {
+    background: t($modalheader);
+  }
+  h3 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    @include xsBreakPoint {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include themed() {
+      color: t($titlefont) !important;
+    }
+  }
+  h6 {
+    cursor: pointer;
+    @include xsBreakPoint {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.card-adjustment {
+  // border: 1px solid red;
+  height: 85%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  @include hlBreakPoint {
+    height: 80%;
+    gap: 5px;
+  }
+  @include xsBreakPoint {
+    display: none;
+  }
+}
+.mentorstudent-Completed {
+  width: 100%;
+  height: 105px;
+  @include hlBreakPoint {
+    height: 90px;
+  }
+  position: relative;
+  // border: 2px solid red;
+  // background: linear-gradient(24.18deg, #2B2E4A 64.51%, rgba(43, 46, 74, 0) 233.27%);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 16px;
+  @include themed() {
+    background-color: t($mentor-profilecard2);
+    filter: t($drop-shadow);
+  }
+  .mentorstudent-details {
+    // @include xsBreakPoint {
+    //   color: white !important;
+    // }
+    color: white !important;
+  }
+  .mentorcompleted-Student {
+    color: white !important;
+  }
+  .mentorcompleted-CollegeName {
+    color: white !important;
+  }
+  .mentorcompleted-Batch {
+    color: white !important;
+  }
+  .mentorstudent-date {
+    color: white !important;
+  }
+}
+.review_pending {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  p {
+    color: #ff7a00 !important;
+    font-size: 12px !important;
+  }
+}
+.mentorcompleted-Student {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  // @include themed() {
+  //   color: t($textColor1);
+  // }
+  // kalai changes xs
+  @include xsBreakPoint {
+    font-size: 12px;
+    width: 130px;
+    // border: 2px solid blue;
+    overflow: hidden;
+  }
+}
+.mentorcompleted-CollegeName {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  // @include themed() {
+  //   color: t($textColor1);
+  // }
+}
+.mentorcompleted-Batch {
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  // @include themed() {
+  //   color: t($textColor1);
+  // }
+}
+// chnage kalai sm
+.mentorstudentCompleted-profile {
+  width: 65%;
+  // border:2px solid red;
+  overflow: hidden;
+  // kalai chnagesa
+  @include xsBreakPoint {
+    width: 70%;
+  }
+}
+.mentorstudent-date {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+  // border: 2px solid blue;
+  // @include themed() {
+  //   color: t($textColor1);
+  // }
+  // kalai chnages xs
+  @include xsBreakPoint {
+    // border: 2px solid red;
+    width: 100%;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+// .mentorprofileright-left{
+//     // border:2px solid red;
+// }
+.mentorprofile-right-upper {
+  width: 65% !important;
+  height: 48% !important;
+  min-height: 280px;
+  @include tabBreakPoint {
+    height: 80% !important;
+  }
+  @include themed() {
+    background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  @include xsBreakPoint {
+    width: 90% !important;
+    // border:2px solid yellow;
+  }
+  // border:2px solid yellow;
+  @include smBreakPoint {
+    width: 80% !important;
+    margin: 0 auto !important;
+  }
+  @include xlBreakPoint {
+    width: 90% !important;
+    height: 50% !important;
+  }
+  @include xxlBreakPoint {
+    width: 80% !important;
+  }
+  @include lgBreakPoint {
+    width: 90% !important;
+  }
+  @include mdBreakPoint {
+    width: 88% !important;
+    height: 88% !important;
+    padding-bottom: 13px;
+    margin: 0 auto;
+  }
+}
+.view-all {
+  margin-top: 240%;
+  // border:2px solid red;
+  margin-left: 10%;
+  width: 80px;
+  cursor: pointer;
+}
+.studentopp-header {
+  width: 100%;
+  height: 15%;
+  // border:2px solid red;
+  .studentopp-header-left {
+    width: 50%;
+  }
+  .studentopp-header-right {
+    width: 50%;
+  }
+}
+.studentopp-middle {
+  width: 100%;
+  height: 25%;
+  // border:2px solid blue;
+}
+.studentopp-middle-card-left {
+  width: 50%;
+  height: 100%;
+  // border: 2px solid yellow;
+  padding-right: 1%;
+  .profile-img {
+    margin-top: 0%;
+    @include mdBreakPoint {
+      margin-top: 3%;
+      width: 130px;
+      height: 130px;
+    }
+    @include smBreakPoint {
+      margin-top: 5%;
+      width: 100px;
+      height: 100px;
+    }
+    @include xsBreakPoint {
+      margin-top: 5%;
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .profile-name {
+    padding-top: 0%;
+    @include mdBreakPoint {
+      font-size: 18px;
+    }
+    @include smBreakPoint {
+      font-size: 17px;
+    }
+    @include xsBreakPoint {
+      font-size: 15px;
+    }
+  }
+  .mentorstudent-stagenumber {
+    @include smBreakPoint {
+      margin-top: 40%;
+      margin-left: 20%;
+      font-size: 11px;
+    }
+    @include xsBreakPoint {
+      margin-top: 40%;
+      margin-left: 20%;
+      font-size: 11px;
+    }
+  }
+  @include lgBreakPoint {
+    width: 55%;
+  }
+  @include mdBreakPoint {
+    width: 60%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    padding-right: 20%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    // padding: 0 auto;
+    //  display:flex;
+    //  align-items: center;
+    //  justify-content:center;
+  }
+}
+.studentopp-middle-card-right {
+  width: 50%;
+  height: 100%;
+  // border:2px solid blue;
+  overflow: hidden;
+  @include lgBreakPoint {
+    width: 45%;
+  }
+  @include mdBreakPoint {
+    width: 40%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.studentopp-fotter {
+  width: 100%;
+  height: 56%;
+  // border: 2px solid blue;
+}
+// .studentopp-middle-card{
+//     // border:2px solid blue;
+// }
+.studentopp-fotter-left {
+  width: 50%;
+  height: 100%;
+  // border:2px solid yellow;
+  @include lgBreakPoint {
+    width: 55%;
+  }
+  @include mdBreakPoint {
+    width: 55%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+}
+.studentopp-graph {
+  width: 100%;
+  // border:2px solid blue;
+  padding-left: 13%;
+  @include lgBreakPoint {
+    padding-left: 10%;
+  }
+  @include mdBreakPoint {
+    padding-left: 11%;
+    // border:2px solid green;
+  }
+  @include smBreakPoint {
+    padding-left: 5%;
+  }
+  @include xsBreakPoint {
+    padding-left: 0%;
+  }
+}
+.studentopp-feedback {
+  width: 50%;
+  padding-bottom: 5%;
+  //  border:2px solid blue;
+  @include lgBreakPoint {
+    width: 45%;
+  }
+  @include mdBreakPoint {
+    width: 45%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    // border:2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.feedback-card {
+  width: 65%;
+  height: 380px;
+  // background: linear-gradient(165.66deg, #E9EBFC 59.08%, rgba(254, 254, 254, 0) 207.46%);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 16px;
+  // border:2px solid blue;
+  overflow: hidden;
+  @include themed() {
+    background: t($componentGradient1);
+    filter: t($drop-shadow);
+  }
+  @include mdBreakPoint {
+    width: 80%;
+  }
+}
+.feedbackcard-ques {
+  // padding-top: 30%;
+  font-weight: 600;
+  font-size: 18px;
+}
+.area-card {
+  height: 100%;
+}
+.input-answer {
+  // border:0.25px solid $primaryColor;
+  height: 80px;
+  @include themed() {
+    border: 0.25px solid t($primaryColor);
+  }
+}
+.input-answer:focus {
+  border: none;
+  outline: none;
+}
+.btn-ans-edit {
+  .btn-blue {
+    width: 5em;
+  }
+  .tick-icon {
+    font-size: 35px;
+    // color:$secondaryColor;
+    @include themed() {
+      color: t($primaryColor);
+    }
+  }
+}
+.graph-studentopp {
+  // margin-top:15%;
+  path {
+    stroke-width: 2;
+  }
+  line {
+    stroke: transparent;
+  }
+  line:first-child {
+    stroke: black;
+  }
+}
+.mentorprofile-align {
+  .profile-personal-details {
+    font-size: 20px;
+  }
+}
+.mentorprofile-right {
+  .mentorstudent-profileimg {
+    // overflow: hidden;
+    object-fit: contain;
+    // border: none;
+    // border: 6px solid orange;
+  }
+}
+.split-students {
+  width: 100%;
+  // background-color: red;
+  height: 100%;
+  @include hlBreakPoint {
+    // height: 400px !important;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include xlBreakPoint {
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 25vh !important;
+    margin-bottom: 15vh;
+  }
+}
+.carda-djustment {
+  border: 2px solid red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}

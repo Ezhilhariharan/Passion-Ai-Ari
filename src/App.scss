@@ -1,0 +1,14 @@
+@use "scss" as *;
+.transistion *,
+.transistion *:before,
+.transistion *:after {
+  transition: all 500ms !important;
+  transition-delay: 0 !important;
+}
+.chat-content {
+  display: block;
+  border: 1px solid red !important;
+  // @include xsBreakPoint {
+  //   display: none;
+  // }
+}

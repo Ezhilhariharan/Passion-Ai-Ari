@@ -1,0 +1,18 @@
+export const Department_text = {
+  Datanotfound: "Data not found",
+  StudentList: "Student List",
+  Deleted: "Deleted",
+  departmentList: "Department List",
+  Departmentname: "Department name",
+  Noofstudent: "No. of student",
+  Admin_name: "Admin name",
+  Status: "Status",
+  Action: "Action",
+  Create_Department: "Create Department",
+  Email: "Email",
+  Password: "Password",
+  save: "save",
+  Edit_Department: "Edit Department",
+  update: "update",
+  ok: "ok",
+};

@@ -1,0 +1,659 @@
+@use "../../../../../../scss/abstract/" as *;
+.filterfeed {
+  position: absolute;
+  // border:1px solid red;
+  margin-top: 145px;
+  margin-left: 37.5%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 130px;
+  height: 90px;
+  text-align: center;
+  background: hsl(257, 32%, 96.9%);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: "Open Sans" !important;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+.flag-icon {
+  font-size: 20px;
+  margin-top: 35px;
+  cursor: pointer;
+  @include themed() {
+    color: t($textColor1);
+  }
+}
+.filterfeed-res {
+  position: absolute;
+  // border:1px solid red;
+  margin-top: 295px;
+  margin-left: 50%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 130px;
+  height: 90px;
+  text-align: center;
+  background: hsl(257, 32%, 96.9%);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-family: "Open Sans" !important;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+.mentorhome {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  // @include hlBreakPoint {
+  //     height: auto !important;
+  //     // border: 2px solid blue;
+  //     // background:green !important;
+  // }
+  // @include xsBreakPoint {
+  //     height: auto !important;
+  // }
+  @include mdBreakPoint {
+    // height: 820px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  @include xlBreakPoint {
+    // height: 100vh;
+  }
+  @include xxlBreakPoint {
+    // height: 100vh !important;
+  }
+  @include lgBreakPoint {
+    // border: 2px solid blue;
+    // height: 100vh;
+    padding-bottom: 10px;
+  }
+  .webinar-card {
+    width: 70%;
+    // height: 360px;
+    min-height: 350px;
+    height: 45%;
+    @include smBreakPoint {
+      margin-bottom: 60px;
+    }
+    @include xsBreakPoint {
+      margin-bottom: 60px;
+    }
+    .carousel {
+      // border: 5px solid orange;
+      background: transparent;
+      min-height: 300px;
+    }
+    @include lgBreakPoint {
+      width: 95% !important;
+      // height: 10% !important;
+      // border: 5px solid orange;
+    }
+    @include xxlBreakPoint {
+      width: 90% !important;
+      height: 40% !important;
+    }
+    @include xlBreakPoint {
+      width: 90%;
+      height: auto !important;
+      // padding-bottom: 40px;
+    }
+    @include mdBreakPoint {
+      width: 98%;
+      height: 450px !important;
+      margin-bottom: 2vh !important;
+    }
+  }
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+  .mentorhome-layout {
+    width: 100%;
+    height: 100%;
+    // border: 5px solid green;
+    // background-color:red;
+    @include xsBreakPoint {
+      height: 85%;
+    }
+    @include smBreakPoint {
+      height: 85%;
+    }
+    @include mdBreakPoint {
+      width: 100%;
+      height: 100%;
+    }
+    @include xlBreakPoint {
+      height: 100% !important;
+    }
+    @include xxlBreakPoint {
+      height: 100vh !important;
+    }
+    .mentor-feed {
+      // border:1px solid green;
+      width: 53%;
+      // height: 100vh;
+      height: 100%;
+      overflow: hidden;
+      padding-left: 15%;
+      padding-top: 17px;
+      @include hlBreakPoint {
+        padding-top: 0px;
+      }
+      @include xsBreakPoint {
+        // height: 90vh;
+      }
+      @include xxlBreakPoint {
+        width: 100%;
+        padding-left: 7%;
+      }
+      @include xlBreakPoint {
+        padding-left: 7%;
+        // width: 100% !important;
+      }
+      @include lgBreakPoint {
+        // border:1px solid red;
+        padding-left: 7%;
+        width: 80% !important;
+        // border:1px solid red;
+      }
+      @include mdBreakPoint {
+        padding-left: 5%;
+      }
+      .area {
+        height: 82%;
+        overflow: scroll;
+        // scrollbar-width: none;
+        // border:1px solid green;
+        @media (max-height: 730px) {
+          height: 75% !important;
+          // border:1px solid green;
+        }
+        // @include hlBreakPoint {
+        //     height: 550px !important;
+        //     border:1px solid red;
+        // }
+        @include mdBreakPoint {
+          height: 80%;
+        }
+        @include xsBreakPoint {
+          // width: 92%;
+          // height: 50%;
+        }
+        @include smBreakPoint {
+          width: 70%;
+          // border:1px solid red;
+          height: 70vh !important;
+          // border:1px solid red;
+        }
+      }
+      @include xsBreakPoint {
+        padding-left: 0%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      @include smBreakPoint {
+        padding-left: 0%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      p {
+        margin-top: 40%;
+        margin-left: 40%;
+      }
+      .studenthomeFeed-name {
+        margin-top: 65px;
+        height: 60px;
+        // border: 2px solid orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+          font-size: 25px;
+          cursor: pointer;
+        }
+        .toggle-feed {
+          width: 304px;
+          @include mdBreakPoint {
+            width: 70%;
+          }
+        }
+        @include xlBreakPoint {
+          margin-top: 75px;
+          // border:1px solid red;
+        }
+        @include lgBreakPoint {
+          margin-top: 75px;
+          // border:1px solid red;
+        }
+        @include mdBreakPoint {
+          margin-top: 85px;
+          width: 100%;
+          //   border:1px solid red;
+        }
+        @include smBreakPoint {
+          margin-top: 3%;
+        }
+        @include xsBreakPoint {
+          margin-top: 3%;
+        }
+      }
+    }
+    .mentorhome-right {
+      width: 45%;
+      height: 100%;
+      padding-top: 80px;
+      // border: 5px solid black;
+      display: flex;
+      flex-direction: column;
+      @include themed() {
+        color: t($textColor2);
+      }
+      @include hlBreakPoint {
+        height: auto !important;
+        // border: 1px solid black;
+        overflow: scroll;
+      }
+      @include lgBreakPoint {
+        width: 70%;
+      }
+      @include xsBreakPoint {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        // align-items: center;
+        flex-direction: column;
+        // justify-content: center;
+      }
+      @include xlBreakPoint {
+        height: 100% !important;
+        overflow: hidden;
+        overflow-y: scroll;
+      }
+      // @include hlBreakPoint {
+      //     padding-top:70px;
+      // }
+      @include xxlBreakPoint {
+        width: 100%;
+        height: auto;
+      }
+      @include smBreakPoint {
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+      h1 {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        // border: 4px solid orange;
+        @include themed() {
+          color: t ($textColor1);
+        }
+      }
+      // kalia chnages
+      .mentorhome-appointment {
+        height: 36%;
+        // border: 5px solid orange;
+        min-height: 250px;
+        width: 70% !important;
+        // @include hlBreakPoint {
+        //     height: 255px;
+        // }
+        @include themed() {
+          background: t($feedsbackground);
+          color: t($feedsfont) !important;
+        }
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        @include xxlBreakPoint {
+          width: 90% !important;
+          height: 35% !important;
+        }
+        @include xlBreakPoint {
+          width: 90% !important;
+          height: auto !important;
+          padding-bottom: 20px;
+        }
+        @include lgBreakPoint {
+          width: 95% !important;
+          height: 43% !important;
+        }
+        @include mdBreakPoint {
+          width: 98% !important;
+        }
+        @include smBreakPoint {
+          width: 470px;
+        }
+        @include xsBreakPoint {
+          width: 90%;
+        }
+        .mentorstudent-stagecircle {
+          @include xsBreakPoint {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            width: 70px !important;
+            height: 70px !important;
+          }
+        }
+        .mentorstudent-stagenumber {
+          @include xsBreakPoint {
+            margin: 0px !important;
+            padding: 0px !important;
+            font-size: 12px !important;
+          }
+        }
+        .carousel {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          // border: 1px solid red;
+          min-height: 250px;
+        }
+        .mentorhome-appointment-studentname {
+          font-family: "Open Sans" !important;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          // line-height: 25px;
+          @include xsBreakPoint {
+            font-size: 14px;
+          }
+          @include themed() {
+            color: t ($textColor1);
+          }
+        }
+        .mentorhome-appointment-collegename {
+          font-family: "Open Sans" !important;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          // line-height: 20px;
+          @include xsBreakPoint {
+            font-size: 12px;
+          }
+          @include themed() {
+            color: t ($textColor1);
+          }
+        }
+        .appointment-title {
+          margin-top: 30px;
+          @include hlBreakPoint {
+            margin-top: 5px;
+          }
+          font-family: "Open Sans" !important;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          @include themed() {
+            color: t ($textColor1);
+          }
+        }
+      }
+    }
+  }
+  .mentorstudent-appointment {
+    width: 35%;
+    @include mdBreakPoint {
+      width: 45%;
+    }
+    @include smBreakPoint {
+      width: 70%;
+    }
+    @include xsBreakPoint {
+      width: 90%;
+    }
+  }
+}
+.modal-header {
+  .edit-small {
+    .fa-solid {
+      font-size: 1rem !important;
+      color: #ff7a00 !important;
+      // border:1px solid red;
+    }
+  }
+}
+.webinardate {
+  height: 14px;
+  width: 14px;
+}
+// .modal-content {
+//     min-height: 450px !important;
+//     min-width: 650px;
+//     @include themed() {
+//         background: t($modal-background) !important;
+//     }
+// }
+// .modal-header {
+//     border-bottom: 1px solid transparent;
+//     h3 {
+//         font-size: 25px;
+//         color: #2b2e4a !important;
+//     }
+// }
+.mentor-appointment-button {
+  margin-left: 12%;
+  margin-top: 5%;
+}
+.date-icon {
+  z-index: 1;
+  margin-top: 1.3%;
+  left: 24%;
+  position: absolute;
+  cursor: pointer;
+  @include themed() {
+    color: t($textColor1);
+  }
+}
+.mentor-appointment-create {
+  position: absolute;
+  right: 8%;
+}
+.mentorhome-upper-profile {
+  position: absolute;
+  right: 8%;
+}
+.input-createwebinar {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding-left: 4px;
+  border-radius: 0px;
+  font-size: 16px;
+  border-bottom: 1px solid lightgrey;
+}
+.input-createwebinar:focus {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid lightgrey;
+}
+.textarea-createwebinar {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100px;
+  height: 250px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid lightgrey !important;
+}
+.textarea-createwebinar:focus {
+  outline: none;
+  border: 1px solid lightgrey;
+}
+.webinarlabel {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  @include themed() {
+    color: t ($textColor1);
+  }
+}
+.yellow {
+  color: #ff7a00 !important;
+  font-size: 1.3rem !important;
+}
+.flatpickr-input {
+  border: 1px solid lightgrey !important;
+  border-radius: 15px !important;
+  width: 160px;
+  min-height: 30px;
+  padding-left: 4px;
+  @include xsBreakPoint {
+    width: 140px;
+  }
+}
+.flatpickr-input:focus {
+  outline: none;
+  border: 1px solid lightgrey;
+}
+.cusDatepicker {
+  // border: 1px solid green;
+  position: relative;
+  i {
+    position: absolute;
+    left: 130px;
+    top: 7px;
+    @include xsBreakPoint {
+      left: 115px;
+    }
+  }
+  .react-date-picker__wrapper{
+    border:1px solid lightgrey !important;
+    min-height: 30px;
+    border-radius: 15px;
+  }
+}
+.date-createwebinar {
+  box-sizing: border-box;
+  width: 80%;
+  min-height: 30px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  border: 1px solid lightgrey !important;
+}
+.date-createwebinar:focus {
+  outline: none;
+  border: 1px solid lightgrey;
+}
+.time-createwebinar {
+  box-sizing: border-box;
+  width: 160px;
+  min-height: 30px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  border: 1px solid lightgrey !important;
+  background-color: transparent;
+  i {
+    // @include themed() {
+    color: red;
+    // }
+  }
+}
+.time-createwebinar:focus {
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+
+// .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+//     width: 1px !important;
+//     color: transparent;
+// }
+.cusTime-picker {
+  width: 160px !important;
+  border: 1px solid lightgrey !important;
+  // border: 1px solid green !important;
+  border-radius: 15px !important;
+  height: 30px;
+  // overflow:hidden !important;
+  @include xsBreakPoint {
+    width: 140px !important;
+  }
+  .Mui-focused {
+    // border: 5px solid red !important;
+    outline: none;
+  }
+  .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-width: 0px !important;
+  }
+  .MuiOutlinedInput-root{
+    // border: 1px solid green !important;
+    border-radius: 15px !important;
+    height: 30px !important;
+    width: 40px !important;
+  }
+  .css-1bn53lx{
+    height: 30px !important;
+    padding:0px 14px 0px 0px !important;
+    border: none !important;
+    position: initial !important;
+    // border: 1px solid red !important;
+  }
+  .MuiFormControl-root{
+    border: none !important;
+  }
+  .MuiOutlinedInput-notchedOutline{
+    border: none !important;
+  }
+  .css-igs3ac{
+    border: none !important;
+  }
+  .MuiTextField-root{
+    border: none !important;
+  }
+  .css-i44wyl{
+    border: none !important;
+  }
+  .Mui-error{
+    border: none !important;
+  }
+  .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 30px !important;
+  }
+  .notranslate{
+    border: none !important;
+  }
+  .css-hdw1oc{
+    border: none !important;
+  }
+  .span {
+    padding: 2px;
+    padding-left: 5px;
+    color: black;
+    width: 100px !important;
+    // border: 1px solid lightgrey !important;
+    @include xsBreakPoint {
+      width: 85px !important;
+    }
+  }
+}

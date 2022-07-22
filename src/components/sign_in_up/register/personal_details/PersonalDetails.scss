@@ -1,0 +1,45 @@
+@use "../../../../scss/abstract/" as *;
+.heading-right {
+  color: white;
+  font-size: 2.2rem;
+  font-family: "Open Sans" !important;
+  @include mdBreakPoint {
+    font-size: 2rem;
+  }
+}
+.reg-img {
+  border: 3px solid #ff7a00 !important;
+  position: relative;
+  height: 75px;
+  width: 75px;
+  border-radius: 100%;
+  background: #ff7a00;
+  // i{
+  //   color:green !important;
+  // }
+  label {
+    height: 100% !important;
+    width: 100% !important;
+    img {
+      height: 100% !important;
+      width: 100% !important;
+      object-fit: cover !important;
+      border-radius: 50% !important;
+    }
+  }
+  .icon {
+    position: absolute;
+    top: 43px;
+    right: 0;
+    background: #2a2e4b;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    color: #ff7a00;
+    font-size: 21px;
+    cursor: pointer;
+  }
+}

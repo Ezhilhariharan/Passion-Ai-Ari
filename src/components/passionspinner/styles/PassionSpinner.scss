@@ -1,0 +1,45 @@
+.main_passion {
+  position: relative;
+  .outside_spinner {
+    // z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: imagescale 3s linear infinite;
+    }
+  }
+  .inside_spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: imagerotate 2s linear infinite;
+    }
+  }
+}
+@keyframes imagerotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(359deg);
+  }
+}
+@keyframes imagescale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

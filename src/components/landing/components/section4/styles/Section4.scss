@@ -1,0 +1,388 @@
+@use "../../../../../scss/abstract" as *;
+.section5 {
+  width: 100%;
+  height: 100vh;
+  background-color: #282b45;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  @include xsBreakPoint {
+    flex-direction: column;
+    height: auto;
+  }
+  @include smBreakPoint {
+    flex-direction: column;
+    height: auto;
+  }
+  @include mdBreakPoint {
+    flex-direction: column;
+    height: auto;
+  }
+  @include lgBreakPoint {
+    flex-direction: column;
+    height: auto;
+  }
+  @include xlBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .left_section5 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include xsBreakPoint {
+      width: 100%;
+    }
+    @include smBreakPoint {
+      width: 100%;
+    }
+    @include mdBreakPoint {
+      width: 100%;
+    }
+    @include lgBreakPoint {
+      width: 100%;
+    }
+    @include xlBreakPoint {
+      width: 100%;
+    }
+    @include xxlBreakPoint {
+      width: 100%;
+    }
+    .landing_gain_what {
+      font-size: 4em;
+      font-weight: 700;
+      color: white;
+      font-family: "Open Sans" !important;
+      padding-top: 6vh;
+      @include xsBreakPoint {
+        font-size: 1.2em;
+        line-height: 1.4;
+        padding-top: 0;
+      }
+      @include smBreakPoint {
+        font-size: 2em;
+        padding-top: 2vh;
+        text-align: center;
+      }
+      @include mdBreakPoint {
+        font-size: 2em;
+        // padding-top: 30vh;
+        text-align: center;
+      }
+      @include lgBreakPoint {
+        font-size: 2em;
+        padding-top: 2vh;
+        text-align: center;
+      }
+      @include xlBreakPoint {
+        font-size: 2.5em;
+        padding-top: 4vh;
+        text-align: center;
+      }
+      @include xxlBreakPoint {
+        font-size: 3em;
+        padding-top: 4vh;
+      }
+    }
+    .institute {
+      color: $orange_text;
+      font-size: 1em;
+      font-family: "Open Sans" !important;
+    }
+    .split_section5 {
+      width: 80%;
+      padding-top: 10vh;
+      @include xsBreakPoint {
+        width: 100%;
+        padding-top: 2vh;
+      }
+      @include smBreakPoint {
+        width: 100%;
+        padding-top: 2vh;
+      }
+      @include mdBreakPoint {
+        width: 100%;
+        padding-top: 1vh;
+      }
+      @include lgBreakPoint {
+        width: 100%;
+        padding-top: 1vh;
+      }
+      @include xlBreakPoint {
+        width: 100%;
+        padding-top: 5vh;
+      }
+      @include xxlBreakPoint {
+        width: 100%;
+        padding-top: 5vh;
+      }
+      .cards {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        @include xsBreakPoint {
+          height: 60px;
+        }
+        .inside_cards {
+          display: flex;
+          gap: 20px;
+          .left_card {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include xsBreakPoint {
+              width: 35%;
+              display: flex;
+              align-items: end;
+              justify-content: end;
+            }
+            @include smBreakPoint {
+              width: 80%;
+              display: flex;
+              align-items: end;
+              justify-content: end;
+            }
+            @include lgBreakPoint {
+              width: 60%;
+              display: flex;
+              align-items: end;
+              justify-content: end;
+            }
+            @include xlBreakPoint {
+              width: 80%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            @include xxlBreakPoint {
+              width: 80%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .img-leftcard {
+              width: 50%;
+              @include xsBreakPoint {
+                width: 35%;
+              }
+              @include smBreakPoint {
+                width: 40%;
+              }
+              @include mdBreakPoint {
+                width: 40%;
+              }
+              @include lgBreakPoint {
+                width: 28%;
+              }
+              @include xlBreakPoint {
+                width: 45%;
+              }
+              @include xxlBreakPoint {
+                width: 35%;
+              }
+            }
+            .boost_image {
+              width: 62%;
+              margin-right: -10px !important;
+              @include xsBreakPoint {
+                width: 38% !important;
+                display: flex;
+                align-items: end;
+                justify-content: end;
+                margin-right: -8px !important;
+              }
+              @include smBreakPoint {
+                width: 46% !important;
+                display: flex;
+                align-items: end;
+                justify-content: end;
+                margin-right: -8px !important;
+              }
+              @include mdBreakPoint {
+                width: 46% !important;
+                display: flex;
+                align-items: end;
+                justify-content: end;
+                margin-right: -10px !important;
+              }
+              @include lgBreakPoint {
+                width: 35% !important;
+                display: flex;
+                align-items: end;
+                justify-content: end;
+                margin-right: -10px !important;
+              }
+              @include xlBreakPoint {
+                width: 54% !important;
+                margin-right: -15px !important;
+              }
+              @include xxlBreakPoint {
+                width: 40% !important;
+                margin-right: -15px !important;
+              }
+            }
+          }
+          .right_card {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include xsBreakPoint {
+              width: 60%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            @include smBreakPoint {
+              width: 70%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            @include mdBreakPoint {
+              width: 70%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            @include lgBreakPoint {
+              width: 70%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            @include xlBreakPoint {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            @include xxlBreakPoint {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+            }
+            .boost {
+              width: 100%;
+              font-size: 1.2em;
+              font-weight: 600;
+              color: white;
+              font-family: "Open Sans" !important;
+              @include xsBreakPoint {
+                font-size: 0.89em;
+                width: 90%;
+              }
+              @include smBreakPoint {
+                font-size: 1em;
+                width: 90%;
+              }
+              @include mdBreakPoint {
+                font-size: 1.2em;
+                width: 90%;
+              }
+              @include lgBreakPoint {
+                font-size: 1.3em;
+                width: 100%;
+                line-height: 1.4;
+              }
+              @include xlBreakPoint {
+                font-size: 1.2em;
+                width: 100%;
+                line-height: 1.4;
+              }
+              @include xxlBreakPoint {
+                font-size: 1.3em;
+                width: 100%;
+                line-height: 1.4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .right_section5 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 5vh;
+    @include xsBreakPoint {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include smBreakPoint {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include mdBreakPoint {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include lgBreakPoint {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include xlBreakPoint {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include xxlBreakPoint {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box1 {
+      position: relative;
+      .image1 {
+          .landing_systems {
+              width: 100%;
+              height: 100%;
+              position: relative;
+          }
+      }
+      .videos {
+          position: absolute;
+          top: 32.8%;
+          left: 11.8%;
+          z-index: 10000;
+          height: 76.2%;
+          .videos_passions {
+              height: 80% !important;
+              width: 89% !important;
+              border-radius: 15px;
+              position: relative;
+              overflow: hidden;
+          }
+      }
+  } 
+  }
+}

@@ -1,0 +1,565 @@
+@use "../../../scss/abstract/" as *;
+@import "https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css";
+.cursor-pointer {
+  cursor: pointer !important;
+}
+// .block-ui {
+//   background: black !important;
+//   opacity: 0.1 !important;
+// }
+.spinner-parent {
+  // width:100vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10000000 !important;
+  //  opacity:0.5;
+}
+.adminLayout {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow-x: hidden;
+  display: flex;
+  position: relative;
+  // opacity:0.8 !important;
+  @include themed() {
+    background: t($secondaryColor);
+  }
+}
+.adminLayout-loading {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  z-index: 1010;
+  background: black !important;
+  opacity: 0.1 !important;
+  cursor: wait !important;
+  @include themed() {
+    background: t($secondaryColor);
+  }
+}
+.t-wrapper {
+  @include hlBreakPoint {
+    margin-top: 80px;
+  }
+}
+.th-wrapper{
+  @include hlBreakPoint {
+    margin-top: 80px;
+  }
+}
+.disclaimer {
+  // border:1px solid red;
+  height: 50px;
+  width: 200px !important;
+}
+.p-datatable,
+.p-datatable-scrollable {
+  .p-datatable-scrollable-header {
+    background: transparent !important;
+    span.p-column-title {
+      @include themed() {
+        color: t($titlefont) !important;
+      }
+    }
+  }
+  table {
+    border-collapse: separate !important;
+    border-spacing: 0 15px !important;
+    thead,
+    .p-datatable-thead {
+      > tr {
+        > th {
+          background: transparent !important;
+          font-size: 25px !important;
+          font-family: "Open Sans" !important;
+          
+          // text-align: center !important;
+          // align-items: center;
+          @include themed() {
+            border-bottom: 1px solid t($profileheaderborder) !important;
+          }
+        }
+      }
+    }
+    i {
+      @include themed() {
+        color: t($titlefont) !important;
+      }
+    }
+    tbody,
+    .p-datatable-tbody {
+      // padding: 0px 10px;      
+      > tr {
+        border-radius: 16px !important;
+        margin-bottom: 20px;
+        min-height: 50px !important;
+        // border:1px solid red;        
+        overflow: hidden;
+        // padding: 0 10px !important;
+        padding-bottom: 0px !important;
+        filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.25));
+        @include themed() {
+          background: t($feedsbackground);
+          color: t($titlefont) !important;
+        }      
+        > td {      
+          // border:1px solid green;
+          overflow-x: scroll;
+          position: relative;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: flex-start !important;
+          padding: 3px 10px !important;
+          word-break: break-all;        
+          .mx-auto {
+            margin: 0 !important;
+          }
+        }
+        > td:first-child,
+        > td:focus:first-child,
+        > td:active:first-child {
+          border-top-left-radius: 16px !important;
+          border-bottom-left-radius: 16px !important;
+        }
+        > td:last-child,
+        > td:focus:first-child,
+        > td:active:first-child {
+          border-top-right-radius: 16px !important;
+          border-bottom-right-radius: 16px !important;
+        }
+        > td::after {
+          content: "";
+          height: 100% !important;
+          width: 1px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          @include themed() {
+            background: t($tableborder-right) !important;
+          }
+        }
+        > td:last-child::after {
+          width: 0;
+        }
+      }
+    }
+  }
+}
+.table-img {
+  height: 65px !important;
+  width: 65px !important;
+  min-width: 65px !important;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+  // border:1px solid red ;
+}
+.loading-icon-admin {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 33%;
+  // border:1px solid red;
+}
+.container {
+  .btn-yellow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 200px !important;
+    height: 33px !important;
+    @include noSelectionAllowed;
+  }
+}
+.form-wrapper {
+  border-radius: 16px;
+  padding: 30px;
+  @include themed() {
+    box-shadow: t($shadow);
+  }
+  width: 95%;
+  height: 650px;
+  // background: #ffffff;
+}
+.form-wrapper-3 {
+  border-radius: 16px;
+  padding: 30px;
+  // @include themed() {
+  //   box-shadow: t($shadow);
+  // }
+  width: 95%;
+  height: 650px;
+  @include themed() {
+    background: t($feedsbackground) !important;
+    // color: t($titlefont) !important;
+  }
+}
+.profile-circle {
+  height: 200px;
+  width: 200px;
+  // padding: 20px;
+  border-radius: 50%;
+  position: relative;
+  transition: background 400ms ease-in-out;
+  @include themed() {
+    background: t($primaryColor);
+  }
+  img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.profile-circle:hover {
+  @include themed() {
+    background: t($goldenYellow);
+  }
+}
+header {
+  width: 88px;
+  height: 100%;
+  position: relative;
+  @include xsBreakPoint {
+    width: 0;
+  }
+  @include smBreakPoint {
+    width: 0;
+  }
+  .studentList {
+    background-color: yellow;
+    .table-List {
+      border: 1px solid red !important;
+    }
+  }
+  .table-wrapper-student {
+    // border:1px solid red;
+    // height: 'calc(100vh - 100px)';
+    height: 600px;
+    thead,
+    .p-datatable-thead {
+      > tr {
+        > th {
+          background: transparent !important;
+          font-size: 20px;
+          font-family: "Open Sans" !important;
+          @include themed() {
+            color: t($titlefont) !important;
+          }
+        }
+      }
+    }
+    .p-datatable-tbody {
+      > tr {
+        @include themed() {
+          background: t($calenderrange) !important;
+          color: t($titlefont) !important;
+        }
+      }
+    }
+  }
+  .sideNav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 88px;
+    height: 100%;
+    min-height: 400px;
+    // border-radius: 5px 50px 50px 5px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    @include themed() {
+      background: t($primaryColor);
+      box-shadow: t($shadow);
+    }
+    @include xsBreakPoint {
+      top: unset;
+      bottom: 0;
+      transform: none;
+      height: 55px;
+      min-height: 55px;
+      width: 100%;
+      border-radius: 50px 50px 5px 5px;
+      flex-direction: row;
+    }
+    @include smBreakPoint {
+      top: unset;
+      bottom: 0;
+      transform: none;
+      height: 55px;
+      min-height: 55px;
+      width: 100%;
+      border-radius: 50px 50px 5px 5px;
+      flex-direction: row;
+    }
+    a {
+      font-size: 2rem;
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none !important;
+      height: 100px;
+      @include themed() {
+        color: t($goldenYellow);
+      }
+      @include xsBreakPoint {
+        padding: 0px 20px;
+      }
+      @include smBreakPoint {
+        padding: 0px 20px;
+      }
+    }
+    a:nth-child(1) {
+      margin-top: 90px;
+    }
+    a:hover {
+      text-decoration: none !important;
+      @include themed() {
+        color: t($goldenYellow);
+      }
+    }
+    // .active{
+    //   svg {
+    //     path {
+    //       @include themed() {
+    //         stroke: t($goldenYellow);
+    //       }
+    //     }
+    //     circle {
+    //       @include themed() {
+    //         fill: t($goldenYellow);
+    //       }
+    //     }
+    //   }
+    // }
+    .active:before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      transform: translateX(-155%);
+      @include themed() {
+        background: t($goldenYellow);
+      }
+      @include xsBreakPoint {
+        transform: translate(0%, 120%);
+      }
+      @include smBreakPoint {
+        transform: translate(0%, 120%);
+      }
+    }
+  }
+}
+.label {
+  font-size: 3.2rem;
+  margin-bottom: 0px;
+  // color:red;
+  // @include themed() {
+  //   color: t($textColor2) !important;
+  // }
+}
+main {
+  padding: 5vh 3vw 2vh 3vw;
+}
+.customFormAdmin {
+  padding: 0 !important;
+  .form-group {
+    position: relative;
+    margin-bottom: 1.3rem;
+    // border:1px solid;
+    i {
+      cursor: pointer;
+    }
+    .label {
+      font-size: 1.2rem;
+      margin-bottom: 0px;
+      // color: red;
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+    .input[type="text"],
+    .input[type="number"],
+    .input[type="email"],
+    .input[type="password"],
+    .input[type="date"],
+    textarea {
+      border: none;
+      box-sizing: border-box;
+      width: 100%;
+      height: 40px;
+      // padding-left: 4px;
+      border-radius: 0px;
+      font-size: 1.2rem;
+      // border-bottom: 1px solid red;
+      border-bottom: 1px solid lightgray;
+      background: transparent;
+      // color:black;
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+    .form-select {
+      border: none;
+      box-sizing: border-box;
+      width: 100%;
+      height: 40px;
+      border-radius: 0px;
+      font-size: 1.2rem;
+      border-bottom: 1px solid lightgray;
+      background: transparent;
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+      option {
+        @include themed() {
+          color: t($textColor2) !important;
+          background: t($feedsbackground) !important;
+        }
+      }
+    }
+    textarea {
+      height: auto !important;
+      // min-height: 32px;
+    }
+    .input-cms {
+      width: 100%;
+      min-height: 250px !important;
+      border: 1px solid lightgrey;
+      border-radius: 13px;
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+    .input-cms:focus {
+      outline: none !important;
+    }
+    .video_upload {
+      width: 100%;
+      border-style: dashed;
+      border-color: lightgrey;
+      border-radius: 10px;
+      height: 95px !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .add_video_icon {
+        width: 30px;
+        height: 30px !important;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include themed() {
+          background: t($goldenYellow);
+        }
+        i {
+          color: white !important;
+        }
+      }
+      .p {
+        font-size: 1.2rem;
+        @include themed() {
+          color: t($textColor2);
+        }
+      }
+      span {
+        font-size: 0.9rem;
+        @include themed() {
+          color: t($textColor2);
+        }
+      }
+    }
+  }
+  .password-input-dashboard {
+    position: relative;
+    // border:1px solid red;
+    .eye-icon {
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+  .password-input {
+    position: relative;
+    // border:1px solid red;
+    .eye-icon {
+      position: absolute;
+      top: 0px;
+      right: 30px;
+      cursor: pointer;
+    }
+  }
+  .input {
+    font-size: 1.2rem;
+    background: transparent !important;
+    @include themed() {
+      // background: t($formInputBackground2);
+      color: t($textColor2);
+    }
+  }
+  .input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    @include themed() {
+      background: t($formInputFocusedBackground2);
+    }
+  }
+  .custom-select {
+    background-color: transparent;
+  }
+  .custom-select-1 {
+    width: 210px;
+    height: 36px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: none;
+    padding-top: 6px;
+    // color:black;
+  }
+  .custom-select-2 {
+    width: 160px;
+    height: 36px;
+    background: #ffffff;
+    box-shadow: 0px 3px 3px lightgrey;
+    border-radius: 9px;
+    border: none;
+    padding-top: 6px;
+  }
+  .custom-select-2:focus {
+    // box-shadow: none !important;
+    outline: none !important;
+  }
+  .custom-select-1:focus {
+    // box-shadow: none !important;
+    outline: none !important;
+  }
+  .custom-select:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  // Field:disabled
+  .input:disabled,
+  .custom-select:disabled {
+    background: rgba(235, 236, 235, 1) !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+.yellow-arrow {
+  @include themed() {
+    color: t($goldenYellow);
+  }
+}

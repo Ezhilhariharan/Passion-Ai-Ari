@@ -1,0 +1,356 @@
+@use "../../../../../scss/abstract/" as *;
+.app {
+  // border: 1px solid red
+  // @include hlBreakPoint {
+  //   height: 140vh !important;
+  //   // border:1px solid green;
+  // }
+  @media (max-height: 700px) {
+    height: 140vh !important;
+  }
+  .app-left {
+    width: 40%;
+    height: 100%;
+    // display:none;
+    // border:1px solid red;
+    @include xsBreakPoint {
+      display: none;
+    }
+    @include smBreakPoint {
+      display: none;
+    }
+    .page-left {
+      // @include hlBreakPoint {
+      //   height: 140vh !important;
+      // }
+      // border:1px solid green;
+      width: 100%;
+      height: 100%;
+      font-size: 3.3rem;
+      font-family: "Open Sans" !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #2a2e4b;
+      @include mdBreakPoint {
+        font-size: 2.5rem;
+      }
+      @include lgBreakPoint {
+        font-size: 2.4rem;
+      }
+      @include mdBreakPoint {
+      }
+      @include themed() {
+        // background: t($leftlayout);
+        box-shadow: t($drop-shadow--light);
+      }
+    }
+  }
+}
+.login-logo {
+  img{
+    cursor: pointer;
+  }
+}
+.app-right {
+  width: 60%;
+  height: 100%;
+  background-image: url("/assets/leftlayout.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  .page-right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    border-radius: 0px;
+  }
+}
+.login-logo {
+  // height: 15%;
+  height: 30% !important;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  // justify-content:flex-end;
+  @include hlBreakPoint {
+    padding-top: 25px;
+    // height: 50vh !important;
+  }
+  img {
+    height: 80px;
+  }
+  .app-name {
+    font-style: normal;
+    font-size: 25px;
+    line-height: 29px;
+    @include themed() {
+      color: t($leftlayout-font);
+    }
+    .app-name-yellow {
+      font-style: normal;
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 42px;
+      @include themed() {
+        color: t($goldenYellow);
+      }
+    }
+  }
+  @include xsBreakPoint {
+    height: 15%;
+  }
+  @include smBreakPoint {
+    height: 15%;
+  }
+  @include mdBreakPoint {
+    height: 15%;
+    // border: 1px solid green;
+  }
+  @include lgBreakPoint {
+    height: 15%;
+    // border: 1px solid green;
+  }
+}
+.pageleft-middle {
+  height: 35% !important;
+  // border: 1px solid green;
+  h1 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    // @include themed() {
+    //   color: t($leftlayout-font);
+    // }
+    @include mdBreakPoint {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 42px;
+    }
+    @include lgBreakPoint {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 42px;
+    }
+  }
+  h2 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+    // @include themed() {
+    //   color: t($leftlayout-font);
+    // }
+    @include mdBreakPoint {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 42px;
+    }
+    @include lgBreakPoint {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 42px;
+    }
+    .app-name-yellow {
+      font-style: normal;
+      // font-weight: 600;
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 42px;
+      @include themed() {
+        color: t($goldenYellow);
+      }
+    }
+  }
+}
+.app-name-yellow {
+  font-style: normal;
+  // font-weight: 600;
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+}
+.pageleft-progreejs {
+  height: 20%;
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .bar {
+    height: 90%;
+    width: 80%;
+    // border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 50px;
+    position: relative;
+    @include lgBreakPoint {
+      width: 90%;
+      padding: 0px 20px;
+    }
+    @include mdBreakPoint {
+      width: 100%;
+      padding: 0px 20px;
+    }
+    .content-signup {
+      position: absolute;
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      color: #c4c4c4;
+      top: 65%;
+      text-align: center;
+      transform: translate(-40%, 0);
+    }
+    .content-signup-active {
+      position: absolute;
+      font-family: "Open Sans" !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+      top: 65%;
+      text-align: center;
+      transform: translate(-30%, 0);
+      @include themed() {
+        color: t($goldenYellow);
+      }
+    }
+    .layout-signup {
+      position: absolute;
+      height: 40px;
+      width: 35px;
+      top: 10%;
+      transform: translate(-17%, 0);
+    }
+    .layout-email {
+      position: absolute;
+      height: 25px;
+      width: 35px;
+      top: 20%;
+      transform: translate(-18%, 0);
+    }
+    .layout-department {
+      position: absolute;
+      height: 40px;
+      width: 35px;
+      top: 12%;
+      transform: translate(-18%, 0);
+    }
+    .pending-circle {
+      height: 12px;
+      width: 12px;
+      border: 4px solid #c4c4c4;
+      border-radius: 50%;
+    }
+    .pending-circle-yellow {
+      height: 23px;
+      width: 23px;
+      border-radius: 50%;
+      @include themed() {
+        border: 8px solid t($goldenYellow);
+      }
+    }
+    .bar-line {
+      height: 5px;
+      width: 50%;
+      background: #c4c4c4;
+      // background: linear-gradient(269.98deg, #FF7A00 5%, #2F2E41 95.7%);
+    }
+    .bar-line-active {
+      height: 5px;
+      width: 50%;
+      // background: #c4c4c4;
+      background: linear-gradient(269.98deg, #ff7a00 5%, #2f2e41 95.7%);
+    }
+    .bar-line-finished {
+      height: 5px;
+      width: 50%;
+      // background: #c4c4c4;
+      background: #2f2e41;
+    }
+    .finished-tick {
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      @include themed() {
+        background: t($primaryColor);
+      }
+      i {
+        font-size: 12px;
+        font-weight: 600;
+        color: aliceblue;
+      }
+    }
+  }
+}
+.pageleft-middle-signup {
+  height: 35% !important;
+  h1 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 46px;
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+  h2 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    // @include themed() {
+    //   color: t($textColor2);
+    // }
+    color: white;
+  }
+  height: 20%;
+  // border: 1px solid green;
+}
+// .pageleft-fotter{
+//   height: 35% !important;
+// }
+.pageleft-fotter-signup {
+  // border: 1px solid red;
+  height: 40%;
+  img {
+    width: 65% !important;
+    min-width: 250px;
+  }
+}

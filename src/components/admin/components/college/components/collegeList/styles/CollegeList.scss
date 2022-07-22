@@ -1,0 +1,7 @@
+@use "../../../../../../../scss/abstract/" as *;
+.main-heading {
+  font-size: 34px;
+  @include themed() {
+    color: t($titlefont) !important;
+  }
+}

@@ -1,0 +1,125 @@
+@use "../../../../../scss/abstract/" as *;
+.carrierpath {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/careerselection.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+}
+.carrierpath-upper {
+  height: 25%;
+  align-items: center;
+  @include hlBreakPoint {
+    align-items: flex-start;
+  }
+}
+.carrierpath-fotter {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 8%;
+}
+.carrierpath-heading {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  text-align: center;
+  @include hlBreakPoint {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.carrierpath-card {
+  width: 374px;
+  height: 222px;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  @include mdBreakPoint {
+    width: 300px;
+    height: 250px;
+  }
+  @include xsBreakPoint {
+    width: 230px;
+    height: 250px;
+  }
+}
+.carrierpath-button {
+  z-index: auto;
+  // display: flex;
+  // height: 100%;
+  .carrierpath-selectcard {
+    z-index: 0;
+    position: relative;
+    .careerselection-yes {
+      height: 300px;
+      z-index: 1;
+      position: absolute;
+      top: -110%;
+      @include mdBreakPoint {
+        width: 250px;
+        top: -80%;
+      }
+      @include hlBreakPoint {
+        display: none;
+      }
+      @include smBreakPoint {
+        display: none;
+      }
+      @include xsBreakPoint {
+        display: none;
+      }
+    }
+    .careerselection-no {
+      height: 370px;
+      z-index: 1;
+      position: absolute;
+      top: -155%;
+      @include mdBreakPoint {
+        width: 250px;
+        top: -110%;
+      }
+      @include hlBreakPoint {
+        display: none;
+      }
+      @include smBreakPoint {
+        display: none;
+      }
+      @include xsBreakPoint {
+        display: none;
+      }
+    }
+    .carrierpath-card {
+      padding: 3%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 2;
+      position: relative;
+      p {
+        font-family: "Open Sans" !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        // color: #000000;$textColor2
+        @include themed() {
+          color: t($textColor2);
+        }
+      }
+      .circle {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        @include themed() {
+          background: t($goldenYellow);
+        }
+      }
+    }
+  }
+}

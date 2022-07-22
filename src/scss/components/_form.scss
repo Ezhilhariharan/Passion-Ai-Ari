@@ -1,0 +1,137 @@
+@use "../abstract" as *;
+// select,
+// textarea
+.input {
+  font-size: 1.2rem;
+  color: white;
+  background: transparent;
+}
+input-psswd {
+  font-size: 1.2rem;
+  color: white;
+  background: transparent;
+  position: relative;
+}
+input-psswd:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent;
+  color: white;
+}
+// Field:focus,
+// textarea:focus
+.input:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent;
+  color: white;
+}
+// Field:disabled
+.input:disabled {
+  background: rgba(235, 236, 235, 1) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.error {
+  @include themed() {
+    color: t($error-color);
+  }
+}
+.custom-select-country {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border-radius: 0px;
+  font-size: 1.2rem;
+  color: #2c2f4b;
+  border-bottom: 1px solid lightgray;
+  background: white;
+  option {
+    background: white;
+    color: black;
+  }
+}
+.custom-select-country:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.custom-select {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border-radius: 0px;
+  font-size: 1.2rem;
+  color: white;
+  border-bottom: 1px solid white;
+  background: transparent;
+  // @include themed() {
+  //   background: t($formInputBackground);
+  //   // color: t($textColor1);
+  //   // border-bottom: 1px solid t($textColor1);
+  // }
+}
+.custom-select:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.customForm {
+  width: 90%;
+  border-radius: 25px;
+  // border:1px solid red;
+  background: white !important;
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 100%;
+  }
+  @include lgBreakPoint {
+    width: 100%;
+  }
+  // @include hlBreakPoint {
+  //   margin-top:5px;
+  //   }
+}
+.form-group {
+  position: relative;
+  // margin-bottom: 1.3rem;
+  margin: auto;
+  width: 80%;
+  // border: 1px solid white;
+  .label {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    // color: white;
+    color: darkgrey;
+    @include hlBreakPoint {
+      font-size: 0.8rem;
+    }
+  }
+  .input[type="text"],
+  .input[type="number"],
+  .input[type="email"],
+  .input[type="password"],
+  .input[type="date"],
+  textarea {
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding-left: 4px;
+    border-radius: 0px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid lightgrey;
+    color: #2c2f4b;
+    // @include themed() {
+    //   border-bottom: 1px solid t($textColor1);
+    // }
+  }
+  textarea {
+    height: auto !important;
+  }
+}

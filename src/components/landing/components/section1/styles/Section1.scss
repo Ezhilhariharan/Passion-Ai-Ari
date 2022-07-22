@@ -1,0 +1,353 @@
+@use "../../../../../scss/abstract" as *;
+.next_lan_section1 {
+  width: 100%;
+  padding-bottom: 12vh;
+  overflow-x: hidden;
+  .inside_land_section1 {
+    width: 100%;
+    display: flex;
+    @include xsBreakPoint {
+      flex-direction: column-reverse;
+    }
+    @include smBreakPoint {
+      flex-direction: column-reverse;
+    }
+    @include mdBreakPoint {
+      flex-direction: column-reverse;
+    }
+    @include lgBreakPoint {
+      flex-direction: column-reverse;
+    }
+    .left_section_land {
+      width: 55%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      @include xsBreakPoint {
+        width: 100%;
+      }
+      @include smBreakPoint {
+        width: 100%;
+      }
+      @include mdBreakPoint {
+        width: 100%;
+      }
+      @include lgBreakPoint {
+        width: 100%;
+      }
+      @include xlBreakPoint {
+        width: 100%;
+      }
+      @include xxlBreakPoint {
+        width: 100%;
+      }
+      .left_contents {
+        width: 100%;
+        padding-left: 25vh;
+        padding-top: 7vh;
+        @include xsBreakPoint {
+          padding-left: 0vh;
+        }
+        @include smBreakPoint {
+          padding-left: 0vh;
+        }
+        @include mdBreakPoint {
+          padding-left: 0vh;
+        }
+        @include lgBreakPoint {
+          padding-left: 0vh;
+        }
+        @include xlBreakPoint {
+          padding-left: 8vh;
+        }
+        .why {
+          font-size: 3.5em;
+          font-family: "Open Sans" !important;
+          color: $text_color;
+          margin: 0 auto;
+          font-weight: 700;
+          @include xsBreakPoint {
+            font-size: 1.6em;
+            text-align: center;
+          }
+          @include smBreakPoint {
+            font-size: 2.1em;
+            text-align: center;
+          }
+          @include mdBreakPoint {
+            font-size: 2.3em;
+            text-align: center;
+          }
+          @include lgBreakPoint {
+            font-size: 2.6em;
+            text-align: center;
+          }
+          @include xlBreakPoint {
+            font-size: 3em;
+          }
+          @include xxlBreakPoint {
+            font-size: 3.2em;
+          }
+        }
+        .with_a_complete {
+          width: 70%;
+          color: $text_color;
+          font-size: 1.2em;
+          line-height: 2;
+          font-family: "Open Sans" !important;
+          @include xsBreakPoint {
+            font-size: 1em;
+            width: 100%;
+            text-align: center;
+            padding: 0px 20px;
+          }
+          @include smBreakPoint {
+            font-size: 1.2em;
+            width: 100%;
+            text-align: center;
+            padding: 0px 25px;
+          }
+          @include mdBreakPoint {
+            font-size: 1.45em;
+            width: 100%;
+            text-align: center;
+            padding: 0px 53px;
+          }
+          @include lgBreakPoint {
+            font-size: 1.67em;
+            width: 100%;
+            text-align: center;
+            padding: 0px 90px;
+          }
+          @include xlBreakPoint {
+            font-size: 1.6em;
+            width: 100%;
+            line-height: 1.9;
+          }
+          @include xxlBreakPoint {
+            font-size: 1.5em;
+            width: 100%;
+            line-height: 1.8;
+          }
+        }
+        .landing_button {
+          width: 30%;
+          font-size: 1.8rem;
+          font-weight: 900;
+          padding: 17px;
+          border: none;
+          outline: none;
+          font-family: "Open Sans" !important;
+          @include xsBreakPoint {
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+          }
+          @include smBreakPoint {
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+          }
+          @include mdBreakPoint {
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            padding: 10px;
+          }
+          @include lgBreakPoint {
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            padding: 10px;
+          }
+          @include xlBreakPoint {
+            width: 35%;
+            font-size: 1.5rem;
+            padding: 11px;
+          }
+          @include xxlBreakPoint {
+            width: 35%;
+            font-size: 1.5rem;
+            padding: 11px;
+          }
+        }
+      }
+    }
+    .right_section_land {
+      width: 45%;
+      position: relative;
+      @include xsBreakPoint {
+        width: 100%;
+      }
+      @include smBreakPoint {
+        width: 100%;
+      }
+      @include mdBreakPoint {
+        width: 100%;
+      }
+      @include lgBreakPoint {
+        width: 100%;
+      }
+      @include xlBreakPoint {
+        width: 100%;
+      }
+      @include xxlBreakPoint {
+        width: 100%;
+      }
+      .land_image_video {
+        width: 100%;
+        height: 100%;
+        padding-top: 6vh;
+        .inside_land_box {
+          width: 60%;
+          height: 400px;
+          border-radius: 20px;
+          margin: 0 auto;
+          overflow: hidden;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          @include xsBreakPoint {
+            width: 70%;
+            height: 250px;
+          }
+          @include smBreakPoint {
+            width: 70%;
+            height: 300px;
+          }
+          @include mdBreakPoint {
+            width: 70%;
+            height: 400px;
+          }
+          @include lgBreakPoint {
+            width: 60%;
+            height: 400px;
+          }
+          @include xlBreakPoint {
+            width: 75%;
+            height: 400px;
+          }
+          @include xxlBreakPoint {
+            width: 65%;
+            height: 400px;
+          }
+          .image_box {
+            display: flex;
+            align-items: center;
+            height: 20%;
+            background-color: $person_image_load;
+            padding: 0px 20px;
+            .person_round_image {
+              display: flex;
+              align-items: center;
+              gap: 20px;              
+              img {
+                width: 70px;
+                height: 70px;
+                object-fit: cover;
+    border-radius:50% !important;
+    border:3px solid #ff7a00;
+                @include xsBreakPoint {
+                  width: 30px;
+                  height: 30px;
+                }
+                @include smBreakPoint {
+                  width: 40px;
+                  height: 40px;
+                }
+                @include mdBreakPoint {
+                  width: 60px;
+                  height: 60px;
+                }
+                @include lgBreakPoint {
+                  width: 60px;
+                  height: 60px;
+                }
+              }
+              .person_name {
+                display: flex;
+                flex-direction: column;
+                .ram {
+                  color: $stagecircle--light;
+                  font-size: 20px;
+                  font-weight: 600;
+                  font-family: "Open Sans" !important;
+                  @include xsBreakPoint {
+                    font-size: 12px;
+                  }
+                  @include smBreakPoint {
+                    font-size: 14px;
+                  }
+                }
+                .rams {
+                  font-size: 15px;
+                  color: $stagecircle--light;
+                  font-family: "Open Sans" !important;
+                  @include xsBreakPoint {
+                    font-size: 10px;
+                  }
+                  @include smBreakPoint {
+                    font-size: 12px;
+                  }
+                }
+              }
+            }
+          }
+          .inside_video {
+            width: 100%;
+            height: 80%;
+            // background-color: green;
+            background: linear-gradient(267.23deg, #282b45 54.11%, #2b3058 96.82%);
+            overflow: hidden;
+            .videos_player {
+              width: 100% !important;
+              height: 100% !important;
+            }
+          }
+        }
+      }
+      .right_off {
+        width: 110px;
+        position: absolute;
+        top: 65%;
+        right: 0;
+        @include xsBreakPoint {
+          top: 90%;
+          width: 50px;
+        }
+        @include smBreakPoint {
+          top: 90%;
+          width: 70px;
+        }
+        @include mdBreakPoint {
+          top: 90%;
+          width: 70px;
+        }
+        @include lgBreakPoint {
+          top: 90%;
+          width: 70px;
+        }
+        @include xlBreakPoint {
+          top: 70%;
+          width: 70px;
+        }
+        @include xxlBreakPoint {
+          top: 70%;
+          width: 90px;
+        }
+      }
+    }
+  }
+}

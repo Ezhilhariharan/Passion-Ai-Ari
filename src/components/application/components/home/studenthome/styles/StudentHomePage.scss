@@ -1,0 +1,2113 @@
+@use "../../../../../../scss/abstract/" as *;
+.fa-regular {
+  cursor: pointer;
+}
+.studenthomepage {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  @include xlBreakPoint {
+    height: 100vh !important;
+    // overflow: hidden;
+    // overflow-y: scroll;
+    // scrollbar-width: none;
+  }
+  @include mdBreakPoint {
+    height: 100vh;
+    // overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  @include lgBreakPoint {
+    height: 100vh !important;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  @include xxlBreakPoint {
+    height: 100vh !important;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  @include themed() {
+    background-color: t($secondaryColor);
+  }
+  font-family: "Open Sans" !important;
+  @include smBreakPoint {
+    height: auto;
+    // padding-bottom: 70px;
+    // border:1px solid green !important;
+  }
+  @include xsBreakPoint {
+    height: 100%;
+    // padding-bottom: 70px;
+  }
+  .flag-icon {
+    margin-top: 9px !important;
+    @include themed() {
+      color: t($textColor2) !important;
+    }
+  }
+  .studenthomeFeed-appointment-card {    
+    @include hlBreakPoint {
+      display: none !important;
+      // border: 1px solid red;
+    }
+  }
+}
+.feed-time-ago {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 14px !important;
+  color: darkgrey;
+}
+.feedcmmnt-time-ago {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  font-size: 12px !important;
+  color: darkgrey;
+}
+.delete_modal {
+  .modal-content {
+    width: 800px !important;
+    @include themed() {
+      background: t($feedsbackground) !important;
+      color: t($feedsfont) !important;
+    }
+  }
+}
+.delete_img {
+  height: 100px !important;
+}
+.delete-icon {
+  font-size: 20px;
+  color: #ff7a00;
+}
+.studenthomepage-upper {
+  height: 50%;
+  padding-top: 4.5%;
+  // border:1px solid orangered;
+  @include mdBreakPoint {
+    height: 70%;
+  }
+}
+.studenthomepage-upper-left {
+  width: 50%;
+  // border:1px solid orangered;
+  @include mdBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+}
+.studenthomepage-upper-left-padding {
+  padding-left: 18%;
+  // border:1px solid blue;
+  p {
+    font-size: 14px;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+  @include lgBreakPoint {
+    padding-left: 80px;
+  }
+  @include mdBreakPoint {
+    padding-left: 0%;
+  }
+  @include smBreakPoint {
+    padding-left: 0%;
+  }
+  @include xsBreakPoint {
+    padding-left: 0%;
+  }
+}
+.studenthomepage-upper-left-card {
+  // width: 110%;
+  width: 496px;
+  height: 181px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    // color: red !important;
+    height: 12%;
+    @include themed() {
+      color: t($textColor2) !important;
+    }
+  }
+  .card-bottom {
+    height: 80%;
+  }
+  .mentorstudent-stagecircle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: red;
+    color: white !important;
+    @include mdBreakPoint {
+      width: 75px;
+      height: 75px;
+    }
+    @include smBreakPoint {
+      width: 75px;
+      height: 75px;
+    }
+    @include xsBreakPoint {
+      width: 75px;
+      height: 75px;
+    }
+    .mentorstudent-stagenumber {
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+  // @include themed() {
+  //     background: t($componentGradient1);
+  //     filter: t($drop-shadow);
+  // }
+  @include lgBreakPoint {
+    width: 100%;
+    // background: green;
+  }
+  @include mdBreakPoint {
+    width: 450px;
+    // background: green;
+  }
+  @include smBreakPoint {
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    width: 330px;
+    height: 160px;
+    // background: green;
+  }
+}
+.student-analytics h1 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  font-family: "Open Sans" !important;
+  @include mdBreakPoint {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include smBreakPoint {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @include xsBreakPoint {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+.student-analytics-completed {
+  font-size: 18px;
+  line-height: 21px;
+  color: #6e7080;
+  font-family: "Open Sans" !important;
+  @include mdBreakPoint {
+    font-size: 15px;
+  }
+  @include xsBreakPoint {
+    font-size: 14px;
+  }
+}
+.student-analytics-percentage {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ff7a00;
+  font-family: "Open Sans" !important;
+}
+.studenthomepage-upper-middle {
+  width: 50%;
+  height: 100%;
+  // border: 1px solid blue;
+  // padding-right: 5%;
+  p {
+    font-size: 14px;
+    // color: #000000;
+    line-height: 16px;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+  .studenthomeFeed-right-appointment-time {
+    // border: 2px solid red;
+    font-family: "Open Sans" !important;
+    p {
+      @include xsBreakPoint {
+        font-size: 10px;
+      }
+    }
+  }
+  @include mdBreakPoint {
+    width: 100%;
+    height: 400px;
+    // border: 1px solid green;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    padding-right: 0%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    padding-right: 0%;
+  }
+}
+//components
+.StudentAppointmentCreate {
+  font-family: "Open Sans" !important;
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    // color: #000000;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+}
+.studenthomepage-fotter {
+  height: 50%;
+  // border: 1px solid orangered;
+}
+.studenthomepage-fotter-left {
+  font-family: "Open Sans" !important;
+  width: 50%;
+  height: 100%;
+  // border: 1px solid orangered;
+  @include mdBreakPoint {
+    width: 100%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    padding-left: 0px;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+.studenthomepage-fotter-left-padding {
+  font-family: "Open Sans" !important;
+  // position:relative;
+  padding-left: 25%;
+  // border:1px solid orangered;
+  @include lgBreakPoint {
+    padding-left: 18%;
+  }
+  @include mdBreakPoint {
+    padding-left: 0px;
+  }
+  @include smBreakPoint {
+    padding-left: 0px;
+  }
+  @include xsBreakPoint {
+    padding-left: 0px;
+  }
+}
+.studenthomepage-fotter-left-feed {
+  width: 70%;
+  min-width: 300px;
+  margin-top: 60px;
+  height: 318px;
+  border-radius: 20px;
+  font-family: "Open Sans" !important;
+  // border:1px solid red;
+  overflow: hidden;
+  h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  @include xlBreakPoint {
+    min-width: 400px;
+  }
+  @include lgBreakPoint {
+    min-width: 340px;
+  }
+  @include mdBreakPoint {
+    min-width: 300px;
+  }
+  @include smBreakPoint {
+    min-width: 280px;
+    padding-left: 0px;
+  }
+  @include xsBreakPoint {
+    min-width: 270px;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+  // border:1px solid #2B2E4A;
+}
+.studenthomepage-fotter-right {
+  width: 50%;
+  height: 100%;
+  font-family: "Open Sans" !important;
+  // border: 1px solid #2b2e4a;
+  p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  @include mdBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  @include smBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.studenthomepage-fotter-cards {
+  margin-top: 20px;
+  height: 270px;
+  width: 270px;
+  border-radius: 16px;
+  @include lgBreakPoint {
+    width: 250px;
+    // border: 1px solid;
+  }
+  @include mdBreakPoint {
+    width: 220px;
+    // border: 1px solid;
+  }
+  text-align: center;
+  align-items: center;
+  font-family: "Open Sans" !important;
+  // background:#444b92 !important;
+  @include themed() {
+    background: t($webinarlist) !important;
+    box-shadow: t($webinarcardshadow);
+    color: t($textColor1) !important;
+  }
+}
+.studenthomepage-fotter-cards:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.studenthomepage-card-Title {
+  margin-top: 20px;
+  height: 30px;
+  // border: 1px solid red;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Open Sans" !important;
+  overflow: hidden;
+  color: #ffffff;
+  // @include themed() {
+  //     color: t($textColor1);
+  // }
+}
+.studenthomepage-card-description {
+  // width:100%;
+  overflow: hidden;
+  height: 20px;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Open Sans" !important;
+  // line-height: 16px;
+  color: #ffffff;
+  // @include themed() {
+  //     color: t($textColor1);
+  // }
+}
+.studenthomepage-card-date {
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Open Sans" !important;
+  color: #ffffff !important;
+  // @include themed() {
+  //     color: t($textColor1);
+  // }
+}
+.studenthomepage-card-date-time {
+  // color: $goldenYellow;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Open Sans" !important;
+  // @include themed() {
+  //     color: t($goldenYellow);
+  // }
+}
+.studenthomepage-card-name {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Open Sans" !important;
+  // line-height: 19px;
+  color: #ffffff;
+  // @include themed() {
+  //     color: t($textColor1);
+  // }
+}
+.studenthomepage-card-domain {
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Open Sans" !important;
+  // line-height: 16px;
+  color: #ffffff;
+  // @include themed() {
+  //     color: t($textColor1);
+  // }
+}
+.studenthomepage-cards-img {
+  width: 45px;
+  font-family: "Open Sans" !important;
+  height: 45px;
+  // border:3px solid $goldenYellow;
+  overflow: hidden;
+  border-radius: 50%;
+  @include themed() {
+    border: 3px solid t($goldenYellow);
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.p-blockui {
+  position: absolute;
+  font-family: "Open Sans" !important;
+  // background:  rgba(43, 46, 74, 0) ;
+  @include themed() {
+    background: t($primaryColor);
+  }
+}
+.p-component-overlay {
+  opacity: 1.8;
+}
+.studenthomepage-header {
+  height: 10%;
+  width: 100%;
+  font-family: "Open Sans" !important;
+  // border:3px solid blue;
+}
+.studenthomepage-header-heading {
+  font-family: "Open Sans" !important;
+  width: 50%;
+  @include xsBreakPoint {
+    width: 65%;
+  }
+  h1 {
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 40px;
+    // color: #000000;
+    // padding-left:20%;
+    @include themed() {
+      color: t($textColor2);
+    }
+    @include xsBreakPoint {
+      font-size: 28px;
+    }
+  }
+}
+.studenthomepage-header-img {
+  font-family: "Open Sans" !important;
+  width: 50%;
+  // border:3px solid blue;
+  @include xsBreakPoint {
+    width: 35%;
+  }
+}
+.feeds-responsive-navigation {
+  font-family: "Open Sans" !important;
+  display: none;
+  padding-top: 100px;
+  .navigation-name {
+    // padding-top:200px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // font-family: "Gilroy-Bold";
+    font-weight: 600;
+    // border:3px solid blue;
+  }
+  @include smBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    // border:3px solid blue;
+  }
+  @include xsBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+}
+.navigation-name p {
+  font-family: "Open Sans" !important;
+  display: inline-block;
+  position: relative;
+  // color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+  top: 5px;
+  padding-bottom: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  @include themed() {
+    color: t($textColor2);
+  }
+}
+.navigation-name p:after {
+  content: "";
+  position: absolute;
+  // background-color: #000;
+  height: 2px;
+  width: 0%;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  transition: 0.35s ease;
+  @include themed() {
+    background-color: t($textColor2);
+  }
+}
+.navigation-name p:hover:after {
+  font-family: "Open Sans" !important;
+  width: 80%;
+}
+.studenthomeFeed-middle {
+  font-family: "Open Sans" !important;
+  padding-top: 83px;
+  width: 100% !important;
+  height: 99.8%;
+  @include smBreakPoint {
+    padding-top: 33px;
+    // overflow: scroll;
+  }
+  @include xsBreakPoint {
+    padding-top: 33px;
+    // overflow: scroll;
+  }
+  // border:1px solid orangered;
+  overflow: hidden;
+}
+.studenthomeFeed-left {
+  font-family: "Open Sans" !important;
+  width: 50%;
+  // border: 1px solid red;
+  padding-left: 17%;
+  overflow: hidden;
+  @include xlBreakPoint {
+    padding-left: 10%;
+    // border:1px solid green;
+    height: 100%;
+    overflow: hidden;
+  }
+  @include lgBreakPoint {
+    padding-left: 6%;
+    // border:1px solid green;
+  }
+  @include mdBreakPoint {
+    padding-left: 10%;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    padding-left: 0%;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    padding-left: 0%;
+  }
+  @include xxlBreakPoint {
+    height: 900px;
+  }
+}
+.studenthomeFeed-right {
+  font-family: "Open Sans" !important;
+  width: 50%;
+  height: 100%;
+  // border: 1px solid orangered;
+  @include smBreakPoint {
+    width: 100%;
+    // border:1px solid orangered;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+  }
+  // chnages kalai
+  @include mdBreakPoint {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+  }
+  @include xlBreakPoint {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 30px;
+  }
+  // changes end kalai
+}
+.studenthomeFeed-right-webinar {
+  font-family: "Open Sans" !important;
+  width: 90%;
+  // padding-left: 5%;
+  // border: 1px solid orangered;
+  @include mdBreakPoint {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @include smBreakPoint {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  @include xsBreakPoint {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .appointment {
+    font-family: "Open Sans" !important;
+    font-size: 25px;
+    font-weight: 600;
+    @include mdBreakPoint {
+      margin-left: -35%;
+    }
+    @include smBreakPoint {
+      margin-left: -75%;
+    }
+    @include xsBreakPoint {
+      margin-left: -65%;
+    }
+  }
+  p {
+    font-family: "Open Sans" !important;
+    font-size: 22px;
+    font-weight: 500;
+    @include themed() {
+      color: t($titlefont) !important;
+    }
+  }
+  h5 {
+    font-family: "Open Sans" !important;
+    font-size: 22px;
+    font-weight: 500;
+    @include themed() {
+      color: t($titlefont) !important;
+    }
+  }
+}
+.studenthomeFeed-right-viewreport {
+  // border:1px solid orangered;
+  font-family: "Open Sans" !important;
+  p {
+    font-size: 19px !important;
+    font-weight: 500;
+  }
+  .studenthomepage-upper-left-card {
+    width: 73%;
+    @include lgBreakPoint {
+      width: 95%;
+    }
+    @include mdBreakPoint {
+      width: 95%;
+    }
+    @include smBreakPoint {
+      width: 95%;
+    }
+    @include xsBreakPoint {
+      width: 100%;
+    }
+  }
+  p {
+    font-family: "Open Sans" !important;
+    font-size: 14px;
+    line-height: 16px;
+    // color: #000000;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+}
+.studenthomeFeed-right-appointment {
+  font-family: "Open Sans" !important;
+  width: 100%;
+  height: 20%;
+  // border:1px solid orangered;
+  p {
+    font-size: 19px;
+    font-weight: 500;
+    font-family: "Open Sans" !important;
+  }
+  .studenthomeFeed-right-appointment-time {
+    p {
+      font-size: 19px;
+      font-weight: 500;
+      font-family: "Open Sans" !important;
+      @include xsBreakPoint {
+        font-size: 10px;
+        line-height: 16px;
+      }
+    }
+  }
+  @include smBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include xsBreakPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.studenthomeFeed-right-appointment-profle-name {
+  h5 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    // color: #444B92;$lightPurple
+    font-family: "Open Sans" !important;
+    @include themed() {
+      color: t($lightPurple);
+    }
+    @include xsBreakPoint {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  h6 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "Open Sans" !important;
+    // color: #2B2E4A;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+}
+.studenthomeFeed-right-appointment-profle-img {
+  font-family: "Open Sans" !important;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  // border:3px solid blue;
+  @include xsBreakPoint {
+    width: 60px;
+    height: 60px;
+  }
+}
+.timebar {
+  // border-left: 2px solid #444B92;
+  font-family: "Open Sans" !important;
+  height: 60px;
+  @include themed() {
+    border-left: 2px solid t($lightPurple);
+  }
+}
+.timebar-circle {
+  font-family: "Open Sans" !important;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  // background:$goldenYellow ;
+  @include themed() {
+    background: t($goldenYellow);
+  }
+}
+.domain-circle {
+  font-family: "Open Sans" !important;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  // background:$goldenYellow ;
+  @include themed() {
+    background: t($goldenYellow);
+  }
+}
+.studenthomeFeed-name {
+  width: 100%;
+  // border:1px solid red;
+  font-family: "Open Sans" !important;
+  height: 43px;
+  .toggle-feed {
+    width: 304px;
+    height: 40px;
+    background: #2b2e4a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include mdBreakPoint {
+      width: 200px;
+      font-size: 0.8rem;
+    }
+    @include smBreakPoint {
+      margin-left: 4%;
+    }
+    @include xsBreakPoint {
+      width: 190px;
+      font-size: 0.8rem;
+      margin-left: 2%;
+    }
+  }
+  button {
+    font-family: "Open Sans" !important;
+    background-color: transparent;
+    width: 154px;
+    color: white;
+    border: none;
+    @include mdBreakPoint {
+      // width: 100px;
+      font-size: 0.8rem;
+    }
+    @include xsBreakPoint {
+      // width: 85px;
+      font-size: 0.8rem;
+    }
+    @include smBreakPoint {
+      font-size: 0.9rem;
+    }
+  }
+  .btn-toggle {
+    font-family: "Open Sans" !important;
+    width: 154px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    // font-size: 0.8rem;
+    font-weight: 600;
+    color: #2b2e4a;
+    border: none;
+    @include mdBreakPoint {
+      font-size: 0.8rem;
+    }
+    @include smBreakPoint {
+      font-size: 0.9rem;
+    }
+    @include xsBreakPoint {
+      font-size: 0.8rem;
+    }
+    @include themed() {
+      color: t($primaryColor);
+      border: none;
+    }
+  }
+}
+.horizontal-line {
+  font-family: "Open Sans" !important;
+  width: 100%;
+  height: 0px;
+  // border: 0.25px solid #000000;
+  @include themed() {
+    border: 0.25px solid t($textColor2);
+  }
+}
+//feed
+.feed {
+  width: 100%;
+  // height: 100%;
+  padding: 1.5% 0%;
+  @include smBreakPoint {
+    width: 90%;
+    margin: 0 auto;
+  }
+  @include xsBreakPoint {
+    width: 95%;
+    margin: 0 auto;
+  }
+  // border: 0.25px solid #000000;
+}
+.feed-comments {
+  width: 90%;
+  // height: 650px;
+  padding: 5%;
+  // border: 0.25px solid #000000;
+}
+.feed-card {
+  position: relative;
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
+  border-radius: 16px;
+  font-family: "Open Sans" !important;
+  @include themed() {
+    background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+  .btn-yellow {
+    max-width: 90px !important;
+  }
+}
+.feed-card-comments {
+  width: 90%;
+  // height: 750px;
+  //     background: linear-gradient(165.66deg, #E9EBFC 59.08%, rgba(254, 254, 254, 0) 207.46%);
+  // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 16px;
+  font-family: "Open Sans" !important;
+  @include themed() {
+    background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+}
+.feed-card-profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid transparent !important;
+  overflow: hidden;
+  font-family: "Open Sans" !important;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include circular_grad_border;
+}
+.feed-comment-profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-family: "Open Sans" !important;
+  // border:3px solid $goldenYellow;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @include themed() {
+    background-color: t($goldenYellow);
+  }
+}
+.feed-card-profile {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  // border:3px solid red;
+  h4 {
+    font-size: 20px;
+    line-height: 16px;
+    // color: #2B2E4A;
+    font-family: "Open Sans" !important;
+    font-weight: 500;
+    @include themed() {
+      color: t($titlefont) !important;
+    }
+  }
+}
+.feed-title {
+  font-family: "Open Sans" !important;
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 500;
+  @include themed() {
+    color: t($feedsfont);
+  }
+}
+.feed-description {
+  height: auto;
+  width: 93%;
+  span {
+    font-family: "Open Sans" !important;
+    font-size: 15px;
+    line-break: anywhere;
+    display: inline-block;
+  }
+  @include themed() {
+    color: t($feedsfont);
+  }
+}
+.feed-img {
+  @include themed() {
+    // border:3px solid t($goldenYellow);
+  }
+}
+.feed-icon {
+  width: 100%;
+  .cmmnt-icon {
+    margin-top: 18px;
+  }
+  // border: 1px solid;
+  .feed-like {
+    font-family: "Open Sans" !important;
+    // border: 1px solid;
+    cursor: pointer;
+    @include mdBreakPoint {
+      width: 13px;
+      height: 13px;
+    }
+    @include xsBreakPoint {
+      width: 13px;
+      height: 13px;
+    }
+  }
+  .like {
+    //    font-family: "Open Sans" !important;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #979797;
+    font-family: "Open Sans" !important;
+    @include mdBreakPoint {
+      font-size: 12px;
+    }
+    @include xsBreakPoint {
+      font-size: 12px;
+    }
+  }
+  .like-color {
+    cursor: pointer;
+    font-style: normal;
+    font-family: "Open Sans" !important;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #ff7a00 !important;
+    // background: #04294b;
+    @include mdBreakPoint {
+      font-size: 12px;
+    }
+    @include xsBreakPoint {
+      font-size: 12px;
+    }
+  }
+  img {
+    height: 16px;
+  }
+  p {
+    cursor: pointer;
+  }
+}
+.comments-count {
+  // border: 1px solid;
+  font-family: "Open Sans" !important;
+  .p {
+    font-family: "Open Sans" !important;
+    @include mdBreakPoint {
+      font-size: 12px;
+    }
+    @include xsBreakPoint {
+      font-size: 12px;
+    }
+  }
+}
+.feeds-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  font-family: "Open Sans" !important;
+  background: #979797;
+}
+.area {
+  height: 90%;
+  overflow: scroll;
+  scrollbar-width: none;
+  // border: 1px solid green;
+  font-family: "Open Sans" !important;
+  // change kalai
+  @include mdBreakPoint {
+    height: 90%;
+  }
+  // end kalai
+  @include smBreakPoint {
+    height: 75vh !important;
+    width: 100%;
+  }
+  @include xsBreakPoint {
+    height: 75vh !important;
+    width: 100%;
+  }
+  // @include hlBreakPoint {
+  //     // border:1px solid blue;
+  //     height: 68vh !important;
+  // }
+  // @include tabBreakPoint {
+  //     // border:1px solid green;
+  //     height: 60vh !important;
+  // }
+}
+.img-background {
+  background: $primaryColor;
+  font-family: "Open Sans" !important;
+}
+// checking purpose
+.font-weight {
+  font-family: "Open Sans" !important;
+  height: 30px;
+}
+.profile-img-post-sthome {
+  font-family: "Open Sans" !important;
+  height: 72px;
+  width: 72px;
+  // padding:0;
+  border-radius: 50%;
+  border: 3px solid $goldenYellow;
+  overflow: hidden;
+  background-color: $goldenYellow;
+}
+.meta-data {
+  font-family: "Open Sans" !important;
+  width: 100%;
+  height: 30%;
+  border: 1px solid $primaryColor;
+  border-radius: 10px;
+}
+.input-post {
+  font-family: "Open Sans" !important;
+  width: 100%;
+  height: 70px;
+  background: transparent;
+  // border:none;
+  border: 1px solid black;
+}
+.input-post:focus {
+  // background: $formInputFocusedBackground;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.update-post {
+  width: 100%;
+  // border:2px solid $primaryColor;
+  justify-content: center;
+  background-color: $goldenYellow;
+  color: $primaryColor;
+}
+.input-comment {
+  font-family: "Open Sans" !important;
+  width: 50% !important;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #979797 !important;
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+  box-sizing: border-box;
+  border-radius: 10px;
+  // @include themed() {
+  //     border: 1px solid t($primaryColor);
+  // }
+  font-size: 13px;
+  @include themed() {
+    color: t($textColor2) !important;
+  }
+}
+.feed-input-comment{
+  font-family: "Open Sans" !important;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #979797 !important;
+  box-sizing: border-box;
+  border-radius: 10px;  
+  font-size: 13px;
+  @include themed() {
+    color: t($textColor2) !important;
+  }
+}
+.feed-input-comment {  
+  box-shadow: none !important;
+  outline: none !important;
+}
+.feeds-comment {
+  font-family: "Open Sans" !important;
+  width: 100% !important;
+  // border: 1px solid red;
+}
+.feeds-comment-section {
+  position: relative;
+  font-family: "Open Sans" !important;
+  width: 100% !important;
+  i {
+    cursor: pointer;
+  }
+  // border: 1px solid red;
+}
+.show-comments {
+  font-family: "Open Sans" !important;
+  width: 70% !important;
+  // width: 421px;
+  min-height: 60px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  // background: $feeds-cmmnt;
+  @include themed() {
+    background: t($feeds-cmmnt) !important;
+  }
+  border-radius: 10px;
+  h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "Open Sans" !important;
+    @include themed() {
+      color: t($textColor2) !important;
+    }
+  }
+  span {
+    font-size: 12px;
+    // line-height: 14px;
+    color: #979797;
+    display: inline-block;
+    line-break: anywhere;
+    font-family: "Open Sans" !important;
+  }
+}
+.input-comment:focus {
+  // background: $formInputFocusedBackground;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.modal-post {
+  .modal-header {
+    h3 {
+      font-family: "Open Sans" !important;
+      justify-content: center;
+      // border: 1px solid;
+    }
+  }
+}
+.metadata {
+  border: 1px solid grey;
+  height: 100px;
+  width: 80%;
+  font-family: "Open Sans" !important;
+  border-radius: 12px;
+  overflow: hidden;
+  .metadata-img {
+    width: 30%;
+  }
+  .metadata-description {
+    h1 {
+      font-size: bold;
+      font-family: "Open Sans" !important;
+    }
+  }
+}
+.dropdown-feed {
+  position: absolute;
+  // display: flex;
+  // border:1px solid black;
+  right: -0px;
+  top: 20px;
+  height: 0;
+  @include themed() {
+    color: t($feedsfont) !important;
+  }
+}
+.dropdown-content {
+  font-family: "Open Sans" !important;
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: 1px;
+  min-width: 100px;
+  box-shadow: 0px 5px 5px 0px lightgrey;
+  // padding: 5px 16px;
+  z-index: 1;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  // @include themed() {
+  //     background-color: t($secondaryColor);
+  // }
+  .content-active {
+    font-size: 14px;
+  }
+  .content-active:hover {
+    // border: 1px solid red;
+    @include themed() {
+      background-color: t($secondaryColor);
+    }
+    // box-shadow: 0px 3px 2px 0px rgba(0, 0, 0, 0.9);
+  }
+}
+.dropdown-feed:hover .dropdown-content {
+  display: block;
+}
+.dropdown-feed:active .dropdown-content {
+  display: block;
+}
+.comment-section {
+  // border: 1px solid red;
+  font-family: "Open Sans" !important;
+  width: 85%;
+  // height:100%;
+  .btn-yellow {
+    font-family: "Open Sans" !important;
+    width: 5em !important;
+    height: 2em !important;
+  }
+}
+.studenthomeFeed-appointment-card-mobile {
+  display: block !important;
+  height: 125px;
+  // border:1px solid red ;
+  // color: white !important;
+  color: white !important;
+  @include themed() {
+    background: t($webinarlist);
+    // color: t($feedsfont) !important;
+  }
+  // @include themed() {
+  //     background: t($feedsbackground);
+  //     // color: t($feedsfont) !important;
+  // }
+  font-family: "Open Sans" !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  .btn-yellow {
+    width: 8em !important;
+    height: 2.2em !important;
+  }
+  @include xsBreakPoint {
+    width: 90%;
+  }
+  @include xxxlBreakPoint {
+    width: 580px;
+  }
+  @include xxlBreakPoint {
+    width: 580px;
+  }
+  @include xlBreakPoint {
+    width: 520px;
+  }
+  @include lgBreakPoint {
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 95%;
+  }
+  @include smBreakPoint {
+    width: 470px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
+//updated design
+.studenthomeFeed-appointment-card {
+  display: block !important;
+  height: 125px;
+  // border:1px solid red ;
+  color: white !important;
+  @include themed() {
+    background: t($webinarlist);   
+  }
+  font-family: "Open Sans" !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  .btn-yellow {
+    width: 8em !important;
+    height: 2.2em !important;
+  }
+  @include xsBreakPoint {
+    width: 90%;
+  }
+  @include xxxlBreakPoint {
+    width: 580px;
+  }
+  @include xxlBreakPoint {
+    width: 580px;
+  }
+  @include xlBreakPoint {
+    width: 520px;
+  }
+  @include lgBreakPoint {
+    width: 100%;
+  }
+  @include mdBreakPoint {
+    width: 95%;
+    .btn-yellow {
+      width: 7em !important;
+    }
+  }
+  @include smBreakPoint {
+    width: 470px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 12px;
+  }
+}
+.hl-appointment {
+  display: none;
+  height: 215px;
+  width: 100%;
+  // width: 280px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: "Open Sans" !important;
+  // border: 5px SOLID blue;
+  @include hlBreakPoint {
+    display: block;
+  }
+  color: white;
+  @include themed() {
+    background: t($webinarlist);
+    // color: t($feedsfont) !important;
+  }
+  @include xxxlBreakPoint {
+    width: 285px;
+  }
+  @include xxlBreakPoint {
+    width: 285px;
+    // border:1px solid red;
+  }
+  @include xlBreakPoint {
+    width: 270px;
+    height: auto;
+  }
+  @include lgBreakPoint {
+    width: 46.6%;
+    height: auto;
+    // border:1px solid ;
+  }
+  @include mdBreakPoint {
+    width: 47.8%;
+    //    margin-left:3px;
+    height: auto;
+  }
+}
+.comment-title {
+  font-family: "Open Sans" !important;
+  border: 1px solid grey;
+  height: 50px;
+  border-radius: 10px;
+  background: transparent !important;
+  @include themed() {
+    color: t($textColor2) !important;
+  }
+}
+.comment-title:focus {
+  outline: none;
+}
+.comment-description {
+  border: 1px solid grey !important;
+  height: 100px;
+  border-radius: 10px;
+  background: transparent !important;
+  @include themed() {
+    color: t($textColor2) !important;
+  }
+}
+.comment-description:focus {
+  outline: none;
+}
+.modal-username {
+  font-family: "Open Sans" !important;
+  font-weight: 600;
+  font-size: 24px;
+  color: #2b2e4a;
+  // background: transparent !important;
+}
+.label-modal {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Open Sans" !important;
+}
+.addimage {
+  width: 100%;
+  // border: 1px solid;
+  img {
+    height: 30px;
+  }
+  p {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .upload-post-active {
+    width: 65px;
+    height: 62px;
+    img {
+      // border: 2px solid green !important;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .upload-post {
+    width: 90px;
+    height: 70px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: "Open Sans" !important;
+    //    border: 2px solid green !important;
+    //    .upload-post{
+    //     img{
+    //         width:100%;
+    //         height:100%;
+    //         object-fit: cover;
+    //     }
+    //     }
+    // @include themed() {
+    //     border: 2px solid t($goldenYellow);
+    // }
+    img {
+      // border: 2px solid green !important;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.studenthomeFeed-appointment-card-img {
+  width: 64px;
+  height: 65px;
+  border: 3px solid transparent !important;
+  font-family: "Open Sans" !important;
+  @include circular_grad_border;
+  @include xsBreakPoint {
+    width: 50px;
+    height: 50px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.studenthomeFeed-appointment-card-username {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  // line-height: 19px;
+  // height: 30px;
+  // border:1px solid red;
+  color: white;
+  // @include themed() {
+  //     color: t($titlefont) !important;
+  // }
+  @include xsBreakPoint {
+    font-size: 14px !important;
+    font-weight: 600;
+  }
+  @include smBreakPoint {
+    font-size: 15px !important;
+    font-weight: 600;
+  }
+}
+.appointment-font {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  // font-weight: 600;
+  // border:1px solid red;
+  min-width: 100px;
+  font-size: 14px;
+  @include xsBreakPoint {
+    font-size: 13px;
+  }
+  @include smBreakPoint {
+    font-size: 13px;
+  }
+}
+.appointment-cancel {
+  .cancel-response {
+    font-family: "Open Sans" !important;
+    height: 200px;
+    width: 100%;
+    border: 1px solid lightgrey !important;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: none;
+    align-items: none;
+    font-size: 20px;
+  }
+  .cancel-response:focus {
+    outline: none !important;
+  }
+}
+.nofeeds {
+  font-family: "Open Sans" !important;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.studenthomeFeed-appointment-card-userdomain {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px !important;
+  line-height: 16px;
+  // color: #6e7080;
+  color: white;
+  @include xsBreakPoint {
+    font-size: 12px !important;
+  }
+}
+.card-domain {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6e7080;
+  span {
+    color: white;
+  }
+}
+.webinar-card {
+  font-family: "Open Sans" !important;
+  width: 580px;
+  height: 380px;
+  // border: 3px solid red;
+  @include themed() {
+    background: t($feedsbackground);
+    color: t($feedsfont) !important;
+  }
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  margin-top: 30px;
+  // @include hlBreakPoint {
+  //     margin-top: 10px;
+  //     height: 340px;
+  // }
+  .studenthomeFeed-appointment-card-username {
+    @include themed() {
+      color: t($titlefont) !important;
+    }
+  }
+  .studenthomeFeed-appointment-card-userdomain {
+    @include themed() {
+      color: t($titlefont) !important;
+    }
+  }
+  @include xxxlBreakPoint {
+    width: 580px;
+  }
+  @include xxlBreakPoint {
+    width: 580px;
+    // border:1px solid red;
+  }
+  @include xlBreakPoint {
+    width: 550px;
+  }
+  @include lgBreakPoint {
+    width: 94%;
+  }
+  @include mdBreakPoint {
+    width: 95%;
+    height: 355px;
+  }
+  @include smBreakPoint {
+    width: 470px;
+  }
+  @include xsBreakPoint {
+    width: 90%;
+  }
+  .carousel {
+    font-family: "Open Sans" !important;
+    width: 100%;
+    height: 85%;
+    background: transparent;
+    .carousel-item {
+      height: 100%;
+      span {
+        font-family: "Open Sans" !important;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.webinar-card-title {
+  font-family: "Open Sans" !important;
+  height: 13%;
+  width: 100%;
+  // border:1px solid red;
+  // background:linear-gradient(92.93deg, #e9e bfc -7.11%, #fefefe 326.99%) !important;
+  // background:red;
+  // background: ;
+  @include themed() {
+    background: t($modalheader) !important;
+    color: t($titlefont) !important;
+  }
+  border-radius: 10px 10px 0px 0px;
+}
+.webinar-title {
+  margin-top: 30px;
+  height: 25px;
+  // border:1px solid red;
+  overflow: hidden;
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  // line-height: 21px;
+  @include themed() {
+    color: t($titlefont) !important;
+  }
+}
+.webinar-description {
+  // border:1px solid red;
+  overflow: hidden;
+  height: 20px;
+  // width:100%;
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  @include themed() {
+    color: t($titlefont) !important;
+  }
+}
+.icon-studenthomeFeed {
+  color: #ff7a00;
+  font-size: 20px;
+}
+.icon-appoitnment {
+  color: #ff7a00;
+  font-size: 15px;
+}
+.webinar-card-title-name {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  @include themed() {
+    color: t($titlefont) !important;
+  }
+}
+.webinar-card-view {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  cursor: pointer;
+  i {
+    font-size: 20px;
+    @include themed() {
+      color: t($goldenYellow);
+    }
+  }
+}
+.add-icon {
+  width: 33px;
+  height: 33px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  i {
+    font-size: 17px !important;
+    text-decoration: none;
+    color: black;
+  }
+}
+.webinor-illustration {
+  height: 85%;
+  width: 100%;
+  font-family: "Open Sans" !important;
+  // background-color: blue;
+  text-align: center;
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: "Open Sans" !important;
+    @include themed() {
+      color: t($feedsfont) !important;
+    }
+    // text-align: center;
+    // align-items: center;
+    // display:flex;
+  }
+}
+.webinor-illustration-img {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// .target-circle{
+// }
+.carousel-indicators {
+  font-family: "Open Sans" !important;
+  // margin-top:100px;
+  // border:1px solid red;
+  button[type="button"] {
+    width: 8px;
+    height: 8px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    // background: #c4c4c4;
+    background: #04294b;
+  }
+  .active {
+    background: #04294b;
+  }
+}
+.outer_circle {
+  position: relative;
+  // margin: 50px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.inner_circle {
+  border: 3px solid transparent;
+  border-image: linear-gradient(#ff7a00 50%, #2b2e4a 50%);
+  border-image-slice: 1;
+  content: "";
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  right: -20px;
+  left: -20px;
+  z-index: 1;
+  border-radius: inherit;
+}
+.studenthomeFeed-right-AppointmentDetail {
+  // border:1px solid red;
+  width: 100%;
+}
+.modal-post {
+  .modal-content {
+    font-family: "Open Sans" !important;
+    min-height: 450px !important;
+    min-width: 650px;
+    @include themed() {
+      background: t($modal-background) !important;
+      color: t($textColor2) !important;
+    }
+    @include xsBreakPoint {
+      min-width: 100% !important;
+    }
+    @include smBreakPoint {
+      min-width: 100% !important;
+    }
+    @include mdBreakPoint {
+      min-width: 90% !important;
+    }
+  }
+  .modal-header {
+    h3 {
+      font-family: "Open Sans" !important;
+      font-size: 25px;
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+  }
+}
+.webinarview {
+  .modal-content {
+    font-family: "Open Sans" !important;
+    min-height: 450px !important;
+    min-width: 550px;
+    @include themed() {
+      background: t($modal-background) !important;
+      color: t($textColor2) !important;
+    }
+    @include xsBreakPoint {
+      min-width: 100% !important;
+    }
+    @include smBreakPoint {
+      min-width: 100% !important;
+    }
+  }
+  .modal-header {
+    font-family: "Open Sans" !important;
+    // border:1px solid red;
+    border-bottom: none !important;
+    h3 {
+      // border: 1px solid red;
+      padding-left: 10px;
+      font-size: 25px;
+      @include themed() {
+        color: t($textColor2) !important;
+      }
+    }
+  }
+}
+.webinar-list {
+  .modal-content {
+    min-height: 450px;
+    font-family: "Open Sans" !important;
+    @include themed() {
+      background: t($modal-background) !important;
+      color: t($textColor2) !important;
+    }
+  }
+}
+.webinarview-title {
+  span {
+    font-family: "Open Sans" !important;
+    font-size: 17px;
+    font-weight: 600;
+    line-break: anywhere;
+    display: inline-block;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+}
+.errormessage-img {
+  // border:1px solid red;
+  height: 150px !important;
+}
+.webinarview-description {
+  height: auto;
+  // border:1px solid red;
+  span {
+    font-family: "Open Sans" !important;
+    font-size: 15px;
+    line-break: anywhere;
+    display: inline-block;
+    @include themed() {
+      color: t($textColor2);
+    }
+  }
+  // p {
+  //    font-family: "Open Sans" !important;
+  //     font-style: normal;
+  //     font-weight: normal;
+  //     font-size: 18px;
+  //     line-height: 21px;
+  //     @include themed() {
+  //         color: t($textColor2);
+  //     }
+  // }
+}
+.webinarview-dateandtime {
+  h4 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+.webinarview-presenter {
+  width: 100%;
+  // border:1px solid ;
+  h4 {
+    font-family: "Open Sans" !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+///fesds privateandpublic
+.privateandpublic {
+  width: 200px;
+  height: 30px;
+  // border: 1px solid red;
+  margin-right: 100px;
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  @include xsBreakPoint {
+    margin-right: 10px !important;
+  }
+  .active {
+    width: 100px;
+    height: 30px;
+    background: rgba(255, 178, 125, 0.21);
+    border-radius: 25px;
+    i {
+      color: #ff7a00;
+    }
+  }
+}
+.viewmore {
+  font-family: "Open Sans" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: gray;
+  margin-left: 75%;
+  cursor: pointer;
+}
+.studenthomepage-cards-join {
+  .mx-auto {
+    text-decoration: none !important;
+  }
+  @include mdBreakPoint {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  @include lgBreakPoint {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  @include xlBreakPoint {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+}
+.links {
+  text-decoration: none;
+}

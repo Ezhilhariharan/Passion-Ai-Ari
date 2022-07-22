@@ -1,0 +1,412 @@
+@use "../../../../scss/abstract/" as *;
+.icon {
+  color: white;
+  font-size: 1.7rem;
+  margin-left: 80%;
+  cursor: pointer;
+  font-family: "Open Sans" !important;
+  display: flex;
+}
+.otp-field {
+  // border: 2px solid blue !important;
+  height: 15vh !important;
+  @include xsBreakPoint {
+    height: 10vh !important;
+  }
+}
+.otp-component {
+  height: 35vh;
+  color: black;
+  // border: 2px solid blue !important;
+}
+.yearpicker {
+  position: relative;
+  width: 100%;
+  // border: 2px solid blue !important;
+}
+.calendar {
+  z-index: 1;
+  margin-top: 2%;
+  left: 85%;
+  // padding-right:100px;
+  position: absolute;
+  cursor: pointer;
+  color: grey;
+  @include mdBreakPoint {
+    left: 80.5%;
+  }
+}
+.year-div {
+  width: 90% !important;
+  input {
+    border: none;
+    box-sizing: border-box;
+    width: 100% !important;
+    height: 40px;
+    padding-left: 4px;
+    border-radius: 0px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid lightgrey;
+    color: #2c2f4b;
+  }
+  input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  img {
+    // display: block;
+    display: none;
+  }
+  .clickable {
+    img {
+      display: block;
+    }
+  }
+}
+.icon-back {
+  color: white;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "Open Sans" !important;
+}
+.register-width {
+  width: 100%;
+  // border: 2px solid blue;
+}
+.carousel-width {
+  width: 60% !important;
+  height: 100%;
+  margin: 0 !important;
+  // border: 2px solid red;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  @include hlBreakPoint {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    justify-content: end;
+    // border: 2px solid green;
+  }
+  @include mdBreakPoint {
+    width: 80%;
+  }
+}
+.carousel-form {
+  // height: 70vh;
+  // display: flex;
+  // align-items: center;
+  // flex-direction: column;
+  // justify-content: center;
+  width: 100%;
+  height: 100%;
+  // border: 2px solid yellow;
+}
+.resend-otp {
+  color: white;
+  font-size: 0.7rem;
+  padding-left: 80%;
+  padding-top: 10%;
+  font-family: "Open Sans" !important;
+  cursor: pointer;
+  @include mdBreakPoint {
+    padding-left: 70%;
+  }
+  @include lgBreakPoint {
+    padding-left: 70%;
+  }
+}
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.hide-position {
+  .folder-img {
+    height: 20px;
+    // border:1px solid red;
+  }
+}
+.otp {
+  color: white;
+  font-size: 0.7rem;
+  padding-left: 47%;
+  font-family: "Open Sans" !important;
+  @include smBreakPoint {
+    padding-left: 43%;
+  }
+  @include mdBreakPoint {
+    padding-left: 15%;
+  }
+  @include lgBreakPoint {
+    padding-left: 30%;
+  }
+}
+.otp-counter {
+  color: white;
+  font-size: 1rem;
+  margin-left: 70%;
+  font-family: "Open Sans" !important;
+}
+.otp-field {
+  width: 50px;
+  height: 40px;
+  // background: $secondaryColor;
+  border-radius: 10px;
+  margin-right: 4%;
+  outline: none;
+  // color:$primaryColor;
+  text-align: center;
+  align-items: center;
+  border: none;
+  @include themed() {
+    color: t($primaryColor);
+    background: t($secondaryColor);
+  }
+}
+.otp-field:focus {
+  // background: $secondaryColor;
+  outline: none;
+  border: none;
+  @include themed() {
+    background: t($secondaryColor);
+  }
+}
+.otp-alertmsg {
+  // color: $primaryColor;
+  @include themed() {
+    color: t($primaryColor);
+  }
+}
+.p-dropdown {
+  border-radius: 0 !important;
+}
+.dropdownfield {
+  width: 110% !important;
+}
+.DatePicker-dropdown {
+  // width: 110% !t;
+  // border: 1px solid red;
+  .react-datepicker-wrapper {
+    width: 90% !important;
+  }
+}
+.dropdown-reg {
+  width: 90% !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none;
+  cursor: auto;
+  // border-bottom: 1px solid white !important;
+  border-bottom: 1px solid lightgrey !important;
+  padding: 0px !important;
+  height: 50px !important;
+  .p-inputtext {
+    // color: white !important;
+    color: black !important;
+    cursor: auto;
+  }
+  .p-dropdown .p-dropdown-trigger {
+    border-radius: 0px !important;
+    // cursor: alias;
+  }
+  .pi-chevron-down {
+    // cursor: alias;
+    color: white !important;
+    color: darkgrey !important;
+  }
+  .p-dropdown-panel {
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+    overflow: hidden !important;
+    background: rgba(227, 223, 237, 0.32) !important;
+    cursor: auto;
+  }
+}
+.p-dropdown-panel {
+  border-bottom-left-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  overflow: hidden !important;
+}
+.auto-complete {
+  width: 100% !important;
+  .p-autocomplete,
+  .p-inputtext,
+  .p-autocomplete-input {
+    width: 100% !important;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none;
+    color: white !important;
+    // position:relative;
+  }
+  .p-button {
+    // z-index:1;
+    //  position: absolute;
+    background-color: transparent !important;
+    border: none !important;
+    outline: none;
+    left: 90%;
+  }
+  .p-inputtext,
+  .p-autocomplete-dd-input {
+    border: none !important;
+    border-bottom: 1px solid white !important;
+    box-sizing: border-box;
+    background-color: transparent !important;
+    outline: none;
+    // width: 70%!important;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+    padding-left: 4px;
+    border-radius: 0px;
+    font-size: 1.2rem;
+    color: white !important;
+  }
+}
+.info-icon {
+  font-size: 1.5rem;
+  // color: #FF7A00;
+  @include themed() {
+    color: t($goldenYellow);
+  }
+}
+.p-button-icon-only {
+  width: 50px !important;
+}
+.p-button {
+  @include themed() {
+    color: t($goldenYellow);
+  }
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 1.5rem !important;
+}
+.hide-inputfile {
+  position: absolute;
+  width: 220px;
+  height: 70px;
+  opacity: 0;
+  border: 1px solid;
+}
+// .password-eye{
+//   border:1px solid red;
+//   position: relative;
+// }
+.back-icon {
+  width: 38px;
+  height: 38px;
+  // margin-right: 150px;
+  // background: #FF7A00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 20px !important;
+  @include themed() {
+    background: t($goldenYellow);
+  }
+  i {
+    color: white;
+    font-size: 17px;
+  }
+}
+.carousel-header {
+  height: 10%;
+  // border:1px solid red;
+}
+.carousel-body {
+  height: 78vh;
+  // border:1px solid red;
+}
+.register-modal {
+  // border:1px solid red;
+  height: 420px !important;
+  @include xsBreakPoint {
+    height: 350px !important;
+  }
+  p {
+    @include xsBreakPoint {
+      font-size: 13px;
+    }
+  }
+  h4 {
+    color: black;
+    @include xsBreakPoint {
+      font-size: 14px;
+    }
+  }
+  h5 {
+    @include xsBreakPoint {
+      font-size: 14px;
+    }
+  }
+  .btn-yellow {
+    width: 20em !important;
+    height: 2.5rem;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 1.5px 5px black; //rgb(54, 53, 53
+    transition: background-color 400ms ease-in-out, color 400ms ease-in-out;
+    font-family: "Gilroy-Bold";
+    background: #2a2e4b;
+    color: #ff7a00;
+    // @include themed() {
+    //   background-color: t($goldenYellow) !important;
+    //   color: t($goldenYellow);
+    // }
+    @include xsBreakPoint {
+      width: 17em !important;
+      font-size: 13px;
+      font-weight: 100;
+    }
+    @include smBreakPoint {
+      width: 100%;
+    }
+    @include mdBreakPoint {
+      width: 100%;
+    }
+  }
+  .btn-yellow:hover {
+    text-decoration: none;
+    color: #2a2e4b;
+    background: #ff7a00;
+    // @include themed() {
+    //   color: t($goldenYellow);
+    //   background: t($primaryColor) !important;
+    // }
+  }
+}
+.modal-title {
+  color: black;
+}
+.register_otp {
+  .modal-content {
+    min-height: 450px !important;
+    min-width: 650px;
+    @include themed() {
+      background: t($modal-background) !important;
+    }
+    .register-modal {
+      p {
+        font-family: "Open Sans" !important;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+  }
+  .modal-header {
+    border-bottom: 1px solid transparent;
+    h3 {
+      font-weight: 600;
+      font-size: 26px;
+      color: #2b2e4a !important;
+    }
+  }
+}
